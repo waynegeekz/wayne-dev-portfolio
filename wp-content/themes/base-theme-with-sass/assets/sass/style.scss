@@ -1,0 +1,29 @@
+/*
+Theme Name: Base-Theme-With-SaSS
+Author: Chris Wayne Comendador
+Description: Base Theme for creating wordpress themes with SaSS
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: base-theme-with-sass
+*/
+
+@import "compass/reset";
+
+//LOAD FONTAWESOME ASSETS
+@import "_vendor/fontawesome/fontawesome";
+@import "_vendor/fontawesome/solid";
+@import "_vendor/fontawesome/regular";
+@import "_vendor/fontawesome/brands";
+
+//GENERAL STYLES
+@import "_partials/variables";
+@import "_partials/typography";
+@import "_partials/mixins";
+@import "_partials/default";
+
+//THEME STYLES
+@import "_partials/header";
+@import "_partials/footer";
+@import "_pages/**";
+@import "_partials/responsive";

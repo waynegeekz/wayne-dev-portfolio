@@ -1,0 +1,151 @@
+/*----------------------------
+  PARTIAL - MIXINS
+----------------------------*/
+
+// CSS Border-Radius Compatibility
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+// Transition Compatibility
+@mixin transition($property, $time, $transition) {
+  transition: $property $time $transition;
+  -moz-transition: $property $time $transition;
+  -webkit-transition: $property $time $transition;
+}
+
+// Box-Sizing Compatibility
+@mixin box-sizing($property) {
+  box-sizing: $property;
+  -moz-box-sizing: $property;
+  -webkit-box-sizing: $property;
+}
+
+// Box-Shadow Compatibility
+@mixin box-shadow($horizontal, $vertical, $blur-radius, $color) {
+  box-shadow: $horizontal $vertical $blur-radius $color;
+  -moz-box-shadow: $horizontal $vertical $blur-radius $color;
+  -webkit-box-shadow: $horizontal $vertical $blur-radius $color;
+}
+
+// Form placeholders compatibility
+@mixin placeholder {
+  
+  ::-webkit-input-placeholder {
+    @content
+  }
+
+  :-moz-placeholder {
+    @content
+  }
+
+  ::-moz-placeholder {
+    @content
+  }
+
+  :-ms-input-placeholder {
+    @content
+  }
+}
+
+// Calc function compatibility
+@mixin calc($element, $minuend, $subtrahend) {
+  $element: -moz-calc($minuend - $subtrahend);
+  $element: -webkit-calc($minuend - $subtrahend);
+  $element: -o-calc($minuend - $subtrahend);
+  $element: calc($minuend - $subtrahend);
+}
+
+
+
+//Animation mixin setup
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+// ANIMATION SAMPLES
+@include keyframes(fade-out) {
+  0% { 
+    opacity: 1;
+  }
+  90% { 
+    opacity: 0; 
+  }
+}
+
+// Gradient Backgrounds
+
+@mixin background-gradient($start-color, $end-color, $orientation) {
+  background: $start-color;
+
+  @if $orientation == 'vertical' {
+    background: -webkit-linear-gradient(top, $start-color, $end-color);
+    background: linear-gradient(to bottom, $start-color, $end-color);
+  }
+  @else if $orientation == 'horizontal' {
+    background: -webkit-linear-gradient(left, $start-color, $end-color);
+    background: linear-gradient(to right, $start-color, $end-color);
+  }
+  @else {
+    background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+    background: radial-gradient(ellipse at center, $start-color, $end-color);
+  }
+
+}
+
+
+// MEDIA QUERY MIXIN BREAKPOINTS
+$breakpoints: ( 
+  "phone": 400px, 
+  "phone-wide": 480px,
+  "phablet": 560px, 
+  "tablet-small": 640px, 
+  "tablet": 768px, 
+  "tablet-wide": 1024px, 
+  "desktop": 1248px, 
+  "desktop-wide": 1440px
+);
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    
+     $width: map_get($breakpoints, $width);
+
+    @if $type == max {
+      $width: $width - 1px;
+    }
+
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+
+  }
+}

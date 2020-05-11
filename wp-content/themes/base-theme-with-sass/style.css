@@ -1,0 +1,53 @@
+/*
+Errno::EINVAL: Invalid argument - D:/dev/xampp/htdocs/wordpress_sass/wp-content/themes/base-theme-with-sass/assets/sass/_pages/*
+
+Backtrace:
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/importers/filesystem.rb:152:in `[]'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/importers/filesystem.rb:152:in `block in find_real_file'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/importers/filesystem.rb:146:in `map'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/importers/filesystem.rb:146:in `find_real_file'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/importers/filesystem.rb:204:in `_find'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/importers/filesystem.rb:22:in `find_relative'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/compass-import-once-1.0.5/lib/compass/import-once/importer.rb:7:in `find_relative'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:48:in `import'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/tools/ruby27/lib/ruby/gems/2.7.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::EINVAL: Invalid argument - D:/dev/xampp/htdocs/wordpress_sass/wp-content/themes/base-theme-with-sass/assets/sass/_pages/*"; }

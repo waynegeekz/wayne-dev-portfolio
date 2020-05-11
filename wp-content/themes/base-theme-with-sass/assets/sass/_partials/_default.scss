@@ -1,0 +1,284 @@
+/*----------------------------
+  PARTIAL - DEFAULT STYLES
+----------------------------*/
+
+
+body {
+  font-family: $font-p;
+  font-size: 1rem;
+  color: $dark-gray;
+}
+.fa, .fas, .fab {
+  margin: 0 10px;
+}
+
+
+
+
+
+
+/*----------------------------
+  PARTIAL - BUTTONS
+----------------------------*/
+
+
+.btn {
+  display: inline-block;
+  border: 1px solid $gray;
+  padding: 1em 1.3em;
+  background: white;
+  color: $dark-gray;
+
+  &:hover {
+    background: $primary;
+    color: white;
+    border: 1px transparent white;
+    @include transition(background, 0.3s, ease-in);
+  }
+
+  &--transparent {
+    opacity: 0.8;
+  }
+
+  &--primary {
+    background: $primary;
+    color: white;
+    border: none;
+
+    &:hover {
+      border: 1px transparent white;
+      background: darken($primary, 15%);
+      @include transition(background, 0.5s, ease-in);
+    }
+  }
+
+}
+
+
+
+
+/*----------------------------
+  PARTIAL - DEFAULT ANCHOR TEXTS
+----------------------------*/
+
+a {
+  color: $link;
+  text-decoration: none;
+  
+  &:hover {
+    color: darken($link, 20%);
+    @include transition(color, 0.5s, ease-in); 
+  }
+
+}
+
+
+
+
+
+/*----------------------------
+  PARTIAL - DEFAULT HEADINGS STYLE
+----------------------------*/
+h1, h2, h3, h4, h5, h6{
+  @include font-heading(32px, $dark-gray, normal, 1.6em);
+  
+  a {
+    color: $dark-gray;
+    
+    &:hover {
+      color: $link;
+    }
+  }
+
+}
+
+h1, h2, h3 {
+  @include font-size(42px);
+}
+
+h4 {
+  @include font-size(32px);
+}
+h5 {
+  @include font-size(26px);
+}
+
+p {
+  @include p-text(1rem, $dark-gray, normal, 1.6em);
+}
+
+
+
+
+/*----------------------------
+  PARTIAL - DEFAULT LIST STYLES
+----------------------------*/
+
+
+ul, ol {
+  margin: 1em;
+}
+
+ul {
+  list-style: disc;
+  list-style-position: inside;
+  li {
+    line-height: 1.6em;
+  }  
+  
+}
+
+ol {
+  list-style: decimal;
+  list-style-position: inside;
+  li {
+    line-height: 1.6em;
+  }  
+  
+}
+
+
+
+
+
+/*----------------------------
+  PARTIAL - DEFAULT FORM STYLES
+----------------------------*/
+input, textarea, select, button {
+  padding: 1em 1.3em;
+  outline: none;
+  font-size: 1em;
+
+  @include placeholder {
+    color: $gray;
+  }
+
+}
+
+select {
+  cursor: pointer;
+}
+
+input {
+
+  &[type="submit"]{
+    cursor: pointer;
+  }
+}
+
+
+
+/*----------------------------
+  PARTIAL - BOX LAYOUTS
+----------------------------*/
+
+
+
+
+
+
+
+
+/*----------------------------
+  PARTIAL - WORDPRESS DEFAULTS
+----------------------------*/
+
+
+/*.rtl {}
+.home {}
+.blog {}
+.archive {}
+.date {}
+.search {}
+.paged {}
+.attachment {}
+.error404 {}
+.single postid-(id) {}
+.attachmentid-(id) {}
+.attachment-(mime-type) {}
+.author {}
+.author-(user_nicename) {}
+.category {}
+.category-(slug) {}
+.tag {}
+.tag-(slug) {}
+.page-parent {}
+.page-child parent-pageid-(id) {}
+.page-template page-template-(template file name) {}
+.search-results {}
+.search-no-results {}
+.logged-in {}
+.paged-(page number) {}
+.single-paged-(page number) {}
+.page-paged-(page number) {}
+.category-paged-(page number) {}
+.tag-paged-(page number) {}
+.date-paged-(page number) {}
+.author-paged-(page number) {}
+.search-paged-(page number) {}*/
+
+
+
+
+
+/*----------------------------
+  PARTIAL - WORDPRESS POST DEFAULTS
+----------------------------*/
+
+/*.post-id {}
+.post {}
+.page {}
+.attachment {}
+.sticky {}
+.hentry {}
+.category-misc {}
+.category-example {}
+.tag-news {}
+.tag-wordpress {}
+.tag-markup {}*/
+
+
+/*----------------------------
+  PARTIAL - WORDPRESS IMAGE DEFAULTS
+----------------------------*/
+
+/*.format-image {}
+.format-gallery {}
+.format-chat {}
+.format-link {}
+.format-quote {}
+.format-status {}
+.format-video {}*/
+
+
+
+/*----------------------------
+  PARTIAL - Default WISIWYG Editor Styles
+----------------------------*/
+
+/*.entry-content img {}
+.alignleft, img.alignleft {}
+.alignright, img.alignright {}
+.aligncenter, img.aligncenter {}
+.alignnone, img.alignnone {}
+ 
+.wp-caption {}
+.wp-caption img {}
+.wp-caption p.wp-caption-text {}
+ 
+.wp-smiley {}
+ 
+blockquote.left {}
+blockquote.right {}
+ 
+.gallery dl {}
+.gallery dt {}
+.gallery dd {}
+.gallery dl a {}
+.gallery dl img {}
+.gallery-caption {}
+ 
+.size-full {}
+.size-large {}
+.size-medium {}
+.size-thumbnail {}*/
