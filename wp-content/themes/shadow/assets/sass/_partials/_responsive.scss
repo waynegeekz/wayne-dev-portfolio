@@ -1,0 +1,90 @@
+@media only screen and (min-width: 481px){
+
+  body { 
+    
+    .header-container {
+
+
+      .header {
+
+        .header__title {
+          margin-right: auto;
+        }
+  
+      }
+
+
+    }
+    
+  }
+
+}
+
+
+
+@media only screen and (min-width: 769px){
+
+  html{
+    
+    body { 
+
+      &.is-home {
+        
+        .header-container {
+          
+          .header {
+            background: transparent;
+            a {
+              color: $dark-gray;
+            }
+          }
+
+        }
+
+      }
+    
+
+      .header-container {
+  
+  
+        .header {
+    
+
+          a {
+  
+            img {
+              width: 70px;
+              height: auto;
+            }
+  
+          }
+  
+          .header__menu {
+            display: none;
+          }
+          
+          .header__right {
+            display: flex;
+  
+            .menu {
+              display: flex;
+              li {
+                padding: 0 1.5em;
+                a {
+                  &:hover {
+                    color: $primary;
+                  }
+                }
+              }
+            }
+          }
+    
+        }
+  
+  
+      }
+      
+    }
+  }
+
+}

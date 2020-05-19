@@ -67,7 +67,7 @@ Thumbs.db
 !CHANGELOG.md
 
 # track these themes
-!wp-content/themes/base-theme-with-sass/
+!wp-content/themes/shadow/
 
 #ignore SaSS Cache Folder
 .*/

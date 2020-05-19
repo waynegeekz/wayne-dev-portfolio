@@ -1,0 +1,84 @@
+/*----------------------------
+  PARTIAL - TYPOGRAPHY
+----------------------------*/
+
+
+// Load font-face
+@font-face {
+  font-family: $font-heading;
+  src: url('assets/fonts/righteous/Righteous-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url('assets/fonts/lato/Lato-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: $font-p;
+  src: url('assets/fonts/lato/Lato-Light.ttf');
+  font-weight: 300;
+}
+
+
+// Define default font size converted to REM
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;// If REM is not supported
+  font-size: calculateRem($size);
+}
+
+@mixin font-heading($size: false, $colour: false, $weight: false, $lh: false) {
+  font-family: $font-heading, Helvetica, Arial, sans-serif;
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $colour {
+    color: $colour;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+}
+
+@mixin p-text($size: false, $colour: false, $weight: false, $lh: false) {
+  font-family: $font-p, Helvetica, Arial, sans-serif;
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $colour {
+    color: $colour;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+}
+
+
+// TRUNCATE TEXT
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
