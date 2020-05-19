@@ -24,9 +24,11 @@
 
 	<section class="header box box--padding">
 
-		<a href="#" class="header__menu js-btnMenu"><i class="fas fa-bars"></i></a>
+		<nav class="header__left box">
+			<a href="#" class="header__menu js-btnMenu"><i class="fas fa-bars"></i></a>
 
-		<div class="header__title"><?php echo get_custom_logo();?></div>
+			<div class="header__title"><a href="<?php echo site_url();?>"><img class="custom-logo" src="<?php echo get_bloginfo('template_url') ?>/assets/images/logo_websiteWhite.png"" alt="Chris Wayne Comendador Logo"></a></div>
+		</nav>
 
 		<nav class="header__right box">
 
@@ -40,6 +42,8 @@
 			?>
 
 			<a href="#" class="js-btnSearch"><i class="fa fa-search"></i></a>
+
+			<a href="#" class="js-btnCart"><i class="fas fa-shopping-cart"></i></a
 
 		</nav>
 

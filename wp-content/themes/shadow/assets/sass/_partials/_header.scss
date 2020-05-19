@@ -15,11 +15,12 @@ html {
 			.header {
 				background: $dark-gray;
 				align-items: center;	
+				@include transition(background, 1s, ease-in);
 
 				a {
 					color: white;
 					img {
-						width: 50px;
+						width: 40px;
 						height: auto;
 					}
 				}
@@ -50,7 +51,7 @@ html {
 				background: white;
 				display: none;
 				justify-content: center;
-				padding: 1em 5vw;
+				padding: 0.5em 5vw;
 				background: white;
 				@include box-shadow(0, 10px, 20px, $light-gray);
 				width: 100%;

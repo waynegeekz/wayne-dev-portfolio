@@ -143,7 +143,8 @@ function basetheme_scripts() {
 
 
     $datatoBePassed = array (
-        'isHome' =>  is_home()? 'true' : 'false'
+        'isHome' =>  is_home()? 'true' : 'false',
+        'theme_dir' => get_template_directory_uri()
     );
 
     wp_localize_script( 'basetheme-scripts', 'PHPVARS', $datatoBePassed );

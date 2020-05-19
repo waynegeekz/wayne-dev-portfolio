@@ -1,27 +1,3 @@
-@media only screen and (min-width: 481px){
-
-  body { 
-    
-    .header-container {
-
-
-      .header {
-
-        .header__title {
-          margin-right: auto;
-        }
-  
-      }
-
-
-    }
-    
-  }
-
-}
-
-
-
 @media only screen and (min-width: 769px){
 
   html{
@@ -34,6 +10,8 @@
           
           .header {
             background: transparent;
+            @include transition(background, 0.5s, ease-in);
+
             a {
               color: $dark-gray;
             }
@@ -81,7 +59,9 @@
     
         }
   
-  
+        .search-form {
+          padding: 1em 5vw;
+        }
       }
       
     }

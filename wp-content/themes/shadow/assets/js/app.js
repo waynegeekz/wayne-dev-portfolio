@@ -6,6 +6,10 @@
 
     //START WRITING THEME FUNCTIONS HERE
 
+    
+
+    let $window = $(window);
+
     const sd_showModal = (modalElement) => {
         
         $('body').addClass('modal-shown');
@@ -22,66 +26,56 @@
 
     const sd_fixHeader = () => {
         
-        let headerHeight = $(".header-container").innerHeight();
+        let headerHeight = $(".header").innerHeight();
 
         $("#content").css({'margin-top' : headerHeight});
     };
 
     const sd_fixNavMenuHeight = () => {
 
-        const navContainerHeight = ($(window).height() - $('.modal__header').height()) - 50;
+        const navContainerHeight = ($window.height() - $('.modal__header').height()) - 50;
         
         $(".modal__nav").css('height', navContainerHeight);
     
     }
 
-    const sd_headerOnScroll = () => {
-
-        const body = $('body');
-
-        if(PHPVARS.isHome === 'true'){
-
-            if (window.pageYOffset > 200) {
-                body.removeClass('is-home');
-            } else {
-                body.addClass('is-home');
-            }
-
-        }
-
-        
-
-    }
-
     const sd_isHome = () => {
-        
-        if(PHPVARS.isHome === 'true') {
+
+        const isMobile = $window.width() < 769 ?  true : false;
+
+        const logo = $('.custom-logo');
+
+        if(PHPVARS.isHome === 'true' && !isMobile && $window.scrollTop() < 200) {
+    
             $('body').addClass('is-home');
+            logo.attr("src", PHPVARS.theme_dir + "/assets/images/logo_website.png");
+    
+        } else {
+
+            $('body').removeClass('is-home');
+            logo.attr("src", PHPVARS.theme_dir + "/assets/images/logo_websiteWhite.png");
+
         }
 
     }
 
-    const changeHomeLogo = () => {
-
-        $('.custom-logo').attr("src", "images/card-front.jpg");
-    
-    }
     $(document).ready(function() {
         
         //CALL STACK FOR ON SCROLL FUNCTIONS
-        $(window).scroll(function () {
+        $window.scroll(function () {
 
             sd_fixHeader();
-            sd_headerOnScroll();
+            sd_isHome();
 
         });
 
 
         //CALL STACK FOR RESIZE FUNCTIONS
-        $(window).resize(function () {
+        $window.resize(function () {
 
             sd_fixHeader();
             sd_fixNavMenuHeight();
+            sd_isHome();
 
         });
 

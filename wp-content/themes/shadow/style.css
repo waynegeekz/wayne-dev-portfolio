@@ -8040,38 +8040,41 @@ html body .header-container {
 html body .header-container .header {
   background: #0D0C0C;
   align-items: center;
+  transition: background 1s ease-in;
+  -moz-transition: background 1s ease-in;
+  -webkit-transition: background 1s ease-in;
 }
-/* line 19, assets/sass/_partials/_header.scss */
+/* line 20, assets/sass/_partials/_header.scss */
 html body .header-container .header a {
   color: white;
 }
-/* line 21, assets/sass/_partials/_header.scss */
+/* line 22, assets/sass/_partials/_header.scss */
 html body .header-container .header a img {
-  width: 50px;
+  width: 40px;
   height: auto;
 }
-/* line 27, assets/sass/_partials/_header.scss */
+/* line 28, assets/sass/_partials/_header.scss */
 html body .header-container .header .fa, html body .header-container .header .fas {
   font-size: 1.5em;
 }
-/* line 31, assets/sass/_partials/_header.scss */
+/* line 32, assets/sass/_partials/_header.scss */
 html body .header-container .header .fa:hover, html body .header-container .header .fas:hover {
   color: #FF3131;
 }
-/* line 35, assets/sass/_partials/_header.scss */
+/* line 36, assets/sass/_partials/_header.scss */
 html body .header-container .header .fa.fa-search, html body .header-container .header .fas.fa-search {
   font-size: 1.3em;
 }
-/* line 41, assets/sass/_partials/_header.scss */
+/* line 42, assets/sass/_partials/_header.scss */
 html body .header-container .header__right {
   align-items: center;
 }
-/* line 49, assets/sass/_partials/_header.scss */
+/* line 50, assets/sass/_partials/_header.scss */
 html body .header-container .search-form {
   background: white;
   display: none;
   justify-content: center;
-  padding: 1em 5vw;
+  padding: 0.5em 5vw;
   background: white;
   box-shadow: 0 10px 20px #DFDFDF;
   -moz-box-shadow: 0 10px 20px #DFDFDF;
@@ -8079,7 +8082,7 @@ html body .header-container .search-form {
   width: 100%;
   z-index: -1;
 }
-/* line 59, assets/sass/_partials/_header.scss */
+/* line 60, assets/sass/_partials/_header.scss */
 html body .header-container .search-form input {
   padding: 0.5em;
   width: 100%;
@@ -8108,133 +8111,134 @@ html body .header-container .search-form input :-ms-input-placeholder {
   font-size: 0.75rem;
   color: red;
 }
-/* line 82, assets/sass/_partials/_header.scss */
+/* line 83, assets/sass/_partials/_header.scss */
 html body #js-modalMenu {
   justify-content: flex-start;
   align-items: flex-end;
   width: 270px;
   height: 100%;
 }
-/* line 89, assets/sass/_partials/_header.scss */
+/* line 90, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__content {
   padding: 0;
 }
-/* line 93, assets/sass/_partials/_header.scss */
+/* line 94, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header {
   align-items: center;
   justify-content: flex-start;
   padding: 1.5em;
 }
-/* line 98, assets/sass/_partials/_header.scss */
+/* line 99, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header img {
   width: 50px;
   height: auto;
   margin-right: 1em;
 }
-/* line 106, assets/sass/_partials/_header.scss */
+/* line 107, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header p:first-child {
   font-weight: bold;
 }
-/* line 110, assets/sass/_partials/_header.scss */
+/* line 111, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header p:last-child {
   font-size: 0.8em;
 }
-/* line 120, assets/sass/_partials/_header.scss */
+/* line 121, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__nav {
   overflow: scroll;
   padding-bottom: 20px;
   box-sizing: content-box;
 }
-/* line 126, assets/sass/_partials/_header.scss */
+/* line 127, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts {
   margin-bottom: 1em;
 }
-/* line 128, assets/sass/_partials/_header.scss */
+/* line 129, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li {
   padding: 0.5em 1.5em;
 }
-/* line 130, assets/sass/_partials/_header.scss */
+/* line 131, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li a {
   font-size: 12px;
   font-size: 0.75rem;
   color: #0D0C0C;
 }
-/* line 133, assets/sass/_partials/_header.scss */
+/* line 134, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li a:hover {
   color: #FF3131;
 }
-/* line 136, assets/sass/_partials/_header.scss */
+/* line 137, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li a i {
   margin: 0 10px 0 0;
 }
-/* line 143, assets/sass/_partials/_header.scss */
+/* line 144, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu {
   display: block;
 }
-/* line 145, assets/sass/_partials/_header.scss */
+/* line 146, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu li {
   padding: 0.8em 1.5em;
 }
-/* line 147, assets/sass/_partials/_header.scss */
+/* line 148, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu li a {
   color: #707070;
 }
-/* line 149, assets/sass/_partials/_header.scss */
+/* line 150, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu li a:hover {
   color: #FF3131;
 }
-/* line 158, assets/sass/_partials/_header.scss */
+/* line 159, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .btn {
   margin: 1em 0 0 1.5em;
 }
-/* line 165, assets/sass/_partials/_header.scss */
+/* line 166, assets/sass/_partials/_header.scss */
 html body hr {
   border: 1px solid #DFDFDF;
   margin: 0 1.5em;
 }
-/* line 171, assets/sass/_partials/_header.scss */
+/* line 172, assets/sass/_partials/_header.scss */
 html body .menu {
   display: none;
 }
 
-@media only screen and (min-width: 481px) {
-  /* line 10, assets/sass/_partials/_responsive.scss */
-  body .header-container .header .header__title {
-    margin-right: auto;
-  }
-}
 @media only screen and (min-width: 769px) {
-  /* line 35, assets/sass/_partials/_responsive.scss */
+  /* line 11, assets/sass/_partials/_responsive.scss */
   html body.is-home .header-container .header {
     background: transparent;
+    transition: background 0.5s ease-in;
+    -moz-transition: background 0.5s ease-in;
+    -webkit-transition: background 0.5s ease-in;
   }
-  /* line 37, assets/sass/_partials/_responsive.scss */
+  /* line 15, assets/sass/_partials/_responsive.scss */
   html body.is-home .header-container .header a {
     color: #0D0C0C;
   }
-  /* line 55, assets/sass/_partials/_responsive.scss */
+  /* line 33, assets/sass/_partials/_responsive.scss */
   html body .header-container .header a img {
     width: 70px;
     height: auto;
   }
-  /* line 62, assets/sass/_partials/_responsive.scss */
+  /* line 40, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__menu {
     display: none;
   }
-  /* line 66, assets/sass/_partials/_responsive.scss */
+  /* line 44, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__right {
     display: flex;
   }
-  /* line 69, assets/sass/_partials/_responsive.scss */
+  /* line 47, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__right .menu {
     display: flex;
   }
-  /* line 71, assets/sass/_partials/_responsive.scss */
+  /* line 49, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__right .menu li {
     padding: 0 1.5em;
   }
-  /* line 74, assets/sass/_partials/_responsive.scss */
+  /* line 52, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__right .menu li a:hover {
     color: #FF3131;
+  }
+  /* line 62, assets/sass/_partials/_responsive.scss */
+  html body .header-container .search-form {
+    padding: 1em 5vw;
   }
 }
