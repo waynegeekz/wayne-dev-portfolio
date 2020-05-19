@@ -8040,9 +8040,6 @@ html body .header-container {
 html body .header-container .header {
   background: #0D0C0C;
   align-items: center;
-  transition: background 0.5s ease-in;
-  -moz-transition: background 0.5s ease-in;
-  -webkit-transition: background 0.5s ease-in;
 }
 /* line 19, assets/sass/_partials/_header.scss */
 html body .header-container .header a {
