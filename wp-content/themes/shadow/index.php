@@ -9,111 +9,31 @@ get_header();
 
 <main id="main" class="site-main" role="main">
 
-	<a href="#" class="btn btn--primary">I need a website <i class="fas fa-caret-right"></i></a>
+	<section class="jumbotron">
 
-<?php
-if ( have_posts() ) : while ( have_posts() ) : the_post();
+		<h3 class="jumbotron__header">Website Done Right</h3>
 
-		get_template_part( 'template-parts/content', get_post_type() );
+		<p class="jumbotron__description">Creating a website is a great way to jump start in scaling your business. I can help you build the right website you are looking for. Let's turn your idea into a reality.</p>
 
-	endwhile;
+		<div class="jumbotron__links">
 
-	the_posts_pagination( array(
-		'prev_text' => __( 'Previous page' ),
-		'next_text' => __( 'Next page' ),
-	) );
+			<a href="<?php echo site_url();?>/cart" class="btn btn--primary" >I need a website <i class="fa fa-caret-right"></i></a>
 
-endif;
-?>
+			<a href="<?php echo site_url();?>/cart" class="btn btn--secondary" >I need a consultation (FREE) <i class="fa fa-caret-right"></i></a>
+	
+		</div>
 
-<pre>
-ad
-asd
-asd
-asd
-asd
-asd
-as
-date_subdas
-das
-das
-da
-sd
-asasd
-asd
-as
-date_subsda
-ad
-asd
-asd
-asd
-asd
-asd
-as
-date_subdas
-das
-das
-da
-sd
-asasd
-asd
-as
-date_subsda
-ad
-asd
-asd
-asd
-asd
-asd
-as
-date_subdas
-das
-das
-da
-sd
-asasd
-asd
-as
-date_subsda
-ad
-asd
-asd
-asd
-asd
-asd
-as
-date_subdas
-das
-das
-da
-sd
-asasd
-asd
-as
-date_subsda
-ad
-asd
-asd
-asd
-asd
-asd
-as
-date_subdas
-das
-das
-da
-sd
-asasd
-asd
-as
-date_subsda
+	</section>
 
+	<section class="intro">
 
-</pre>
+	
+	</section>
+
 
 
 </main>
 
 <?php
-get_sidebar();
+
 get_footer();

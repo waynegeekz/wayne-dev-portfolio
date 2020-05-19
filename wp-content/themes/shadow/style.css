@@ -7667,15 +7667,10 @@ body {
   color: #0D0C0C;
 }
 
-/* line 14, assets/sass/_partials/_default.scss */
-.fa, .fas, .fab {
-  margin: 0 10px;
-}
-
 /*----------------------------
   PARTIAL - BUTTONS
 ----------------------------*/
-/* line 28, assets/sass/_partials/_default.scss */
+/* line 24, assets/sass/_partials/_default.scss */
 .btn {
   display: inline-block;
   border: 1px solid #707070;
@@ -7683,7 +7678,7 @@ body {
   background: white;
   color: #0D0C0C;
 }
-/* line 35, assets/sass/_partials/_default.scss */
+/* line 31, assets/sass/_partials/_default.scss */
 .btn:hover {
   background: #FF3131;
   color: white;
@@ -7691,6 +7686,10 @@ body {
   transition: background 0.3s ease-in;
   -moz-transition: background 0.3s ease-in;
   -webkit-transition: background 0.3s ease-in;
+}
+/* line 38, assets/sass/_partials/_default.scss */
+.btn i {
+  margin-left: 10px;
 }
 /* line 42, assets/sass/_partials/_default.scss */
 .btn--transparent {
@@ -8035,54 +8034,63 @@ html body .header-container {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 999;
 }
-/* line 15, assets/sass/_partials/_header.scss */
+/* line 18, assets/sass/_partials/_header.scss */
 html body .header-container .header {
   background: #0D0C0C;
   align-items: center;
-  transition: background 1s ease-in;
-  -moz-transition: background 1s ease-in;
-  -webkit-transition: background 1s ease-in;
+  transition: padding 0.5s ease-in;
+  -moz-transition: padding 0.5s ease-in;
+  -webkit-transition: padding 0.5s ease-in;
 }
-/* line 20, assets/sass/_partials/_header.scss */
+/* line 23, assets/sass/_partials/_header.scss */
 html body .header-container .header a {
   color: white;
 }
-/* line 22, assets/sass/_partials/_header.scss */
+/* line 25, assets/sass/_partials/_header.scss */
 html body .header-container .header a img {
   width: 40px;
   height: auto;
 }
-/* line 28, assets/sass/_partials/_header.scss */
+/* line 31, assets/sass/_partials/_header.scss */
 html body .header-container .header .fa, html body .header-container .header .fas {
   font-size: 1.5em;
 }
-/* line 32, assets/sass/_partials/_header.scss */
+/* line 35, assets/sass/_partials/_header.scss */
 html body .header-container .header .fa:hover, html body .header-container .header .fas:hover {
   color: #FF3131;
 }
-/* line 36, assets/sass/_partials/_header.scss */
+/* line 39, assets/sass/_partials/_header.scss */
 html body .header-container .header .fa.fa-search, html body .header-container .header .fas.fa-search {
   font-size: 1.3em;
 }
-/* line 42, assets/sass/_partials/_header.scss */
+/* line 47, assets/sass/_partials/_header.scss */
+html body .header-container .header__left .fa, html body .header-container .header__left .fas, html body .header-container .header__left .fab {
+  margin: 0 1em 0 0;
+}
+/* line 53, assets/sass/_partials/_header.scss */
 html body .header-container .header__right {
   align-items: center;
 }
-/* line 50, assets/sass/_partials/_header.scss */
+/* line 56, assets/sass/_partials/_header.scss */
+html body .header-container .header__right .fa, html body .header-container .header__right .fas, html body .header-container .header__right .fab {
+  margin: 0 0 0 1em;
+}
+/* line 65, assets/sass/_partials/_header.scss */
 html body .header-container .search-form {
   background: white;
   display: none;
   justify-content: center;
   padding: 0.5em 5vw;
   background: white;
-  box-shadow: 0 10px 20px #DFDFDF;
-  -moz-box-shadow: 0 10px 20px #DFDFDF;
-  -webkit-box-shadow: 0 10px 20px #DFDFDF;
+  box-shadow: 0 1px 5px #DFDFDF;
+  -moz-box-shadow: 0 1px 5px #DFDFDF;
+  -webkit-box-shadow: 0 1px 5px #DFDFDF;
   width: 100%;
   z-index: -1;
 }
-/* line 60, assets/sass/_partials/_header.scss */
+/* line 75, assets/sass/_partials/_header.scss */
 html body .header-container .search-form input {
   padding: 0.5em;
   width: 100%;
@@ -8111,134 +8119,213 @@ html body .header-container .search-form input :-ms-input-placeholder {
   font-size: 0.75rem;
   color: red;
 }
-/* line 83, assets/sass/_partials/_header.scss */
+/* line 98, assets/sass/_partials/_header.scss */
 html body #js-modalMenu {
   justify-content: flex-start;
   align-items: flex-end;
   width: 270px;
   height: 100%;
 }
-/* line 90, assets/sass/_partials/_header.scss */
+/* line 105, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__content {
   padding: 0;
 }
-/* line 94, assets/sass/_partials/_header.scss */
+/* line 109, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header {
   align-items: center;
   justify-content: flex-start;
   padding: 1.5em;
 }
-/* line 99, assets/sass/_partials/_header.scss */
+/* line 114, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header img {
   width: 50px;
   height: auto;
   margin-right: 1em;
 }
-/* line 107, assets/sass/_partials/_header.scss */
+/* line 122, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header p:first-child {
   font-weight: bold;
 }
-/* line 111, assets/sass/_partials/_header.scss */
+/* line 126, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header p:last-child {
   font-size: 0.8em;
 }
-/* line 121, assets/sass/_partials/_header.scss */
+/* line 136, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__nav {
   overflow: scroll;
   padding-bottom: 20px;
   box-sizing: content-box;
 }
-/* line 127, assets/sass/_partials/_header.scss */
+/* line 142, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts {
   margin-bottom: 1em;
 }
-/* line 129, assets/sass/_partials/_header.scss */
+/* line 144, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li {
   padding: 0.5em 1.5em;
 }
-/* line 131, assets/sass/_partials/_header.scss */
+/* line 146, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li a {
   font-size: 12px;
   font-size: 0.75rem;
   color: #0D0C0C;
 }
-/* line 134, assets/sass/_partials/_header.scss */
+/* line 149, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li a:hover {
   color: #FF3131;
 }
-/* line 137, assets/sass/_partials/_header.scss */
+/* line 152, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li a i {
   margin: 0 10px 0 0;
 }
-/* line 144, assets/sass/_partials/_header.scss */
+/* line 159, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu {
   display: block;
 }
-/* line 146, assets/sass/_partials/_header.scss */
+/* line 161, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu li {
   padding: 0.8em 1.5em;
 }
-/* line 148, assets/sass/_partials/_header.scss */
+/* line 163, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu li a {
   color: #707070;
 }
-/* line 150, assets/sass/_partials/_header.scss */
+/* line 165, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu li a:hover {
   color: #FF3131;
 }
-/* line 159, assets/sass/_partials/_header.scss */
+/* line 174, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .btn {
   margin: 1em 0 0 1.5em;
 }
-/* line 166, assets/sass/_partials/_header.scss */
+/* line 181, assets/sass/_partials/_header.scss */
 html body hr {
   border: 1px solid #DFDFDF;
   margin: 0 1.5em;
 }
-/* line 172, assets/sass/_partials/_header.scss */
+/* line 187, assets/sass/_partials/_header.scss */
 html body .menu {
   display: none;
 }
 
+/* line 10, assets/sass/_pages/_index.scss */
+html body .site-content #main .jumbotron {
+  background: url("assets/images/bg_jumbotron.jpg");
+  height: 100vh;
+  width: calc(100vw - (100vw - 100%));
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 5vw;
+  max-height: 600px;
+}
+/* line 26, assets/sass/_pages/_index.scss */
+html body .site-content #main .jumbotron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+/* line 37, assets/sass/_pages/_index.scss */
+html body .site-content #main .jumbotron__header {
+  color: white;
+  text-align: left;
+  padding: 0;
+}
+/* line 43, assets/sass/_pages/_index.scss */
+html body .site-content #main .jumbotron__description {
+  color: white;
+  padding: 1em 0;
+}
+/* line 49, assets/sass/_pages/_index.scss */
+html body .site-content #main .jumbotron__links a:first-child {
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
 @media only screen and (min-width: 769px) {
-  /* line 11, assets/sass/_partials/_responsive.scss */
+  /* line 13, assets/sass/_partials/_responsive.scss */
   html body.is-home .header-container .header {
     background: transparent;
-    transition: background 0.5s ease-in;
-    -moz-transition: background 0.5s ease-in;
-    -webkit-transition: background 0.5s ease-in;
+    padding: 2em 5vw;
+    transition: padding 0.5s ease-in;
+    -moz-transition: padding 0.5s ease-in;
+    -webkit-transition: padding 0.5s ease-in;
   }
-  /* line 15, assets/sass/_partials/_responsive.scss */
-  html body.is-home .header-container .header a {
-    color: #0D0C0C;
-  }
-  /* line 33, assets/sass/_partials/_responsive.scss */
+  /* line 32, assets/sass/_partials/_responsive.scss */
   html body .header-container .header a img {
     width: 70px;
     height: auto;
   }
-  /* line 40, assets/sass/_partials/_responsive.scss */
+  /* line 39, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__menu {
     display: none;
   }
-  /* line 44, assets/sass/_partials/_responsive.scss */
+  /* line 43, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__right {
     display: flex;
   }
-  /* line 47, assets/sass/_partials/_responsive.scss */
+  /* line 46, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__right .menu {
     display: flex;
   }
-  /* line 49, assets/sass/_partials/_responsive.scss */
+  /* line 48, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__right .menu li {
     padding: 0 1.5em;
   }
-  /* line 52, assets/sass/_partials/_responsive.scss */
+  /* line 51, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__right .menu li a:hover {
     color: #FF3131;
   }
-  /* line 62, assets/sass/_partials/_responsive.scss */
+  /* line 61, assets/sass/_partials/_responsive.scss */
   html body .header-container .search-form {
     padding: 1em 5vw;
+  }
+  /* line 70, assets/sass/_partials/_responsive.scss */
+  html body .site-content #main .jumbotron {
+    align-items: center;
+    max-height: 100vh;
+    padding: 0 10vw;
+    background-size: 140% auto;
+    background-position: center;
+  }
+  /* line 77, assets/sass/_partials/_responsive.scss */
+  html body .site-content #main .jumbotron__description {
+    text-align: center;
+    padding: 2em 0;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  /* line 106, assets/sass/_partials/_responsive.scss */
+  html body .site-content #main .jumbotron {
+    background-size: 100% auto;
+    padding: 0 15vw;
+  }
+  /* line 111, assets/sass/_partials/_responsive.scss */
+  html body .site-content #main__header {
+    font-size: 42px;
+    font-size: 2.625rem;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  /* line 139, assets/sass/_partials/_responsive.scss */
+  html body .site-content #main .jumbotron {
+    background-size: 100% auto;
+    padding: 0 25vw;
+  }
+  /* line 143, assets/sass/_partials/_responsive.scss */
+  html body .site-content #main .jumbotron__header {
+    font-size: 52px;
+    font-size: 3.25rem;
   }
 }

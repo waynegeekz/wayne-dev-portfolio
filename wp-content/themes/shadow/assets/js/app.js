@@ -25,10 +25,17 @@
     }
 
     const sd_fixHeader = () => {
-        
-        let headerHeight = $(".header").innerHeight();
+    
 
-        $("#content").css({'margin-top' : headerHeight});
+        let headerHeight = $(".header").innerHeight();
+    
+        if(PHPVARS.isHome === "false"){
+            $("#content").css({'margin-top' : headerHeight});
+        } else if ($('.jumbotron').length){
+            console.log("with jumbotron");
+            $(".jumbotron__header").css({'margin-top' : headerHeight});
+        }
+
     };
 
     const sd_fixNavMenuHeight = () => {
@@ -48,12 +55,12 @@
         if(PHPVARS.isHome === 'true' && !isMobile && $window.scrollTop() < 200) {
     
             $('body').addClass('is-home');
-            logo.attr("src", PHPVARS.theme_dir + "/assets/images/logo_website.png");
+            //logo.attr("src", PHPVARS.theme_dir + "/assets/images/logo_website.png");
     
         } else {
 
             $('body').removeClass('is-home');
-            logo.attr("src", PHPVARS.theme_dir + "/assets/images/logo_websiteWhite.png");
+            //logo.attr("src", PHPVARS.theme_dir + "/assets/images/logo_websiteWhite.png");
 
         }
 

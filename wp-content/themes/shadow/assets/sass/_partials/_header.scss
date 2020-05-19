@@ -10,12 +10,15 @@ html {
 			width: 100%;
 			top:0;
 			left: 0;
+			z-index: 999;
+
+		
 
 
 			.header {
 				background: $dark-gray;
 				align-items: center;	
-				@include transition(background, 1s, ease-in);
+				@include transition(padding, 0.5s, ease-in);
 
 				a {
 					color: white;
@@ -39,8 +42,20 @@ html {
 
 				}
 
+				&__left {
+
+					.fa, .fas, .fab {
+						margin: 0 1em 0 0;
+					}
+
+				}
+
 				&__right {
 					align-items: center;
+
+					.fa, .fas, .fab {
+						margin: 0 0 0 1em;
+					}
 
 				}
 
@@ -53,7 +68,7 @@ html {
 				justify-content: center;
 				padding: 0.5em 5vw;
 				background: white;
-				@include box-shadow(0, 10px, 20px, $light-gray);
+				@include box-shadow(0, 1px, 5px, $light-gray);
 				width: 100%;
 				z-index: -1;
 

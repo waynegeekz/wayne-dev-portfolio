@@ -1,0 +1,64 @@
+html {
+  
+  
+  body {
+
+    .site-content {
+      
+      #main {
+        
+        .jumbotron {
+          background: url('assets/images/bg_jumbotron.jpg');
+          height: 100vh;
+          width: calc(100vw - (100vw - 100%));
+          position: relative;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          z-index: 1;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 0 5vw;
+          max-height: 600px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: rgba(0,0,0, 0.5);
+            width: 100%;
+            height: 100%;
+          }
+          
+          &__header {
+            color: white;
+            text-align: left;
+            padding: 0;
+          }
+
+          &__description {
+            color: white;
+            padding: 1em 0;
+          }
+
+          &__links {
+            a:first-child {
+              margin-bottom: 1em;
+              margin-right: 1em;
+            }
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+}

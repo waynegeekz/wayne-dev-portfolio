@@ -11,10 +11,6 @@ body {
   color: $dark-gray;
 
 }
-.fa, .fas, .fab {
-  margin: 0 10px;
-}
-
 
 
 
@@ -37,6 +33,10 @@ body {
     color: white;
     border: 1px transparent white;
     @include transition(background, 0.3s, ease-in);
+  }
+
+  i {
+    margin-left: 10px;
   }
 
   &--transparent {

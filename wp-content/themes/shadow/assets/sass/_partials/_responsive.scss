@@ -1,8 +1,10 @@
 @media only screen and (min-width: 769px){
 
+
   html{
     
     body { 
+
 
       &.is-home {
         
@@ -10,11 +12,8 @@
           
           .header {
             background: transparent;
-            @include transition(background, 0.5s, ease-in);
-
-            a {
-              color: $dark-gray;
-            }
+            padding: 2em 5vw;
+            @include transition(padding, 0.5s, ease-in);
           }
 
         }
@@ -63,8 +62,97 @@
           padding: 1em 5vw;
         }
       }
+
+      .site-content {
+
+        #main {
+
+          .jumbotron {
+            align-items: center;
+            max-height: 100vh;
+            padding: 0 10vw;
+            background-size: 140% auto;
+            background-position: center;
+
+            &__description {
+              text-align: center;
+              padding: 2em 0;
+            }
+          }
+
+        }
+
+      }
       
+
     }
   }
+
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+
+  html {
+    body {
+
+
+      .site-content {
+
+
+        #main {
+          
+          .jumbotron {
+            background-size: 100% auto;
+            padding: 0 15vw;
+          }
+
+          &__header{
+            @include font-size(42px);
+          }
+
+        }
+
+
+      }
+
+
+    }
+  }
+
+
+}
+
+@media only screen and (min-width: 1281px) {
+
+
+  html {
+    body {
+
+
+      .site-content {
+
+
+        #main {
+          
+          .jumbotron {
+            background-size: 100% auto;
+            padding: 0 25vw;
+
+            &__header{
+              @include font-size(52px);
+            }
+          }
+
+        }
+
+
+      }
+
+
+    }
+  }
+
 
 }
