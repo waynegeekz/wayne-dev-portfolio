@@ -7935,6 +7935,15 @@ button {
 }
 
 /*----------------------------
+  PARTIAL - MENU
+----------------------------*/
+/* line 297, assets/sass/_partials/_default.scss */
+img.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/*----------------------------
   PARTIAL - WORDPRESS DEFAULTS
 ----------------------------*/
 /*.rtl {}
@@ -8210,20 +8219,20 @@ html body .menu {
 
 /* line 10, assets/sass/_pages/_index.scss */
 html body .site-content #main .jumbotron {
-  background: url("assets/images/bg_jumbotron.jpg");
-  height: 100vh;
-  width: calc(100vw - (100vw - 100%));
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 1;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 5vw;
+  background: url("assets/images/bg_jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
   max-height: 600px;
+  width: calc(100vw - (100vw - 100%));
+  z-index: 1;
+  padding: 0 5vw;
 }
 /* line 26, assets/sass/_pages/_index.scss */
 html body .site-content #main .jumbotron:after {
@@ -8251,6 +8260,92 @@ html body .site-content #main .jumbotron__description {
 html body .site-content #main .jumbotron__links a:first-child {
   margin-bottom: 1em;
   margin-right: 1em;
+}
+/* line 57, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro {
+  padding: 5em 5vw;
+  align-items: center;
+  display: flex;
+}
+/* line 62, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__img {
+  flex: 0 0 25vw;
+  font-size: 16px;
+  position: relative;
+}
+/* line 67, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__img .intro__circle {
+  position: absolute;
+  border: 15px solid #DFDFDF;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  height: 25em;
+  width: 25em;
+  z-index: -1;
+  top: -2em;
+  left: 3em;
+}
+/* line 77, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__img .intro__circle .circles-container {
+  position: relative;
+  height: 25em;
+  width: 25em;
+}
+/* line 82, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__img .intro__circle .circles-container .circle__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0 1px 5px #DFDFDF;
+  -moz-box-shadow: 0 1px 5px #DFDFDF;
+  -webkit-box-shadow: 0 1px 5px #DFDFDF;
+  position: absolute;
+}
+/* line 93, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:first-child {
+  top: -2em;
+  right: 8em;
+}
+/* line 98, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:nth-child(2) {
+  top: 3em;
+  right: 1em;
+}
+/* line 103, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:nth-child(3) {
+  top: calc(50% - 2em);
+  right: 0em;
+}
+/* line 108, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:nth-child(4) {
+  bottom: 4em;
+  right: 2em;
+}
+/* line 113, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:last-child {
+  bottom: 0em;
+  right: 8em;
+}
+/* line 118, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__img .intro__circle .circles-container .circle__img img {
+  width: 2em;
+  height: auto;
+}
+/* line 130, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__img .intro__profimage {
+  width: 100%;
+  height: auto;
+}
+/* line 137, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__description {
+  flex: 0 0 50vw;
 }
 
 @media only screen and (min-width: 769px) {

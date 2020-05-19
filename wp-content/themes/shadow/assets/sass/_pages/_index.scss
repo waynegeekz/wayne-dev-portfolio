@@ -8,20 +8,20 @@ html {
       #main {
         
         .jumbotron {
-          background: url('assets/images/bg_jumbotron.jpg');
-          height: 100vh;
-          width: calc(100vw - (100vw - 100%));
-          position: relative;
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-attachment: fixed;
-          z-index: 1;
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
           align-items: flex-start;
-          padding: 0 5vw;
+          background: url('assets/images/bg_jumbotron.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          position: relative;
+          height: 100vh;
           max-height: 600px;
+          width: calc(100vw - (100vw - 100%));
+          z-index: 1;
+          padding: 0 5vw;
 
           &:after {
             content: '';
@@ -50,6 +50,92 @@ html {
               margin-bottom: 1em;
               margin-right: 1em;
             }
+          }
+
+        }
+
+        .intro {
+          padding: 5em 5vw;
+          align-items: center;
+          display: flex;
+          
+          &__img {
+            flex: 0 0 25vw;
+            font-size: 16px;
+            position: relative;
+
+            .intro__circle {
+              position: absolute;
+              border: 15px solid $light-gray;
+              @include border-radius(50%);
+              height: 25em;
+              width: 25em;
+              z-index: -1;
+              top: -2em;
+              left: 3em;
+
+              .circles-container {
+                position: relative;
+                height: 25em;
+                width: 25em;
+
+                .circle__img {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: white;
+                  width: 4em;
+                  height: 4em;
+                  @include border-radius(50%);
+                  @include box-shadow(0, 1px, 5px, $light-gray);
+                  position: absolute;
+
+                  &:first-child {
+                    top: -2em;
+                    right: 8em;
+                  }
+
+                  &:nth-child(2){
+                    top: 3em;
+                    right: 1em;
+                  }
+
+                  &:nth-child(3){
+                    top: calc(50% - 2em);
+                    right: 0em;
+                  }
+
+                  &:nth-child(4){
+                    bottom: 4em;
+                    right: 2em;
+                  }
+
+                  &:last-child{
+                    bottom: 0em;
+                    right: 8em;
+                  }
+
+                  img {
+                    width: 2em;
+                    height: auto;
+                  }
+
+                }
+
+              }
+              
+
+            }
+
+            .intro__profimage {
+              width: 100%;
+              height: auto;
+            }
+            
+          }
+
+          &__description {
+            flex: 0 0 50vw;
           }
 
         }
