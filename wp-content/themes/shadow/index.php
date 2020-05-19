@@ -25,9 +25,35 @@ get_header();
 
 	</section>
 
-	<section class="intro">
+	<section class="intro box">
 
-	
+		<section class="intro__img">
+			
+			<div class="intro__circle">
+
+			</div>
+			<img src="<?php echo bloginfo('template_url')?>/assets/images/logo_me.png" alt="Chris Wayne Comendador">
+
+
+		
+		</section>
+
+		<section class="intro__description">
+			
+			<h3>I am a professional <span>wordpress theme developer</span> and a UX/UI designer.</h3>
+			
+			<p>
+				Hello! My name is Chris Wayne Comendador. I'm a strong communicator. I am fond of making website ideas come to life and surely I want that for your business too.
+			</p>
+
+			<p>
+				Let me help you make a strong online presence by designing a beautiful and professional website that will convert your audience into customers.
+			</p>
+
+			<a href="<?php echo site_url();?>/cart" class="btn btn--primary">I need a website <i class="fa fa-caret-right"></i></a>
+		
+		</section>
+
 	</section>
 
 

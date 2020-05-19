@@ -7875,7 +7875,7 @@ button {
 /* line 220, assets/sass/_partials/_default.scss */
 .js-page-overlay {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
@@ -7902,7 +7902,7 @@ button {
 .modal {
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   width: 270px;
   height: 100%;
