@@ -138,6 +138,29 @@
             }
           }
 
+          .process {
+            &__title {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              .title__left {
+                flex: 0 0 50%
+              }
+            }
+
+            &__steps {
+              display: flex;
+              justify-content: space-around;
+
+              .steps__box {
+                flex: 0 0 30%;
+              }
+
+            }
+
+          }
+
         }
 
 
@@ -180,9 +203,6 @@
 
             &__description {
               flex: 0 0 50%;
-              h3 {
-                @include font-size(32px);
-              }
             }
           }
 

@@ -153,6 +153,39 @@ html {
 
         }
 
+        .process {
+          background: black;
+          color: white;
+          padding: 2em 5vw;
+          h3, h4, p {
+            color: white;
+          }
+
+          h3 {
+            @include font-size(32px);
+          }
+
+          h4 {
+            @include font-size(22px);
+            margin-top: 1em;
+          }
+
+          img {
+            height: 50px;
+            width: auto;
+          }
+
+          p {
+            padding: 1.5em 0;
+          }
+
+          .steps__box {
+            margin: 2em 0 1em 0;
+          }
+
+        }
+        
+
       }
 
     }

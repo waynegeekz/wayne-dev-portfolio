@@ -101,6 +101,10 @@ html {
 			width: 270px;
 			height: 100%;
 
+			hr {
+				border: 1px solid $light-gray;
+				margin: 0 1.5em;
+			}
 
 			.modal__content{
 				padding: 0;
@@ -178,10 +182,7 @@ html {
 		}
 
 
-		hr {
-			border: 1px solid $light-gray;
-			margin: 0 1.5em;
-		}
+		
 
 
 		.menu {

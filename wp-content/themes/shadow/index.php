@@ -91,6 +91,72 @@ get_header();
 	</section>
 
 
+	<section class="process box--padding">
+
+		<header class="process__title">
+
+			<section class="title__left">
+
+				<h3>How do i create your website?</h3>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquya.</p>
+			
+			</section>
+			
+			<a href="#" class="btn btn--primary">Learn More About The Process <i class="fa fa-caret-right"></i></a>
+
+		</header>
+
+		<hr>
+
+		<section class="process__steps">
+
+			<div class="steps__box">
+				<img src="<?php echo bloginfo('template_url')?>/assets/images/icon_define.png" alt="Chris Wayne Comendador define icon">
+				<h4>Define and Ideate</h4>
+				<p>Websites help you grow your business. Understanding what your clients need on your website will help us create a better user experience for everyone.</p>
+			</div>
+
+			<div class="steps__box">
+				<img src="<?php echo bloginfo('template_url')?>/assets/images/icon_prototype.png" alt="Chris Wayne Comendador prototype icon">
+				<h4>Prototype your idea</h4>
+				<p>It's not just about typography and nice color schemes, it's about making the experience easier and more convenient for your customers. </p>
+			</div>
+
+			<div class="steps__box">
+				<img src="<?php echo bloginfo('template_url')?>/assets/images/icon_deploy.png" alt="Chris Wayne Comendador deploy icon">
+				<h4>Train and Deploy</h4>
+				<p>At this stage, your theme will be developed according to the project timeline. Application Deployment is included in all the package.</p>
+			</div>
+
+		</section>
+
+
+	</section>
+
+	
+	<section class="promotion">
+
+			<img src="<?php echo bloginfo('template_url');?>/assets/images/gallery_promotion.png" alt="website development">
+
+			<aside>
+				
+				<h3>Let's create your <span>professional<span> <span>website</span></h3>
+				
+				<p>
+					Purpose. That's the way to good website design. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.
+				</p>
+				
+				<p>
+					Let's win the web space by creating stunning website design that can help you reach your digital marketing goals. With my experience and training on content marketing and web development, I'm ready to help you build your website idea.
+				</p>
+			
+				<a class="btn btn--primary" href="<?php echo site_url();?>/pricing">I need a website <i class="fa fa-caret-right"></i></a>
+				
+			</aside>
+
+		</section>
+
+
 
 </main>
 
