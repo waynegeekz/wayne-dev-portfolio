@@ -55,18 +55,20 @@ html {
         }
 
         .intro {
-          padding: 5em 5vw;
+          padding: 3em 5vw;
           align-items: center;
           display: flex;
+          flex-flow: row wrap;
           
           &__img {
-            flex: 0 0 25vw;
-            font-size: 16px;
+            font-size: 2.9vw;
             position: relative;
+            flex: 0 0 100%;
+            margin-bottom: 5em;
 
             .intro__circle {
               position: absolute;
-              border: 15px solid $light-gray;
+              border: 1em solid $light-gray;
               @include border-radius(50%);
               height: 25em;
               width: 25em;
@@ -128,14 +130,25 @@ html {
             }
 
             .intro__profimage {
-              width: 100%;
+              width: 21em;
               height: auto;
             }
             
           }
 
           &__description {
-            flex: 0 0 50vw;
+            flex: 0 0 100%;
+
+            h3 {
+              font-size: 1.5em;
+              span {
+                color: $primary;
+              }
+            }
+
+            p {
+              margin: 1.5em 0;
+            }
           }
 
         }

@@ -25,7 +25,7 @@ get_header();
 
 	</section>
 
-	<section class="intro box--padding">
+	<section class="intro box">
 
 
 

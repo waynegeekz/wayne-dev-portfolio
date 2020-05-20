@@ -1,3 +1,25 @@
+@media only screen and (min-width: 481px){
+
+
+  html {
+    
+
+    body {
+      .site-content {
+        #main {
+          .intro {
+            padding: 5em 5vw;
+          }
+        }
+      }
+    }
+
+
+  }
+
+
+}
+
 @media only screen and (min-width: 769px){
 
 
@@ -90,6 +112,98 @@
 
 
 }
+
+
+@media only screen and (min-width: 801px){
+
+
+  html {
+    
+
+    body {
+
+
+      .site-content {
+
+
+        #main {
+
+          .intro {
+            padding: 7em 5vw;
+
+            &__description {
+              h3 {
+                @include font-size(32px);
+              }
+            }
+          }
+
+        }
+
+
+      }
+
+
+    }
+
+
+  }
+
+
+}
+
+
+
+
+@media only screen and (min-width: 960px){
+
+
+  html {
+    
+
+    body {
+
+
+      .site-content {
+
+
+        #main {
+
+          .intro {
+            padding: 7em 5vw;
+
+            &__img {
+              flex: 0 0 50%;
+              font-size: 1.4vw;
+              margin-bottom: 0;
+            }
+
+            &__description {
+              flex: 0 0 50%;
+              h3 {
+                @include font-size(32px);
+              }
+            }
+          }
+
+        }
+
+
+      }
+
+
+    }
+
+
+  }
+
+
+}
+
+
+
+
+
 
 @media only screen and (min-width: 1025px) {
 

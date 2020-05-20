@@ -8263,20 +8263,22 @@ html body .site-content #main .jumbotron__links a:first-child {
 }
 /* line 57, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro {
-  padding: 5em 5vw;
+  padding: 3em 5vw;
   align-items: center;
   display: flex;
+  flex-flow: row wrap;
 }
-/* line 62, assets/sass/_pages/_index.scss */
+/* line 63, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img {
-  flex: 0 0 25vw;
-  font-size: 16px;
+  font-size: 2.9vw;
   position: relative;
+  flex: 0 0 100%;
+  margin-bottom: 5em;
 }
-/* line 67, assets/sass/_pages/_index.scss */
+/* line 69, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle {
   position: absolute;
-  border: 15px solid #DFDFDF;
+  border: 1em solid #DFDFDF;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -8286,13 +8288,13 @@ html body .site-content #main .intro__img .intro__circle {
   top: -2em;
   left: 3em;
 }
-/* line 77, assets/sass/_pages/_index.scss */
+/* line 79, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle .circles-container {
   position: relative;
   height: 25em;
   width: 25em;
 }
-/* line 82, assets/sass/_pages/_index.scss */
+/* line 84, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle .circles-container .circle__img {
   display: flex;
   align-items: center;
@@ -8308,48 +8310,66 @@ html body .site-content #main .intro__img .intro__circle .circles-container .cir
   -webkit-box-shadow: 0 1px 5px #DFDFDF;
   position: absolute;
 }
-/* line 93, assets/sass/_pages/_index.scss */
+/* line 95, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:first-child {
   top: -2em;
   right: 8em;
 }
-/* line 98, assets/sass/_pages/_index.scss */
+/* line 100, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:nth-child(2) {
   top: 3em;
   right: 1em;
 }
-/* line 103, assets/sass/_pages/_index.scss */
+/* line 105, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:nth-child(3) {
   top: calc(50% - 2em);
   right: 0em;
 }
-/* line 108, assets/sass/_pages/_index.scss */
+/* line 110, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:nth-child(4) {
   bottom: 4em;
   right: 2em;
 }
-/* line 113, assets/sass/_pages/_index.scss */
+/* line 115, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:last-child {
   bottom: 0em;
   right: 8em;
 }
-/* line 118, assets/sass/_pages/_index.scss */
+/* line 120, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle .circles-container .circle__img img {
   width: 2em;
   height: auto;
 }
-/* line 130, assets/sass/_pages/_index.scss */
+/* line 132, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__profimage {
-  width: 100%;
+  width: 21em;
   height: auto;
 }
-/* line 137, assets/sass/_pages/_index.scss */
+/* line 139, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__description {
-  flex: 0 0 50vw;
+  flex: 0 0 100%;
+}
+/* line 142, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__description h3 {
+  font-size: 1.5em;
+}
+/* line 144, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__description h3 span {
+  color: #FF3131;
+}
+/* line 149, assets/sass/_pages/_index.scss */
+html body .site-content #main .intro__description p {
+  margin: 1.5em 0;
 }
 
+@media only screen and (min-width: 481px) {
+  /* line 10, assets/sass/_partials/_responsive.scss */
+  html body .site-content #main .intro {
+    padding: 5em 5vw;
+  }
+}
 @media only screen and (min-width: 769px) {
-  /* line 13, assets/sass/_partials/_responsive.scss */
+  /* line 35, assets/sass/_partials/_responsive.scss */
   html body.is-home .header-container .header {
     background: transparent;
     padding: 2em 5vw;
@@ -8357,36 +8377,36 @@ html body .site-content #main .intro__description {
     -moz-transition: padding 0.5s ease-in;
     -webkit-transition: padding 0.5s ease-in;
   }
-  /* line 32, assets/sass/_partials/_responsive.scss */
+  /* line 54, assets/sass/_partials/_responsive.scss */
   html body .header-container .header a img {
     width: 70px;
     height: auto;
   }
-  /* line 39, assets/sass/_partials/_responsive.scss */
+  /* line 61, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__menu {
     display: none;
   }
-  /* line 43, assets/sass/_partials/_responsive.scss */
+  /* line 65, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__right {
     display: flex;
   }
-  /* line 46, assets/sass/_partials/_responsive.scss */
+  /* line 68, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__right .menu {
     display: flex;
   }
-  /* line 48, assets/sass/_partials/_responsive.scss */
+  /* line 70, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__right .menu li {
     padding: 0 1.5em;
   }
-  /* line 51, assets/sass/_partials/_responsive.scss */
+  /* line 73, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__right .menu li a:hover {
     color: #FF3131;
   }
-  /* line 61, assets/sass/_partials/_responsive.scss */
+  /* line 83, assets/sass/_partials/_responsive.scss */
   html body .header-container .search-form {
     padding: 1em 5vw;
   }
-  /* line 70, assets/sass/_partials/_responsive.scss */
+  /* line 92, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron {
     align-items: center;
     max-height: 100vh;
@@ -8394,31 +8414,63 @@ html body .site-content #main .intro__description {
     background-size: 140% auto;
     background-position: center;
   }
-  /* line 77, assets/sass/_partials/_responsive.scss */
+  /* line 99, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron__description {
     text-align: center;
     padding: 2em 0;
   }
 }
+@media only screen and (min-width: 801px) {
+  /* line 131, assets/sass/_partials/_responsive.scss */
+  html body .site-content #main .intro {
+    padding: 7em 5vw;
+  }
+  /* line 135, assets/sass/_partials/_responsive.scss */
+  html body .site-content #main .intro__description h3 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /* line 172, assets/sass/_partials/_responsive.scss */
+  html body .site-content #main .intro {
+    padding: 7em 5vw;
+  }
+  /* line 175, assets/sass/_partials/_responsive.scss */
+  html body .site-content #main .intro__img {
+    flex: 0 0 50%;
+    font-size: 1.4vw;
+    margin-bottom: 0;
+  }
+  /* line 181, assets/sass/_partials/_responsive.scss */
+  html body .site-content #main .intro__description {
+    flex: 0 0 50%;
+  }
+  /* line 183, assets/sass/_partials/_responsive.scss */
+  html body .site-content #main .intro__description h3 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
 @media only screen and (min-width: 1025px) {
-  /* line 106, assets/sass/_partials/_responsive.scss */
+  /* line 220, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron {
     background-size: 100% auto;
     padding: 0 15vw;
   }
-  /* line 111, assets/sass/_partials/_responsive.scss */
+  /* line 225, assets/sass/_partials/_responsive.scss */
   html body .site-content #main__header {
     font-size: 42px;
     font-size: 2.625rem;
   }
 }
 @media only screen and (min-width: 1281px) {
-  /* line 139, assets/sass/_partials/_responsive.scss */
+  /* line 253, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron {
     background-size: 100% auto;
     padding: 0 25vw;
   }
-  /* line 143, assets/sass/_partials/_responsive.scss */
+  /* line 257, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron__header {
     font-size: 52px;
     font-size: 3.25rem;
