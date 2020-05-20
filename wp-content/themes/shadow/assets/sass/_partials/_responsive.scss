@@ -102,6 +102,21 @@
             }
           }
 
+          .clients {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__info {
+              flex: 0 0 40%;
+            }
+          
+            &__gallery {
+              flex: 0 0 50%;
+            }
+
+          }
+
         }
 
       }
@@ -161,6 +176,24 @@
 
           }
 
+          .promotion {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            div {
+              flex: 0 0 40vw;
+              img {
+                width: 100%;
+                height: 100vw;
+                object-fit: cover;
+              }
+            }
+            aside {
+              flex: 0 0 50vw;
+              padding: 0 5vw 0 0;
+            }
+          }
+
         }
 
 
@@ -192,6 +225,7 @@
 
         #main {
 
+
           .intro {
             padding: 7em 5vw;
 
@@ -205,6 +239,7 @@
               flex: 0 0 50%;
             }
           }
+
 
         }
 
@@ -240,10 +275,26 @@
           .jumbotron {
             background-size: 100% auto;
             padding: 0 15vw;
-          }
 
-          &__header{
-            @include font-size(42px);
+            &__header{
+              @include font-size(42px);
+            }
+
+          }
+          
+          .promotion {
+
+            div {
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+
+            aside {
+              padding: 0 10vw 0 0;
+            }
+
           }
 
         }

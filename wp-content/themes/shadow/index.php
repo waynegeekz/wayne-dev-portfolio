@@ -135,17 +135,19 @@ get_header();
 
 	
 	<section class="promotion">
-
-			<img src="<?php echo bloginfo('template_url');?>/assets/images/gallery_promotion.png" alt="website development">
+			
+			<div>
+				<img src="<?php echo bloginfo('template_url');?>/assets/images/gallery_promotion.png" alt="website development">
+			</div>			
 
 			<aside>
 				
 				<h3>Let's create your <span>professional<span> <span>website</span></h3>
 				
 				<p>
-					Purpose. That's the way to good website design. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.
+					Let's win the web space by creating stunning website design that can help you reach your digital marketing goals.
 				</p>
-				
+
 				<p>
 					Let's win the web space by creating stunning website design that can help you reach your digital marketing goals. With my experience and training on content marketing and web development, I'm ready to help you build your website idea.
 				</p>
@@ -156,7 +158,55 @@ get_header();
 
 		</section>
 
+		<hr>
 
+		<section class="clients box--padding">
+
+			<div class="clients__info">
+
+				<h3>Recent Clients</h3>
+
+				<div class="hr-bar"></div>
+
+				<p>
+					My experience is working mainly with clients in education and tourism industry.
+				</p>
+
+				<p>
+				Learn how to I can help you create beautiful yet powerful websites that can convert your audience into customers.
+				</p>
+				
+				<a class="btn btn--secondary" href="<?php echo site_url();?>/consult">I need a consultation (FREE) <i class="fa fa-caret-right"></i></a>
+
+			</div>
+
+			<aside class="clients__gallery">
+
+				<div class="clients__box">
+
+					<div class="client">
+						<img src="<?php echo bloginfo('template_url');?>/assets/images/logo_uc.png" alt="Unviversity of Cebu Logo">
+					</div>
+
+					<div class="client">
+						<img src="<?php echo bloginfo('template_url');?>/assets/images/logo_epicparctanay.png" alt="Epic Parc Tanay Logo">
+					</div>
+
+					<div class="client">
+						<img src="<?php echo bloginfo('template_url');?>/assets/images/logo_cite.png" alt="CITE Logo">
+					</div>
+
+					<div class="client">
+						<img src="<?php echo bloginfo('template_url');?>/assets/images/logo_gotravelwisely.png" alt="Go Travel Wisely Logo">
+					</div>
+
+				</div>
+
+			</aside>
+
+
+
+		</section>
 
 </main>
 
