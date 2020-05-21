@@ -70,7 +70,7 @@ get_header();
 		<section class="intro__description">
 		
 		
-			<h3>I am a professional <span>wordpress theme developer</span> and a UX/UI designer.</h3>
+			<h3>I am a professional <span>website developer</span> and a UX/UI designer.</h3>
 			
 			<p>
 				Hello! My name is Chris Wayne Comendador. I'm a strong communicator. I am fond of making website ideas come to life and surely I want that for your business too.

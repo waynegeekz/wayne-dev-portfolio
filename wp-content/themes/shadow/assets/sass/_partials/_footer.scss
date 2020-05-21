@@ -1,0 +1,62 @@
+html {
+
+
+  body {
+
+
+    .site-footer {
+      background: $dark-gray;
+      width: 100%;
+      color: white;
+      padding: 2em 5vw;
+      margin-top: 4em;
+      position: relative;
+
+      span {
+        position: absolute;
+        height: 2em;
+        width: 2em;
+        @include border-radius(50%);
+        font-size: 2em;
+        background: $dark-gray;
+        top: -0.8em;
+        left: calc(50% - 1em);
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &:hover {
+          cursor: pointer;
+          color: $primary;
+        }
+
+      }
+      
+      div {
+        text-align: center;
+        margin-bottom: 2em;
+      }
+
+      aside {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      a {
+        color: white;
+        margin: 0 10px;
+        
+        &:hover {
+          color: $primary;
+        }
+
+      }
+
+    }
+
+
+  }
+
+
+}
