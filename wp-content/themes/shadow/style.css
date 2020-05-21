@@ -7706,7 +7706,7 @@ hr {
 .btn:hover {
   background: #FF3131;
   color: white;
-  border: 1px transparent white;
+  border: 1px solid transparent;
   transition: background 0.3s ease-in;
   -moz-transition: background 0.3s ease-in;
   -webkit-transition: background 0.3s ease-in;
@@ -7727,7 +7727,7 @@ hr {
 }
 /* line 72, assets/sass/_partials/_default.scss */
 .btn--primary:hover {
-  border: 1px transparent white;
+  border: none;
   background: #e40000;
   transition: background 0.5s ease-in;
   -moz-transition: background 0.5s ease-in;
@@ -7741,7 +7741,7 @@ hr {
 }
 /* line 84, assets/sass/_partials/_default.scss */
 .btn--secondary:hover {
-  border: 1px transparent white;
+  border: none;
   background: #353131;
   transition: background 0.5s ease-in;
   -moz-transition: background 0.5s ease-in;
@@ -8493,6 +8493,129 @@ html body .site-content #main .clients__gallery .clients__box .client img {
   height: 50px;
 }
 
+/* line 9, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing {
+  padding: 2em 5vw;
+}
+/* line 12, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing p {
+  padding: 1em 0;
+}
+/* line 16, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages {
+  margin-top: 1em;
+}
+/* line 19, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package {
+  margin: 1em 0 2em 0;
+  padding: 1.5em;
+  box-shadow: 0 1px 5px #707070;
+  -moz-box-shadow: 0 1px 5px #707070;
+  -webkit-box-shadow: 0 1px 5px #707070;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  position: relative;
+}
+/* line 27, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package:hover .package__popular {
+  transform: scale(1.3) rotate(-315deg);
+  transition: all .5s ease-in;
+}
+/* line 33, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package__popular {
+  position: absolute;
+  top: 18px;
+  right: -23px;
+  color: white;
+  letter-spacing: 1px;
+  z-index: 9;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s ease-in;
+  transform: rotate(45deg);
+}
+/* line 47, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package__popular div {
+  font-size: 12px;
+  font-size: 0.75rem;
+  background: #FF3131;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+/* line 56, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package__popular:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 10px solid #FF3131;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #FF3131;
+  border-top: 10px solid transparent;
+}
+/* line 66, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package__popular:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid #FF3131;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #FF3131;
+  border-top: 10px solid transparent;
+}
+/* line 78, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package__price {
+  margin-top: 1em;
+}
+/* line 82, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package .btn {
+  width: 100%;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+/* line 86, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package .btn i {
+  margin-right: 1em;
+}
+/* line 92, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package__features {
+  margin-top: 1em;
+}
+/* line 95, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package__features li {
+  padding: 0.8em 0;
+  line-height: 1.6em;
+}
+/* line 99, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package__features li.feature--inactive {
+  color: #DFDFDF;
+}
+/* line 103, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package__features li i {
+  margin-right: 1em;
+}
+/* line 106, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package__features li i.fa-check {
+  color: #22FF1A;
+}
+/* line 110, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package__features li i.fa-times {
+  color: #FF1131;
+}
+/* line 125, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .pricing__inquiry h3 {
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+/* line 129, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .pricing__inquiry a {
+  margin-top: 2em;
+}
+
 /* line 7, assets/sass/_partials/_footer.scss */
 html body .site-footer {
   background: #0D0C0C;
@@ -8630,100 +8753,127 @@ html body .site-footer a:hover {
   }
 }
 @media only screen and (min-width: 801px) {
-  /* line 163, assets/sass/_partials/_responsive.scss */
+  /* line 164, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .intro {
     padding: 7em 5vw;
   }
-  /* line 167, assets/sass/_partials/_responsive.scss */
+  /* line 168, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .intro__description h3 {
     font-size: 32px;
     font-size: 2rem;
   }
-  /* line 174, assets/sass/_partials/_responsive.scss */
+  /* line 175, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .process__title {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  /* line 179, assets/sass/_partials/_responsive.scss */
+  /* line 180, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .process__title .title__left {
     flex: 0 0 50%;
   }
-  /* line 184, assets/sass/_partials/_responsive.scss */
+  /* line 185, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .process__steps {
     display: flex;
     justify-content: space-around;
   }
-  /* line 188, assets/sass/_partials/_responsive.scss */
+  /* line 189, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .process__steps .steps__box {
     flex: 0 0 30%;
   }
-  /* line 196, assets/sass/_partials/_responsive.scss */
+  /* line 197, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .promotion {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
-  /* line 200, assets/sass/_partials/_responsive.scss */
+  /* line 201, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .promotion div {
     flex: 0 0 40vw;
   }
-  /* line 202, assets/sass/_partials/_responsive.scss */
+  /* line 203, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .promotion div img {
     width: 100%;
     height: 100vw;
     object-fit: cover;
   }
-  /* line 208, assets/sass/_partials/_responsive.scss */
+  /* line 209, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .promotion aside {
     flex: 0 0 50vw;
     padding: 0 5vw 0 0;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 246, assets/sass/_partials/_responsive.scss */
+  /* line 247, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .intro {
     padding: 7em 5vw;
   }
-  /* line 249, assets/sass/_partials/_responsive.scss */
+  /* line 250, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .intro__img {
     flex: 0 0 50%;
     font-size: 1.4vw;
     margin-bottom: 0;
   }
-  /* line 255, assets/sass/_partials/_responsive.scss */
+  /* line 256, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .intro__description {
     flex: 0 0 50%;
   }
+  /* line 266, assets/sass/_partials/_responsive.scss */
+  html body .site-content #pricing > p {
+    width: 60%;
+  }
+  /* line 270, assets/sass/_partials/_responsive.scss */
+  html body .site-content #pricing .packages {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* line 274, assets/sass/_partials/_responsive.scss */
+  html body .site-content #pricing .packages .package {
+    flex: 0 0 30%;
+  }
+  /* line 280, assets/sass/_partials/_responsive.scss */
+  html body .site-content #pricing .pricing__inquiry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* line 285, assets/sass/_partials/_responsive.scss */
+  html body .site-content #pricing .pricing__inquiry h3 {
+    width: 50%;
+  }
+  /* line 289, assets/sass/_partials/_responsive.scss */
+  html body .site-content #pricing .pricing__inquiry a {
+    margin-top: 0;
+  }
 }
 @media only screen and (min-width: 1025px) {
-  /* line 292, assets/sass/_partials/_responsive.scss */
+  /* line 325, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron {
     background-size: 100% auto;
     padding: 0 15vw;
   }
-  /* line 296, assets/sass/_partials/_responsive.scss */
+  /* line 329, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron__header {
     font-size: 42px;
     font-size: 2.625rem;
   }
-  /* line 305, assets/sass/_partials/_responsive.scss */
+  /* line 338, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .promotion div img {
     width: 100%;
     height: auto;
   }
-  /* line 311, assets/sass/_partials/_responsive.scss */
+  /* line 344, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .promotion aside {
     padding: 0 10vw 0 0;
   }
 }
 @media only screen and (min-width: 1281px) {
-  /* line 341, assets/sass/_partials/_responsive.scss */
+  /* line 374, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron {
     background-size: 100% auto;
     padding: 0 25vw;
   }
-  /* line 345, assets/sass/_partials/_responsive.scss */
+  /* line 378, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron__header {
     font-size: 52px;
     font-size: 3.25rem;

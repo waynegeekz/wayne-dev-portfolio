@@ -52,7 +52,7 @@ hr {
   &:hover {
     background: $primary;
     color: white;
-    border: 1px transparent white;
+    border: 1px solid rgba(0,0,0,0);
     @include transition(background, 0.3s, ease-in);
   }
 
@@ -70,7 +70,7 @@ hr {
     border: none;
 
     &:hover {
-      border: 1px transparent white;
+      border: none;
       background: darken($primary, 15%);
       @include transition(background, 0.5s, ease-in);
     }
@@ -82,7 +82,7 @@ hr {
     border: none;
 
     &:hover {
-      border: 1px transparent white;
+      border: none;
       background: lighten($secondary, 15%);
       @include transition(background, 0.5s, ease-in);
     }
