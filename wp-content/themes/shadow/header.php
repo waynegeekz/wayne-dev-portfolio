@@ -42,9 +42,7 @@
 			?>
 
 			<a href="#" class="js-btnSearch"><i class="fa fa-search"></i></a>
-
-			<a href="#" class="js-btnCart"><i class="fas fa-shopping-cart"></i></a
-
+			
 		</nav>
 
 	</section>

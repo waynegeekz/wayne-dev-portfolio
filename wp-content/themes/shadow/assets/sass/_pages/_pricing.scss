@@ -103,12 +103,16 @@ html {
                 i {
                   margin-right: 1em;
 
-                  &.fa-check {
+                  &.fas {
                     color: $check;
                   }
 
-                  &.fa-times {
-                    color: $error;
+                  &.fa {
+                    color: $check;
+                  }
+
+                  &.fab {
+                    color: $check;
                   }
                 }
                 

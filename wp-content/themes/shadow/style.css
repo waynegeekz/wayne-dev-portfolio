@@ -7766,9 +7766,56 @@ a:hover {
 }
 
 /*----------------------------
+  PARTIAL - TOOLTIP
+----------------------------*/
+/* line 120, assets/sass/_partials/_default.scss */
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  color: #DFDFDF !important;
+}
+/* line 125, assets/sass/_partials/_default.scss */
+.tooltip span {
+  display: none;
+  position: absolute;
+  bottom: 25px;
+  left: -92px;
+  background: rgba(0, 0, 0, 0.9);
+  width: 200px;
+  color: white;
+  font-family: Lato Light;
+  font-size: 12px;
+  font-size: 0.75rem;
+  padding: 0.8em;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  line-height: 1.6em;
+  transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+}
+/* line 139, assets/sass/_partials/_default.scss */
+.tooltip span:after {
+  height: 0;
+  padding: 0;
+  content: '';
+  border-top: 5px solid rgba(0, 0, 0, 0.9);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  bottom: -5px;
+  left: calc(50% - 4px);
+}
+/* line 154, assets/sass/_partials/_default.scss */
+.tooltip:hover span {
+  display: block;
+}
+
+/*----------------------------
   PARTIAL - DEFAULT HEADINGS STYLE
 ----------------------------*/
-/* line 119, assets/sass/_partials/_default.scss */
+/* line 168, assets/sass/_partials/_default.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: Righteous, Helvetica, Arial, sans-serif;
   font-size: 32px;
@@ -7776,34 +7823,34 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 1.6em;
 }
-/* line 122, assets/sass/_partials/_default.scss */
+/* line 171, assets/sass/_partials/_default.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #0D0C0C;
 }
-/* line 125, assets/sass/_partials/_default.scss */
+/* line 174, assets/sass/_partials/_default.scss */
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   color: #318AFF;
 }
 
-/* line 132, assets/sass/_partials/_default.scss */
+/* line 181, assets/sass/_partials/_default.scss */
 h1, h2, h3 {
   font-size: 32px;
   font-size: 2rem;
 }
 
-/* line 136, assets/sass/_partials/_default.scss */
+/* line 185, assets/sass/_partials/_default.scss */
 h4 {
   font-size: 22px;
   font-size: 1.375rem;
 }
 
-/* line 139, assets/sass/_partials/_default.scss */
+/* line 188, assets/sass/_partials/_default.scss */
 h5 {
   font-size: 26px;
   font-size: 1.625rem;
 }
 
-/* line 143, assets/sass/_partials/_default.scss */
+/* line 192, assets/sass/_partials/_default.scss */
 p {
   font-family: Lato, Helvetica, Arial, sans-serif;
   font-size: 1rem;
@@ -7815,25 +7862,25 @@ p {
 /*----------------------------
   PARTIAL - DEFAULT LIST STYLES
 ----------------------------*/
-/* line 156, assets/sass/_partials/_default.scss */
+/* line 205, assets/sass/_partials/_default.scss */
 .page-blog ul, .page-blog ol {
   margin: 1em;
 }
-/* line 160, assets/sass/_partials/_default.scss */
+/* line 209, assets/sass/_partials/_default.scss */
 .page-blog ul {
   list-style: disc;
   list-style-position: inside;
 }
-/* line 163, assets/sass/_partials/_default.scss */
+/* line 212, assets/sass/_partials/_default.scss */
 .page-blog ul li {
   line-height: 1.6em;
 }
-/* line 169, assets/sass/_partials/_default.scss */
+/* line 218, assets/sass/_partials/_default.scss */
 .page-blog ol {
   list-style: decimal;
   list-style-position: inside;
 }
-/* line 172, assets/sass/_partials/_default.scss */
+/* line 221, assets/sass/_partials/_default.scss */
 .page-blog ol li {
   line-height: 1.6em;
 }
@@ -7841,7 +7888,7 @@ p {
 /*----------------------------
   PARTIAL - DEFAULT FORM STYLES
 ----------------------------*/
-/* line 188, assets/sass/_partials/_default.scss */
+/* line 237, assets/sass/_partials/_default.scss */
 input, textarea, select, button {
   padding: 1em 1.3em;
   outline: none;
@@ -7864,17 +7911,17 @@ input :-ms-input-placeholder, textarea :-ms-input-placeholder, select :-ms-input
   color: #707070;
 }
 
-/* line 199, assets/sass/_partials/_default.scss */
+/* line 248, assets/sass/_partials/_default.scss */
 select {
   cursor: pointer;
 }
 
-/* line 205, assets/sass/_partials/_default.scss */
+/* line 254, assets/sass/_partials/_default.scss */
 input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 210, assets/sass/_partials/_default.scss */
+/* line 259, assets/sass/_partials/_default.scss */
 button {
   cursor: pointer;
 }
@@ -7882,13 +7929,13 @@ button {
 /*----------------------------
   PARTIAL - BOX LAYOUTS
 ----------------------------*/
-/* line 219, assets/sass/_partials/_default.scss */
+/* line 268, assets/sass/_partials/_default.scss */
 .box {
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
 }
-/* line 224, assets/sass/_partials/_default.scss */
+/* line 273, assets/sass/_partials/_default.scss */
 .box--padding {
   padding: 1em 5vw;
 }
@@ -7896,7 +7943,7 @@ button {
 /*----------------------------
   PARTIAL - MODAL
 ----------------------------*/
-/* line 241, assets/sass/_partials/_default.scss */
+/* line 290, assets/sass/_partials/_default.scss */
 .js-page-overlay {
   display: none;
   position: fixed;
@@ -7908,21 +7955,21 @@ button {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 253, assets/sass/_partials/_default.scss */
+/* line 302, assets/sass/_partials/_default.scss */
 .modal-shown {
   overflow: hidden !important;
 }
-/* line 256, assets/sass/_partials/_default.scss */
+/* line 305, assets/sass/_partials/_default.scss */
 .modal-shown .js-page-overlay {
   display: block;
 }
-/* line 260, assets/sass/_partials/_default.scss */
+/* line 309, assets/sass/_partials/_default.scss */
 .modal-shown .modal {
   transform: translateX(270px);
   transition: 800ms ease all;
 }
 
-/* line 267, assets/sass/_partials/_default.scss */
+/* line 316, assets/sass/_partials/_default.scss */
 .modal {
   align-items: center;
   justify-content: center;
@@ -7934,7 +7981,7 @@ button {
   left: -270px;
   transition: 800ms ease all;
 }
-/* line 278, assets/sass/_partials/_default.scss */
+/* line 327, assets/sass/_partials/_default.scss */
 .modal__content {
   padding: 1.5em;
   background: white;
@@ -7945,15 +7992,15 @@ button {
 /*----------------------------
   PARTIAL - MENU
 ----------------------------*/
-/* line 296, assets/sass/_partials/_default.scss */
+/* line 345, assets/sass/_partials/_default.scss */
 .menu li {
   padding: 1em 0;
 }
-/* line 299, assets/sass/_partials/_default.scss */
+/* line 348, assets/sass/_partials/_default.scss */
 .menu li a {
   color: white;
 }
-/* line 302, assets/sass/_partials/_default.scss */
+/* line 351, assets/sass/_partials/_default.scss */
 .menu li a:hover {
   color: #FF3131;
 }
@@ -7961,7 +8008,7 @@ button {
 /*----------------------------
   PARTIAL - MENU
 ----------------------------*/
-/* line 318, assets/sass/_partials/_default.scss */
+/* line 367, assets/sass/_partials/_default.scss */
 img.responsive {
   width: 100%;
   height: auto;
@@ -8599,19 +8646,23 @@ html body .site-content #pricing .packages .package__features li i {
   margin-right: 1em;
 }
 /* line 106, assets/sass/_pages/_pricing.scss */
-html body .site-content #pricing .packages .package__features li i.fa-check {
+html body .site-content #pricing .packages .package__features li i.fas {
   color: #22FF1A;
 }
 /* line 110, assets/sass/_pages/_pricing.scss */
-html body .site-content #pricing .packages .package__features li i.fa-times {
-  color: #FF1131;
+html body .site-content #pricing .packages .package__features li i.fa {
+  color: #22FF1A;
 }
-/* line 125, assets/sass/_pages/_pricing.scss */
+/* line 114, assets/sass/_pages/_pricing.scss */
+html body .site-content #pricing .packages .package__features li i.fab {
+  color: #22FF1A;
+}
+/* line 129, assets/sass/_pages/_pricing.scss */
 html body .site-content #pricing .pricing__inquiry h3 {
   font-size: 22px;
   font-size: 1.375rem;
 }
-/* line 129, assets/sass/_pages/_pricing.scss */
+/* line 133, assets/sass/_pages/_pricing.scss */
 html body .site-content #pricing .pricing__inquiry a {
   margin-top: 2em;
 }
@@ -8826,54 +8877,55 @@ html body .site-footer a:hover {
   html body .site-content #pricing .packages {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
-  /* line 274, assets/sass/_partials/_responsive.scss */
+  /* line 275, assets/sass/_partials/_responsive.scss */
   html body .site-content #pricing .packages .package {
-    flex: 0 0 30%;
+    flex: 0 0 31%;
   }
-  /* line 280, assets/sass/_partials/_responsive.scss */
+  /* line 281, assets/sass/_partials/_responsive.scss */
   html body .site-content #pricing .pricing__inquiry {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  /* line 285, assets/sass/_partials/_responsive.scss */
+  /* line 286, assets/sass/_partials/_responsive.scss */
   html body .site-content #pricing .pricing__inquiry h3 {
     width: 50%;
   }
-  /* line 289, assets/sass/_partials/_responsive.scss */
+  /* line 290, assets/sass/_partials/_responsive.scss */
   html body .site-content #pricing .pricing__inquiry a {
     margin-top: 0;
   }
 }
 @media only screen and (min-width: 1025px) {
-  /* line 325, assets/sass/_partials/_responsive.scss */
+  /* line 326, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron {
     background-size: 100% auto;
     padding: 0 15vw;
   }
-  /* line 329, assets/sass/_partials/_responsive.scss */
+  /* line 330, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron__header {
     font-size: 42px;
     font-size: 2.625rem;
   }
-  /* line 338, assets/sass/_partials/_responsive.scss */
+  /* line 339, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .promotion div img {
     width: 100%;
     height: auto;
   }
-  /* line 344, assets/sass/_partials/_responsive.scss */
+  /* line 345, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .promotion aside {
     padding: 0 10vw 0 0;
   }
 }
 @media only screen and (min-width: 1281px) {
-  /* line 374, assets/sass/_partials/_responsive.scss */
+  /* line 375, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron {
     background-size: 100% auto;
     padding: 0 25vw;
   }
-  /* line 378, assets/sass/_partials/_responsive.scss */
+  /* line 379, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron__header {
     font-size: 52px;
     font-size: 3.25rem;

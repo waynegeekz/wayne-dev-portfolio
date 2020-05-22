@@ -18,20 +18,16 @@ get_header();
 
 		<div class="package">
 			<h4>Single Page Site</h4>
-			<div class="package__price">$300</div>
+			<div class="package__price">&#8369; 10,000</div>
 			<p>
 				Simple one-page website with perfect for service professionals and portfolio.
 			</p>
-			<a class="btn" href="<?php echo site_url();?>/cart/?package=basic"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+			<a class="btn" href="<?php echo site_url();?>/cart/?package=basic"><i class="fas fa-handshake"></i>Get Started Now</a>
 			<ul class="package__features">
-				<li><i class="fa fa-check"></i>&plusmn; 5 days delivery</li>
-				<li><i class="fa fa-check"></i>Fully Mobile Responsive</li>
-				<li><i class="fa fa-check"></i>SEO Optimized Website</li>
-				<li><i class="fa fa-check"></i>1 Month Website Maintenance</li>
-				<li class="feature--inactive"><i class="fas fa-times"></i>Google Analytics</li>
-				<li class="feature--inactive"><i class="fas fa-times"></i>Content Management System</li>
-				<li class="feature--inactive"><i class="fas fa-times"></i>Ecommerce Integration</li>
-				<li class="feature--inactive"><i class="fas fa-times"></i>Paypal Integration</li>
+			<li><i class="fa fa-calendar"></i>&plusmn; 5 days delivery</li>
+				<li><i class="fas fa-laptop-code"></i>Fully Mobile Responsive</li>
+				<li><i class="fas fa-pen-nib"></i>SEO Optimized Website</li>
+				<li><i class="fa fa-tools"></i>Website Maintenance (1 month)</li>
 			</ul>
 		</div>
 
@@ -40,40 +36,108 @@ get_header();
 			<i class="package__popular"><div>POPULAR</div></i>
 			
 			<h4>SME's Choice</h4>
-			<div class="package__price">$900</div>
+			
+			<div class="package__price">&#8369; 45,000</div>
+			
 			<p>
 				Multi-page CMS website with forms, image galleries, and social media integration.
 			</p>
-			<a class="btn btn--primary" href="<?php echo site_url();?>/cart/?package=sme"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+			
+			<a class="btn btn--primary" href="<?php echo site_url();?>/cart/?package=sme"><i class="fas fa-handshake"></i>Get Started</a>
+			
 			<ul class="package__features">
-				<li><i class="fa fa-check"></i>&plusmn; 5 days delivery</li>
-				<li><i class="fa fa-check"></i>Fully Mobile Responsive</li>
-				<li><i class="fa fa-check"></i>SEO Optimized Website</li>
-				<li><i class="fa fa-check"></i>3 months website maintenance</li>
-				<li><i class="fas fa-check"></i>Google Analytics</li>
-				<li><i class="fas fa-check"></i>Content Management System</li>
-				<li class="feature--inactive"><i class="fas fa-times"></i>Ecommerce Integration</li>
-				<li class="feature--inactive"><i class="fas fa-times"></i>Paypal Integration</li>
+				<li><i class="fa fa-calendar"></i>&plusmn; 4 weeks delivery</li>
+				<li><i class="fas fa-laptop-code"></i>Fully Mobile Responsive</li>
+				<li><i class="fas fa-pen-nib"></i>SEO Optimized Website</li>
+				<li><i class="fa fa-tools"></i>Website Maintenance (3 months)</li>
+				<li>
+					<i class="fas fa-chart-line"></i>
+					Google Analytics 
+					<i class="fa fa-info-circle tooltip">
+						<span>
+							Track how your visitors use your website by integrating Google Analytics.
+						</span>
+					</i>
+				</li>
+				<li>
+					<i class="fab fa-wordpress"></i>
+					Content Management System 
+					<i class="fa fa-info-circle tooltip">
+						<span>
+							Publish posts, pages, and create online forms with integrated wordpress content sanagement system. Update your site content without coding!
+						</span>
+					</i>
+				</li>
+				<li><i class="fab fa-facebook-messenger"></i>Live Chat (3 months)</li>
 			</ul>
+			
 		</div>
 
 		<div class="package">
-			<h4>E-commerce Package</h4>
-			<div class="package__price">$1,600</div>
+
+			<h4>Ecommerce Pro</h4>
+			
+			<div class="package__price">&#8369; 80,000</div>
+			
 			<p>
 				Setup your online store and do business transactions safely.
 			</p>
-			<a class="btn" href="<?php echo site_url();?>/cart/?package=ecommerce"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+			
+			<a class="btn" href="<?php echo site_url();?>/cart/?package=ecommerce"><i class="fas fa-handshake"></i>Get Started</a>
+			
 			<ul class="package__features">
-				<li><i class="fa fa-check"></i>&plusmn; 5 days delivery</li>
-				<li><i class="fa fa-check"></i>Fully Mobile Responsive</li>
-				<li><i class="fa fa-check"></i>SEO Optimized Website</li>
-				<li><i class="fa fa-check"></i>6 months Website Maintenance</li>
-				<li><i class="fas fa-check"></i>Google Analytics</li>
-				<li><i class="fas fa-check"></i>Content Management System</li>
-				<li><i class="fas fa-check"></i>Ecommerce Integration</li>
-				<li><i class="fas fa-check"></i>Paypal Integration</li>
+				<li><i class="fa fa-calendar"></i>&plusmn; 8 weeks delivery</li>
+				<li><i class="fas fa-laptop-code"></i>Fully Mobile Responsive</li>
+				<li><i class="fas fa-pen-nib"></i>SEO Optimized Website</li>
+				<li><i class="fa fa-tools"></i>Website Maintenance (6 months)</li>
+				<li>
+					<i class="fas fa-chart-line"></i>
+					Google Analytics 
+					<i class="fa fa-info-circle tooltip">
+						<span>
+							Track how your visitors use your website by integrating Google Analytics.
+						</span>
+					</i>
+				</li>
+				<li>
+					<i class="fab fa-wordpress"></i>
+					Content Management System 
+					<i class="fa fa-info-circle tooltip">
+						<span>
+							Publish posts, pages, and create online forms with integrated wordpress content sanagement system. Update your site content without coding!
+						</span>
+					</i>
+				</li>
+				<li><i class="fab fa-facebook-messenger"></i>Live Chat (3 months)</li>
+				<li>
+					<i class="fas fa-shopping-cart"></i>
+					Ecommerce
+					<i class="fa fa-info-circle tooltip">
+						<span>
+							Sell products and manage your online store by integrating ecommerce on your website.
+						</span>
+					</i>
+				</li>
+				<li>
+					<i class="fas fa-envelope"></i>
+					Business Email Setup
+					<i class="fa fa-info-circle tooltip">
+						<span>
+							Configure Email Hosting Services such GSuite or Outlook.
+						</span>
+					</i>
+				</li>
+				<li>
+					<i class="fas fa-database"></i>
+					Site Backups 
+					<i class="fa fa-info-circle tooltip">
+						<span>
+							Monthly backup service for 6 months to get you ready in case of data failure or malicious attacks.
+						</span>
+					</i>
+				</li>
 			</ul>
+
 		</div>
 
 

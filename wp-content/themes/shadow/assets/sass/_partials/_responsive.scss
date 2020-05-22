@@ -270,9 +270,10 @@
           .packages {
             display: flex;
             justify-content: space-between;
-  
+            align-items: flex-start;
+
             .package {
-              flex: 0 0 30%;
+              flex: 0 0 31%;
             }
   
           }
