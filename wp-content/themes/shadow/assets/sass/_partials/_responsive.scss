@@ -350,6 +350,25 @@
 
         }
 
+        #checkout {
+
+          .wpcf7-form {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 1em;
+            
+            .checkout__personal {
+              flex-grow: 1;
+              margin-right: 5%;
+            }
+
+            .checkout__product {
+              flex: 0 0 390px;
+            }
+          }
+        }
+
 
       }
 

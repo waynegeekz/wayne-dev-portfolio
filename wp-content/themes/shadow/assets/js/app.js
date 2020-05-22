@@ -6,9 +6,111 @@
 
     //START WRITING THEME FUNCTIONS HERE
 
-    
-
     let $window = $(window);
+
+    function currencyFormat(num) {
+
+        return `&#8369; ${num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}`;
+
+    }
+
+
+    let sd_populateFeatures = (selectedPkg) => {
+
+        const pkgData = {
+            "Single Page Site" : {
+                duration: 5,
+                timeline: 'days',
+                maintenance: 1,
+                features: 4,
+                price: 15000
+            },
+            "SME's Choice" : {
+                duration: 4,
+                timeline: 'weeks',
+                maintenance: 3,
+                features : 5,
+                price: 45000
+            },
+            "Ecommerce Pro" : {
+                duration: 4,
+                timeline: 'weeks',
+                maintenance: 3,
+                features : 10,
+                price: 80000
+            }
+                
+        }
+
+        const data = pkgData[selectedPkg];
+
+        let elements = [
+            `<li><i class="fa fa-calendar"></i>&plusmn; ${data.duration} ${data.timeline} delivery</li>`,
+            `<li><i class="fas fa-laptop-code"></i>Fully Mobile Responsive</li>`,
+            `<li><i class="fas fa-pen-nib"></i>SEO Optimized Website</li>`,
+            `<li><i class="fa fa-tools"></i>Website Maintenance (${data.maintenance} month)</li>`,
+            `<li>
+                <i class="fas fa-chart-line"></i>
+                Google Analytics 
+                <i class="fa fa-info-circle tooltip">
+                    <span>
+                        Track how your visitors use your website by integrating Google Analytics.
+                    </span>
+                </i>
+            </li>`,
+            `<li>,
+                <i class="fab fa-wordpress"></i>
+                Content Management System 
+                <i class="fa fa-info-circle tooltip">
+                    <span>
+                        Publish posts, pages, and create online forms with integrated wordpress content sanagement system. Update your site content without coding!
+                    </span>
+                </i>
+            </li>`,
+            `<li><i class="fab fa-facebook-messenger"></i>Live Chat (3 months)</li>`,
+            `<li>
+                <i class="fas fa-shopping-cart"></i>
+                Ecommerce
+                <i class="fa fa-info-circle tooltip">
+                    <span>
+                        Sell products and manage your online store by integrating ecommerce on your website.
+                    </span>
+                </i>
+            </li>`,
+            `<li>
+                <i class="fas fa-envelope"></i>
+                Business Email Setup
+                <i class="fa fa-info-circle tooltip">
+                    <span>
+                        Configure Email Hosting Services such GSuite or Outlook.
+                    </span>
+                </i>
+            </li>`,
+            `<li>
+                <i class="fas fa-database"></i>
+                Site Backups 
+                <i class="fa fa-info-circle tooltip">
+                    <span>
+                        Monthly backup service for 6 months to get you ready in case of data failure or malicious attacks.
+                    </span>
+                </i>
+            </li>`
+        ];
+
+        let dataToAppend = `<ul class="package__features">${elements.slice(0, data.features).join('')}</ul>`;
+
+        $(".package__details").html(dataToAppend);
+
+    }
+
+    const sd_calculateAmount = () => {
+        
+        $(".checkout__amount").html(currencyFormat(data.price));
+
+        console.log(data.price);
+
+    }
+
 
     const sd_showModal = (modalElement) => {
         
@@ -66,7 +168,8 @@
 
     }
 
-    $(document).ready(function() {
+    $(document).ready(function($) {
+
         
         //CALL STACK FOR ON SCROLL FUNCTIONS
         $window.scroll(function () {
@@ -112,9 +215,21 @@
         });
 
         $("#js-scrollToTop").click(function (){
+
             $("html, body").animate({ 
                 scrollTop: 0 
             }, "slow");
+        
+        });
+
+
+        $("#package-choice").on("change", function(){
+
+            var selectedPkg = $(this).children("option:selected").val();
+
+            sd_populateFeatures(selectedPkg);
+
+        
         });
 
 
@@ -123,6 +238,7 @@
         sd_fixHeader();
         sd_fixNavMenuHeight();
         sd_isHome();
+        sd_populateFeatures('Single Page Site');
 
     });
 

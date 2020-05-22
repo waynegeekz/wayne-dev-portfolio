@@ -3,6 +3,8 @@
 ----------------------------*/
 * {
   @include box-sizing(border-box);
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -225,7 +227,36 @@ p {
   }
 }
 
+.package__features {
+  margin-top: 1em;
 
+  li {
+    padding: 0.8em 0;
+    line-height: 1.6em;
+
+    &.feature--inactive {
+      color: $light-gray;
+    }
+
+    i {
+      margin-right: 1em;
+
+      &.fas {
+        color: $check;
+      }
+
+      &.fa {
+        color: $check;
+      }
+
+      &.fab {
+        color: $check;
+      }
+    }
+    
+  }
+
+}
 
 
 
@@ -254,11 +285,52 @@ input {
   &[type="submit"]{
     cursor: pointer;
   }
+
+  &[type="checkbox"]{
+    margin: 0 .5em 0 0;
+    width: auto !important;
+  }
+
 }
 
 button {
   cursor: pointer;
 }
+
+label {
+  display: flex;
+  padding: 1em 0 0.5em 0;
+  font-weight: bold;
+}
+
+.input-format {
+  padding: 0 0 1em 0;
+  @include font-size(12px);
+}
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+  margin: 0;
+  padding: 1em;
+  border: 1px solid $error;
+  color: $error;
+}
+
+
+// .wpcf7-checkbox .wpcf7-list-item input[type=checkbox], .wpcf7-checkbox .wpcf7-list-item input[type=radio], .radio .wpcf7-list-item input[type=checkbox], .radio .wpcf7-list-item input[type=radio] {
+//   /* display: none; */
+//   position: absolute;
+//   z-index: 123;
+//   left: -1px;
+//   opacity: 0;
+// }
+
+
+
+
+
+
+
+
 
 
 /*----------------------------

@@ -18,13 +18,13 @@ get_header();
 
 		<div class="package">
 			<h4>Single Page Site</h4>
-			<div class="package__price">&#8369; 10,000</div>
+			<div class="package__price">&#8369; 15,000</div>
 			<p>
 				Simple one-page website with perfect for service professionals and portfolio.
 			</p>
 			<a class="btn" href="<?php echo site_url();?>/cart/?package=basic"><i class="fas fa-handshake"></i>Get Started Now</a>
 			<ul class="package__features">
-			<li><i class="fa fa-calendar"></i>&plusmn; 5 days delivery</li>
+				<li><i class="fa fa-calendar"></i>&plusmn; 5 days delivery</li>
 				<li><i class="fas fa-laptop-code"></i>Fully Mobile Responsive</li>
 				<li><i class="fas fa-pen-nib"></i>SEO Optimized Website</li>
 				<li><i class="fa fa-tools"></i>Website Maintenance (1 month)</li>

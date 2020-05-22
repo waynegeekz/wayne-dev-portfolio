@@ -88,37 +88,7 @@ html {
               }
 
             }
-
-            &__features {
-              margin-top: 1em;
-
-              li {
-                padding: 0.8em 0;
-                line-height: 1.6em;
-
-                &.feature--inactive {
-                  color: $light-gray;
-                }
-
-                i {
-                  margin-right: 1em;
-
-                  &.fas {
-                    color: $check;
-                  }
-
-                  &.fa {
-                    color: $check;
-                  }
-
-                  &.fab {
-                    color: $check;
-                  }
-                }
-                
-              }
-
-            }
+            
 
           }
 
