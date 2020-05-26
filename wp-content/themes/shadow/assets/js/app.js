@@ -21,16 +21,12 @@
                 'email': "",
                 'details' : "",
                 'package' : "Single Page Site",
-                'domain' : false,
-                'hosting': false,
-                'extendedMaintenance': false    
+                'domain[]' : false,
+                'hosting[]': false,
+                'extendedMaintenance[]': false    
             }
 
-            if(localStorage.getItem("sd_cart") === null) {
-
-                localStorage.setItem("sd_cart", JSON.stringify(cart));
-
-            } else {
+            if(localStorage.getItem("sd_cart") !== null) {
 
                 cart = JSON.parse(localStorage.getItem("sd_cart"));
 
@@ -39,13 +35,19 @@
 
                     $.each(cart, function(key, value){
                             
-                        if (key === "domain" || key === "hosting" || key === "extendedMaintenance") {
+                        if (key === "domain[]" || key === "hosting[]" || key === "extendedMaintenance[]") {
 
-                            $(`.wpcf7-form-control[name='${key}[]']`).prop("checked", value);
+                            $(`.wpcf7-form-control input[name='${key}']`).prop("checked", value);
 
                         } else {
 
                             $(`.wpcf7-form-control[name='${key}']`).val(value);
+                            
+                            if (key === 'package') {
+
+                                sd_populateFeatures(value);
+
+                            }
 
                         }
 
@@ -53,7 +55,11 @@
 
                 }
 
-            }
+            } else {
+
+                localStorage.setItem("sd_cart", JSON.stringify(cart));
+
+            } 
             
         } else {
 
@@ -64,8 +70,15 @@
 
     }
     
+    let sd_updateLocalStorage = (key, value) => {
 
-    let updatePackageDropdown = (packageName) =>  {
+        cart[key] = value;
+
+        localStorage.setItem("sd_cart", JSON.stringify(cart));
+
+    }
+
+    let sd_populateFeatures = (packageName) =>  {
 
             const features = {
                 "Single Page Site" : {
@@ -93,15 +106,17 @@
             
             let data = features[packageName];
             
-            $(".js-pkgName").html(name);
-            $(".js-pkgDuration").html(duration);
-            $(".js-pkgTimeline").html(timeline);
+            $(".js-pkgName").html(packageName);
+            $(".js-pkgDuration").html(data.duration);
+            $(".js-pkgTimeline").html(data.timeline);
+            $(".js-pkgPrice").html(currencyFormat(data.price));
+            $(".js-pkgDefaultMaintenance").html(data.maintenance < 2 ? `${data.maintenance} month` : `${data.maintenance} months`);
 
-            $(".js-pkgPrice").html();
+            let featureCount = data.features;
 
             $(".package__feature").each(function(i, obj){
             
-                if(featureCount > i) {
+                if(i < featureCount) {
                     $(this).addClass("js-activeFeature");
                 } else {
                     $(this).removeClass("js-activeFeature");
@@ -111,7 +126,12 @@
     
             });
     
-            $(`select[name='${packageName}']`).val(packageName);
+            $(`select[name='package']`).val(packageName);
+
+            sd_updateLocalStorage('package', packageName);
+
+            sd_calculateAmount();
+
     }
 
     function currencyFormat(num) {
@@ -122,6 +142,25 @@
 
     const sd_calculateAmount = () => {
         
+        let packageCost = 300;
+
+        let packageSelected = cart['package'];
+
+        if(packageSelected == "SME's Choice") {
+            packageCost = 900;
+        }else if (packageSelected == "Ecommerce Pro") {
+            packageCost = 1600;
+        }
+
+        let domainCost = cart['domain[]'] ? 50 : 0;
+
+        let hostingCost = cart['hosting[]'] ? 300 : 0;
+
+        let maintenanceCost = cart['extendedMaintenance[]'] ? 300 : 0;
+        
+        let total = packageCost + domainCost + hostingCost + maintenanceCost;
+
+        $(".checkout__amount").html(currencyFormat(total));
 
     }
 
@@ -228,6 +267,8 @@
 
         });
 
+
+        //BOTTOM SCROLL TO TOP
         $("#js-scrollToTop").click(function (){
 
             $("html, body").animate({ 
@@ -236,17 +277,38 @@
         
         });
 
+        //CHECKOUT FORM - DROPDOWN TOGGLE
+        $(".dropdown").on("click", function(){
+
+            $(this).toggleClass("dropdownIsToggled");
+
+        });
+
+        //CHECKOUT FORM - WHEN DROPDOWN OPTION IS CLICKED
         $(".dropdown__option").on ("click", function(e){
             
             let pkgName = $(this).find('.js-pkgValue').text();
 
-            //sd_populateFeatures(pkgName);
+            sd_populateFeatures(pkgName);
+
         
         });
 
-        $(".dropdown").on("click", function(){
+        //CHECKOUT FORM - STORE LOCAL STORAGE WHEN EDITING INPUT TEXT
+        $("#wpcf7-f44-o1").on("keyup", ".wpcf7-form-control", function(){
 
-            $(this).toggleClass("dropdownIsToggled");
+            sd_updateLocalStorage([$(this).attr("name")], $(this).val());
+
+        });
+
+        //CHECKOUT FORM - STORE LOCAL STORAGE WHEN CHECKBOX IS CHANGED
+        $("#wpcf7-f44-o1").on("change", "input[type='checkbox']", function(){
+
+            let checkValue = $(this).is(":checked") ? true : false;
+
+            sd_updateLocalStorage([$(this).attr("name")], checkValue);
+
+            sd_calculateAmount();
 
         });
 
@@ -257,7 +319,6 @@
         sd_fixNavMenuHeight();
         sd_isHome();
         sd_loadCartOnLocalStorage();
-        //sd_populateFeatures("Single Page Site");
 
     });
 

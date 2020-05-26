@@ -269,6 +269,7 @@ input, textarea, select, button {
   padding: 1em 1.3em;
   outline: none;
   font-size: 1em;
+  font-family: "Lato";
 
   @include placeholder {
     color: $gray;

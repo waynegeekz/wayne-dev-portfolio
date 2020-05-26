@@ -63,10 +63,14 @@ html {
 
                 .package__feature {
                   display: none;
+                  line-height: 1em;
+                  padding: 1em 2em;
+                  background: #f6f6f6;
                 }
                 .js-activeFeature {
                   display: block;
                 }
+                
               }
               
               ul {
