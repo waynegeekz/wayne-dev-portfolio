@@ -79,6 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 4, assets/sass/_vendor/fontawesome/_core.scss */
 .fa,
 .fas,
+.dropdown__selected:after,
 .far,
 .fal,
 .fad,
@@ -89,6 +90,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
+  line-height: 1;
+}
+
+/* line 19, assets/sass/_vendor/fontawesome/_core.scss */
+.dropdown__selected:after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
   line-height: 1;
 }
 
@@ -205,6 +217,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 18, assets/sass/_vendor/fontawesome/_bordered-pulled.scss */
 .fa.fa-pull-left,
 .fas.fa-pull-left,
+.fa-pull-left.dropdown__selected:after,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
@@ -213,6 +226,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 19, assets/sass/_vendor/fontawesome/_bordered-pulled.scss */
 .fa.fa-pull-right,
 .fas.fa-pull-right,
+.fa-pull-right.dropdown__selected:after,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
@@ -7545,7 +7559,8 @@ readers do not read off random characters that represent icons */
 }
 /* line 19, assets/sass/_vendor/fontawesome/_solid.scss */
 .fa,
-.fas {
+.fas,
+.dropdown__selected:after {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
@@ -7905,7 +7920,7 @@ p {
   margin-right: 1em;
 }
 /* line 244, assets/sass/_partials/_default.scss */
-.package__features li i.fas {
+.package__features li i.fas, .package__features li i.dropdown__selected:after {
   color: #22FF1A;
 }
 /* line 248, assets/sass/_partials/_default.scss */
@@ -7968,16 +7983,17 @@ label {
   display: flex;
   padding: 1em 0 0.5em 0;
   font-weight: bold;
+  cursor: pointer;
 }
 
-/* line 306, assets/sass/_partials/_default.scss */
+/* line 307, assets/sass/_partials/_default.scss */
 .input-format {
   padding: 0 0 1em 0;
   font-size: 12px;
   font-size: 0.75rem;
 }
 
-/* line 311, assets/sass/_partials/_default.scss */
+/* line 312, assets/sass/_partials/_default.scss */
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   margin: 0;
   padding: 1em;
@@ -7985,16 +8001,80 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   color: #FF1131;
 }
 
+/* line 319, assets/sass/_partials/_default.scss */
+.currency {
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-right: 5px;
+}
+
+/* line 325, assets/sass/_partials/_default.scss */
+.dropdown {
+  position: relative;
+}
+/* line 328, assets/sass/_partials/_default.scss */
+.dropdown__selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+/* line 334, assets/sass/_partials/_default.scss */
+.dropdown__selected .drowpdown__value {
+  flex-grow: 1;
+}
+/* line 338, assets/sass/_partials/_default.scss */
+.dropdown__selected:after {
+  content: "\f107";
+  margin-left: 1em;
+}
+/* line 348, assets/sass/_partials/_default.scss */
+.dropdown__options {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+  color: #0D0C0C;
+}
+/* line 358, assets/sass/_partials/_default.scss */
+.dropdown__options .dropdown__option {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+/* line 363, assets/sass/_partials/_default.scss */
+.dropdown__options .dropdown__option:hover {
+  background: #DFDFDF;
+}
+/* line 373, assets/sass/_partials/_default.scss */
+.dropdown.dropdownIsToggled .dropdown__options {
+  display: block;
+}
+/* line 376, assets/sass/_partials/_default.scss */
+.dropdown.dropdownIsToggled .dropdown__options:hover {
+  display: block;
+}
+/* line 384, assets/sass/_partials/_default.scss */
+.dropdown.dropdownIsToggled .dropdown__selected:after {
+  content: "\f106";
+  transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+}
+
 /*----------------------------
   PARTIAL - BOX LAYOUTS
 ----------------------------*/
-/* line 340, assets/sass/_partials/_default.scss */
+/* line 418, assets/sass/_partials/_default.scss */
 .box {
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
 }
-/* line 345, assets/sass/_partials/_default.scss */
+/* line 423, assets/sass/_partials/_default.scss */
 .box--padding {
   padding: 1em 5vw;
 }
@@ -8002,7 +8082,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - MODAL
 ----------------------------*/
-/* line 362, assets/sass/_partials/_default.scss */
+/* line 440, assets/sass/_partials/_default.scss */
 .js-page-overlay {
   display: none;
   position: fixed;
@@ -8014,21 +8094,21 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 374, assets/sass/_partials/_default.scss */
+/* line 452, assets/sass/_partials/_default.scss */
 .modal-shown {
   overflow: hidden !important;
 }
-/* line 377, assets/sass/_partials/_default.scss */
+/* line 455, assets/sass/_partials/_default.scss */
 .modal-shown .js-page-overlay {
   display: block;
 }
-/* line 381, assets/sass/_partials/_default.scss */
+/* line 459, assets/sass/_partials/_default.scss */
 .modal-shown .modal {
   transform: translateX(270px);
   transition: 800ms ease all;
 }
 
-/* line 388, assets/sass/_partials/_default.scss */
+/* line 466, assets/sass/_partials/_default.scss */
 .modal {
   align-items: center;
   justify-content: center;
@@ -8040,7 +8120,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   left: -270px;
   transition: 800ms ease all;
 }
-/* line 399, assets/sass/_partials/_default.scss */
+/* line 477, assets/sass/_partials/_default.scss */
 .modal__content {
   padding: 1.5em;
   background: white;
@@ -8051,15 +8131,15 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - MENU
 ----------------------------*/
-/* line 417, assets/sass/_partials/_default.scss */
+/* line 495, assets/sass/_partials/_default.scss */
 .menu li {
   padding: 1em 0;
 }
-/* line 420, assets/sass/_partials/_default.scss */
+/* line 498, assets/sass/_partials/_default.scss */
 .menu li a {
   color: white;
 }
-/* line 423, assets/sass/_partials/_default.scss */
+/* line 501, assets/sass/_partials/_default.scss */
 .menu li a:hover {
   color: #FF3131;
 }
@@ -8067,7 +8147,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - MENU
 ----------------------------*/
-/* line 439, assets/sass/_partials/_default.scss */
+/* line 517, assets/sass/_partials/_default.scss */
 img.responsive {
   width: 100%;
   height: auto;
@@ -8193,19 +8273,19 @@ html body .header-container .header a img {
   height: auto;
 }
 /* line 31, assets/sass/_partials/_header.scss */
-html body .header-container .header .fa, html body .header-container .header .fas {
+html body .header-container .header .fa, html body .header-container .header .fas, html body .header-container .header .dropdown__selected:after {
   font-size: 1.5em;
 }
 /* line 35, assets/sass/_partials/_header.scss */
-html body .header-container .header .fa:hover, html body .header-container .header .fas:hover {
+html body .header-container .header .fa:hover, html body .header-container .header .fas:hover, html body .header-container .header .dropdown__selected:hover:after {
   color: #FF3131;
 }
 /* line 39, assets/sass/_partials/_header.scss */
-html body .header-container .header .fa.fa-search, html body .header-container .header .fas.fa-search {
+html body .header-container .header .fa.fa-search, html body .header-container .header .fas.fa-search, html body .header-container .header .fa-search.dropdown__selected:after {
   font-size: 1.3em;
 }
 /* line 47, assets/sass/_partials/_header.scss */
-html body .header-container .header__left .fa, html body .header-container .header__left .fas, html body .header-container .header__left .fab {
+html body .header-container .header__left .fa, html body .header-container .header__left .fas, html body .header-container .header__left .dropdown__selected:after, html body .header-container .header__left .fab {
   margin: 0 1em 0 0;
 }
 /* line 53, assets/sass/_partials/_header.scss */
@@ -8213,7 +8293,7 @@ html body .header-container .header__right {
   align-items: center;
 }
 /* line 56, assets/sass/_partials/_header.scss */
-html body .header-container .header__right .fa, html body .header-container .header__right .fas, html body .header-container .header__right .fab {
+html body .header-container .header__right .fa, html body .header-container .header__right .fas, html body .header-container .header__right .dropdown__selected:after, html body .header-container .header__right .fab {
   margin: 0 0 0 1em;
 }
 /* line 65, assets/sass/_partials/_header.scss */
@@ -8720,35 +8800,80 @@ html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
-/* line 39, assets/sass/_pages/_checkout.scss */
+/* line 38, assets/sass/_pages/_checkout.scss */
+html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product h3 {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #0D0C0C;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+/* line 42, assets/sass/_pages/_checkout.scss */
+html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product h4 {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #0D0C0C;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+/* line 46, assets/sass/_pages/_checkout.scss */
+html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product h3, html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product h4 {
+  margin: 0.5em 0;
+}
+/* line 51, assets/sass/_pages/_checkout.scss */
+html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .checkout__pkgSelect .package {
+  display: none;
+}
+/* line 54, assets/sass/_pages/_checkout.scss */
+html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .checkout__pkgSelect .pkgSelect__box {
+  width: 100%;
+  background: #0D0C0C;
+  color: white;
+}
+/* line 61, assets/sass/_pages/_checkout.scss */
+html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .package__features {
+  margin: 0;
+}
+/* line 64, assets/sass/_pages/_checkout.scss */
+html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .package__features .package__feature {
+  display: none;
+}
+/* line 67, assets/sass/_pages/_checkout.scss */
+html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .package__features .js-activeFeature {
+  display: block;
+}
+/* line 72, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product ul {
   font-size: 12px;
   font-size: 0.75rem;
-  background: #f6f6f6;
-  margin: 0;
 }
-/* line 44, assets/sass/_pages/_checkout.scss */
+/* line 74, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product ul li {
   padding: 1em 2em;
   line-height: 1.6em;
 }
-/* line 50, assets/sass/_pages/_checkout.scss */
+/* line 80, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product hr {
   margin: 1em 0 0 0;
   border: 1px solid #f6f6f6;
 }
-/* line 55, assets/sass/_pages/_checkout.scss */
+/* line 85, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .addon {
   padding: 0.5em 0;
+  font-size: 12px;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
 }
-/* line 57, assets/sass/_pages/_checkout.scss */
+/* line 91, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .addon .wpcf7-list-item {
   margin: 0;
+  display: flex;
 }
-/* line 64, assets/sass/_pages/_checkout.scss */
+/* line 98, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .checkout__total {
-  font-size: 1.3em;
-  padding: 1em 0;
+  font-size: 1.2em;
+  padding: 1.5em 0;
   display: flex;
   justify-content: space-between;
 }

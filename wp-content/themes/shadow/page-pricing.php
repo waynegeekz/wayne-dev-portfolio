@@ -18,7 +18,7 @@ get_header();
 
 		<div class="package">
 			<h4>Single Page Site</h4>
-			<div class="package__price">&#8369; 15,000</div>
+			<div class="package__price">$300</div>
 			<p>
 				Simple one-page website with perfect for service professionals and portfolio.
 			</p>
@@ -37,7 +37,7 @@ get_header();
 			
 			<h4>SME's Choice</h4>
 			
-			<div class="package__price">&#8369; 45,000</div>
+			<div class="package__price">$900</div>
 			
 			<p>
 				Multi-page CMS website with forms, image galleries, and social media integration.
@@ -77,7 +77,7 @@ get_header();
 
 			<h4>Ecommerce Pro</h4>
 			
-			<div class="package__price">&#8369; 80,000</div>
+			<div class="package__price">$1,600</div>
 			
 			<p>
 				Setup your online store and do business transactions safely.

@@ -7,107 +7,121 @@
     //START WRITING THEME FUNCTIONS HERE
 
     let $window = $(window);
+    let cart;
+
+    let sd_loadCartOnLocalStorage = () => {
+
+        //CHECK IF LOCAL STORAGE COMPATIBLE
+        if (typeof localStorage !== 'undefined') {
+
+            cart = {
+                'fullname': "",
+                'company': "",
+                'contact' : "",
+                'email': "",
+                'details' : "",
+                'package' : "Single Page Site",
+                'domain' : false,
+                'hosting': false,
+                'extendedMaintenance': false    
+            }
+
+            if(localStorage.getItem("sd_cart") === null) {
+
+                localStorage.setItem("sd_cart", JSON.stringify(cart));
+
+            } else {
+
+                cart = JSON.parse(localStorage.getItem("sd_cart"));
+
+                //IF IN CHECKOUT PAGE, LOAD CART DETAILS INTO FORM
+                if($('#wpcf7-f44-o1').length) {
+
+                    $.each(cart, function(key, value){
+                            
+                        if (key === "domain" || key === "hosting" || key === "extendedMaintenance") {
+
+                            $(`.wpcf7-form-control[name='${key}[]']`).prop("checked", value);
+
+                        } else {
+
+                            $(`.wpcf7-form-control[name='${key}']`).val(value);
+
+                        }
+
+                    });
+
+                }
+
+            }
+            
+        } else {
+
+            alert("Your browser does not support Local Storage! Please update your browser to the latest version.");
+
+        }
+
+
+    }
+    
+
+    let updatePackageDropdown = (packageName) =>  {
+
+            const features = {
+                "Single Page Site" : {
+                    duration: 5,
+                    timeline: 'days',
+                    maintenance: 1,
+                    features: 4,
+                    price: 300
+                },
+                "SME's Choice" : {
+                    duration: 4,
+                    timeline: 'weeks',
+                    maintenance: 3,
+                    features : 7,
+                    price: 900
+                },
+                "Ecommerce Pro" : {
+                    duration: 8,
+                    timeline: 'weeks',
+                    maintenance: 3,
+                    features : 10,
+                    price: 1600
+                }
+            };
+            
+            let data = features[packageName];
+            
+            $(".js-pkgName").html(name);
+            $(".js-pkgDuration").html(duration);
+            $(".js-pkgTimeline").html(timeline);
+
+            $(".js-pkgPrice").html();
+
+            $(".package__feature").each(function(i, obj){
+            
+                if(featureCount > i) {
+                    $(this).addClass("js-activeFeature");
+                } else {
+                    $(this).removeClass("js-activeFeature");
+                }
+                
+                i++;
+    
+            });
+    
+            $(`select[name='${packageName}']`).val(packageName);
+    }
 
     function currencyFormat(num) {
 
-        return `&#8369; ${num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}`;
-
-    }
-
-
-    let sd_populateFeatures = (selectedPkg) => {
-
-        const pkgData = {
-            "Single Page Site" : {
-                duration: 5,
-                timeline: 'days',
-                maintenance: 1,
-                features: 4,
-                price: 15000
-            },
-            "SME's Choice" : {
-                duration: 4,
-                timeline: 'weeks',
-                maintenance: 3,
-                features : 5,
-                price: 45000
-            },
-            "Ecommerce Pro" : {
-                duration: 4,
-                timeline: 'weeks',
-                maintenance: 3,
-                features : 10,
-                price: 80000
-            }
-                
-        }
-
-        const data = pkgData[selectedPkg];
-
-        let elements = [
-            `<li><i class="fa fa-calendar"></i>&plusmn; ${data.duration} ${data.timeline} delivery</li>`,
-            `<li><i class="fas fa-laptop-code"></i>Fully Mobile Responsive</li>`,
-            `<li><i class="fas fa-pen-nib"></i>SEO Optimized Website</li>`,
-            `<li><i class="fa fa-tools"></i>Website Maintenance (${data.maintenance} month)</li>`,
-            `<li>
-                <i class="fas fa-chart-line"></i>
-                Google Analytics 
-                <i class="fa fa-info-circle tooltip">
-                    <span>
-                        Track how your visitors use your website by integrating Google Analytics.
-                    </span>
-                </i>
-            </li>`,
-            `<li>,
-                <i class="fab fa-wordpress"></i>
-                Content Management System 
-                <i class="fa fa-info-circle tooltip">
-                    <span>
-                        Publish posts, pages, and create online forms with integrated wordpress content sanagement system. Update your site content without coding!
-                    </span>
-                </i>
-            </li>`,
-            `<li><i class="fab fa-facebook-messenger"></i>Live Chat (3 months)</li>`,
-            `<li>
-                <i class="fas fa-shopping-cart"></i>
-                Ecommerce
-                <i class="fa fa-info-circle tooltip">
-                    <span>
-                        Sell products and manage your online store by integrating ecommerce on your website.
-                    </span>
-                </i>
-            </li>`,
-            `<li>
-                <i class="fas fa-envelope"></i>
-                Business Email Setup
-                <i class="fa fa-info-circle tooltip">
-                    <span>
-                        Configure Email Hosting Services such GSuite or Outlook.
-                    </span>
-                </i>
-            </li>`,
-            `<li>
-                <i class="fas fa-database"></i>
-                Site Backups 
-                <i class="fa fa-info-circle tooltip">
-                    <span>
-                        Monthly backup service for 6 months to get you ready in case of data failure or malicious attacks.
-                    </span>
-                </i>
-            </li>`
-        ];
-
-        let dataToAppend = `<ul class="package__features">${elements.slice(0, data.features).join('')}</ul>`;
-
-        $(".package__details").html(dataToAppend);
+        return `$ ${num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}`;
 
     }
 
     const sd_calculateAmount = () => {
         
-        $(".checkout__amount").html(currencyFormat(data.price));
-
-        console.log(data.price);
 
     }
 
@@ -222,14 +236,18 @@
         
         });
 
+        $(".dropdown__option").on ("click", function(e){
+            
+            let pkgName = $(this).find('.js-pkgValue').text();
 
-        $("#package-choice").on("change", function(){
-
-            var selectedPkg = $(this).children("option:selected").val();
-
-            sd_populateFeatures(selectedPkg);
-
+            //sd_populateFeatures(pkgName);
         
+        });
+
+        $(".dropdown").on("click", function(){
+
+            $(this).toggleClass("dropdownIsToggled");
+
         });
 
 
@@ -238,7 +256,8 @@
         sd_fixHeader();
         sd_fixNavMenuHeight();
         sd_isHome();
-        sd_populateFeatures('Single Page Site');
+        sd_loadCartOnLocalStorage();
+        //sd_populateFeatures("Single Page Site");
 
     });
 

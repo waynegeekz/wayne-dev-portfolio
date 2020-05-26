@@ -301,6 +301,7 @@ label {
   display: flex;
   padding: 1em 0 0.5em 0;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .input-format {
@@ -314,6 +315,83 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   border: 1px solid $error;
   color: $error;
 }
+
+.currency {
+  @include font-size(12px);
+  margin-right: 5px;
+}
+
+
+.dropdown {
+  position: relative;
+
+  &__selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    .drowpdown__value {
+      flex-grow: 1;
+    }
+
+    &:after {
+      
+      @extend %fa-icon;
+      @extend .fas;
+      content: fa-content($fa-var-angle-down);
+      margin-left: 1em;
+    }
+
+  }
+
+  &__options {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+    color: $dark-gray;
+
+    .dropdown__option {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+
+      &:hover {
+        background: $light-gray;
+      }
+
+    }
+
+  }
+
+  &.dropdownIsToggled {
+      
+    .dropdown__options {
+      display: block;
+      
+      &:hover {
+        display: block;
+      }
+
+    }
+
+    .dropdown__selected {
+
+      &:after {
+        content: fa-content($fa-var-angle-up);
+        @include transition(all, 1s, ease-in);
+      }
+
+    }
+
+  }
+
+}
+
 
 
 // .wpcf7-checkbox .wpcf7-list-item input[type=checkbox], .wpcf7-checkbox .wpcf7-list-item input[type=radio], .radio .wpcf7-list-item input[type=checkbox], .radio .wpcf7-list-item input[type=radio] {
