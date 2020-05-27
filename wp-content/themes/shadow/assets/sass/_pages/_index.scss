@@ -92,25 +92,30 @@ html {
                   @include border-radius(50%);
                   @include box-shadow(0, 1px, 5px, $light-gray);
                   position: absolute;
+                  animation-iteration-count: infinite;
 
                   &:first-child {
                     top: -2em;
                     right: 8em;
+                    animation-duration: 4s;
                   }
 
                   &:nth-child(2){
                     top: 3em;
                     right: 1em;
+                    animation-duration: 3s;
                   }
 
                   &:nth-child(3){
                     top: calc(50% - 2em);
                     right: 0em;
+                    animation-duration: 4.5s;
                   }
 
                   &:nth-child(4){
                     bottom: 4em;
                     right: 2em;
+                    animation-duration: 3.5s;
                   }
 
                   &:last-child{

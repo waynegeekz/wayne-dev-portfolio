@@ -8694,146 +8694,151 @@ html body .site-content #main .intro__img .intro__circle .circles-container .cir
   -moz-box-shadow: 0 1px 5px #DFDFDF;
   -webkit-box-shadow: 0 1px 5px #DFDFDF;
   position: absolute;
+  animation-iteration-count: infinite;
 }
-/* line 96, assets/sass/_pages/_index.scss */
+/* line 97, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:first-child {
   top: -2em;
   right: 8em;
+  animation-duration: 4s;
 }
-/* line 101, assets/sass/_pages/_index.scss */
+/* line 103, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:nth-child(2) {
   top: 3em;
   right: 1em;
+  animation-duration: 3s;
 }
-/* line 106, assets/sass/_pages/_index.scss */
+/* line 109, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:nth-child(3) {
   top: calc(50% - 2em);
   right: 0em;
+  animation-duration: 4.5s;
 }
-/* line 111, assets/sass/_pages/_index.scss */
+/* line 115, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:nth-child(4) {
   bottom: 4em;
   right: 2em;
+  animation-duration: 3.5s;
 }
-/* line 116, assets/sass/_pages/_index.scss */
+/* line 121, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle .circles-container .circle__img:last-child {
   bottom: 0em;
   right: 8em;
 }
-/* line 121, assets/sass/_pages/_index.scss */
+/* line 126, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__circle .circles-container .circle__img img {
   width: 2em;
   height: auto;
 }
-/* line 133, assets/sass/_pages/_index.scss */
+/* line 138, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__img .intro__profimage {
   width: 21em;
   height: auto;
 }
-/* line 140, assets/sass/_pages/_index.scss */
+/* line 145, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__description {
   flex: 0 0 100%;
 }
-/* line 143, assets/sass/_pages/_index.scss */
+/* line 148, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__description h3 {
   font-size: 1.5em;
 }
-/* line 145, assets/sass/_pages/_index.scss */
+/* line 150, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__description h3 span {
   color: #FF4343;
 }
-/* line 150, assets/sass/_pages/_index.scss */
+/* line 155, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__description p {
   margin: 1.5em 0;
 }
-/* line 157, assets/sass/_pages/_index.scss */
+/* line 162, assets/sass/_pages/_index.scss */
 html body .site-content #main .process {
   background: black;
   color: white;
   padding: 2em 5vw;
 }
-/* line 161, assets/sass/_pages/_index.scss */
+/* line 166, assets/sass/_pages/_index.scss */
 html body .site-content #main .process h3, html body .site-content #main .process h4, html body .site-content #main .process p {
   color: white;
 }
-/* line 165, assets/sass/_pages/_index.scss */
+/* line 170, assets/sass/_pages/_index.scss */
 html body .site-content #main .process h3 {
   font-size: 32px;
   font-size: 2rem;
   margin-top: 1em;
 }
-/* line 170, assets/sass/_pages/_index.scss */
+/* line 175, assets/sass/_pages/_index.scss */
 html body .site-content #main .process h4 {
   font-size: 22px;
   font-size: 1.375rem;
   margin-top: 1em;
 }
-/* line 175, assets/sass/_pages/_index.scss */
+/* line 180, assets/sass/_pages/_index.scss */
 html body .site-content #main .process img {
   height: 50px;
   width: auto;
 }
-/* line 180, assets/sass/_pages/_index.scss */
+/* line 185, assets/sass/_pages/_index.scss */
 html body .site-content #main .process p {
   padding: 1.5em 0;
 }
-/* line 184, assets/sass/_pages/_index.scss */
+/* line 189, assets/sass/_pages/_index.scss */
 html body .site-content #main .process hr {
   margin: 2em 0;
 }
-/* line 188, assets/sass/_pages/_index.scss */
+/* line 193, assets/sass/_pages/_index.scss */
 html body .site-content #main .process .steps__box {
   margin: 2em 0 1em 0;
 }
-/* line 194, assets/sass/_pages/_index.scss */
+/* line 199, assets/sass/_pages/_index.scss */
 html body .site-content #main .promotion {
   margin-top: 4em;
 }
-/* line 197, assets/sass/_pages/_index.scss */
+/* line 202, assets/sass/_pages/_index.scss */
 html body .site-content #main .promotion div img {
   width: 100%;
   max-height: 70vw;
   object-fit: cover;
 }
-/* line 204, assets/sass/_pages/_index.scss */
+/* line 209, assets/sass/_pages/_index.scss */
 html body .site-content #main .promotion aside {
   margin: 2em 5vw;
 }
-/* line 207, assets/sass/_pages/_index.scss */
+/* line 212, assets/sass/_pages/_index.scss */
 html body .site-content #main .promotion aside h3 {
   font-size: 42px;
   font-size: 2.625rem;
 }
-/* line 211, assets/sass/_pages/_index.scss */
+/* line 216, assets/sass/_pages/_index.scss */
 html body .site-content #main .promotion aside p {
   padding: 1em 0 0 0;
 }
-/* line 215, assets/sass/_pages/_index.scss */
+/* line 220, assets/sass/_pages/_index.scss */
 html body .site-content #main .promotion aside .btn {
   margin-top: 1em;
 }
-/* line 222, assets/sass/_pages/_index.scss */
+/* line 227, assets/sass/_pages/_index.scss */
 html body .site-content #main hr {
   margin: 3em 5vw;
 }
-/* line 230, assets/sass/_pages/_index.scss */
+/* line 235, assets/sass/_pages/_index.scss */
 html body .site-content #main .clients__info p {
   margin-bottom: 1em;
 }
-/* line 237, assets/sass/_pages/_index.scss */
+/* line 242, assets/sass/_pages/_index.scss */
 html body .site-content #main .clients__gallery {
   width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
 }
-/* line 243, assets/sass/_pages/_index.scss */
+/* line 248, assets/sass/_pages/_index.scss */
 html body .site-content #main .clients__gallery .clients__box {
   display: inline-flex;
   overflow: auto;
   padding: 2em 0;
 }
-/* line 248, assets/sass/_pages/_index.scss */
+/* line 253, assets/sass/_pages/_index.scss */
 html body .site-content #main .clients__gallery .clients__box .client {
   width: 150px;
   height: 150px;
@@ -8846,7 +8851,7 @@ html body .site-content #main .clients__gallery .clients__box .client {
   justify-content: center;
   margin-right: 2em;
 }
-/* line 258, assets/sass/_pages/_index.scss */
+/* line 263, assets/sass/_pages/_index.scss */
 html body .site-content #main .clients__gallery .clients__box .client img {
   width: auto;
   height: 50px;
@@ -9003,37 +9008,41 @@ html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .checkou
   background: #FF4343;
   color: white;
 }
-/* line 61, assets/sass/_pages/_checkout.scss */
+/* line 59, assets/sass/_pages/_checkout.scss */
+html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .checkout__pkgSelect .pkgSelect__box:hover {
+  background: #dc0000;
+}
+/* line 66, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .package__features {
   margin: 0;
 }
-/* line 64, assets/sass/_pages/_checkout.scss */
+/* line 69, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .package__features .package__feature {
   display: none;
   line-height: 1em;
   padding: 1em 2em;
   background: #f6f6f6;
 }
-/* line 70, assets/sass/_pages/_checkout.scss */
+/* line 75, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .package__features .js-activeFeature {
   display: block;
 }
-/* line 76, assets/sass/_pages/_checkout.scss */
+/* line 81, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product ul {
   font-size: 12px;
   font-size: 0.75rem;
 }
-/* line 78, assets/sass/_pages/_checkout.scss */
+/* line 83, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product ul li {
   padding: 1em 2em;
   line-height: 1.6em;
 }
-/* line 84, assets/sass/_pages/_checkout.scss */
+/* line 89, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product hr {
   margin: 1em 0 0 0;
   border: 1px solid #f6f6f6;
 }
-/* line 89, assets/sass/_pages/_checkout.scss */
+/* line 94, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .addon {
   padding: 0.5em 0;
   font-size: 12px;
@@ -9041,12 +9050,12 @@ html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .addon {
   display: flex;
   align-items: center;
 }
-/* line 95, assets/sass/_pages/_checkout.scss */
+/* line 100, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .addon .wpcf7-list-item {
   margin: 0;
   display: flex;
 }
-/* line 102, assets/sass/_pages/_checkout.scss */
+/* line 107, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .checkout__total {
   font-size: 1.2em;
   padding: 1.5em 0;

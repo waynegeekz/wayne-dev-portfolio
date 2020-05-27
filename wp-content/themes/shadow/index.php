@@ -36,23 +36,23 @@ get_header();
 
 				<div class="circles-container">
 
-					<div class="circle__img">
+					<div class="circle__img anim-bounce">
 						<img src="<?php echo bloginfo('template_url')?>/assets/images/logo_wordpress.png" " alt="Wordpress Logo">
 					</div>
 
-					<div class="circle__img">
+					<div class="circle__img anim-bounce">
 						<img src="<?php echo bloginfo('template_url')?>/assets/images/logo_yoast.png" " alt="Yoast SEO Logo">
 					</div>
 					
-					<div class="circle__img">
+					<div class="circle__img anim-bounce">
 						<img src="<?php echo bloginfo('template_url')?>/assets/images/logo_analytics.png" " alt="Google Analytics Logo">
 					</div>
 
-					<div class="circle__img">
+					<div class="circle__img anim-bounce">
 						<img src="<?php echo bloginfo('template_url')?>/assets/images/logo_woo.png" " alt="WooCommerce Logo">
 					</div>
 
-					<div class="circle__img">
+					<div class="circle__img anim-bounce">
 						<img src="<?php echo bloginfo('template_url')?>/assets/images/logo_w3.png" " alt="W3 Total Cache Logo">
 					</div>
 
