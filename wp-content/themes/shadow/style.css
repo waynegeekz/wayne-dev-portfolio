@@ -7625,46 +7625,6 @@ readers do not read off random characters that represent icons */
 /*----------------------------
   PARTIAL - MIXINS
 ----------------------------*/
-@-webkit-keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
-  }
-}
-@-moz-keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
-  }
-}
-@-ms-keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
-  }
-}
-@-o-keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
-  }
-}
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
-  }
-}
 /*----------------------------
   PARTIAL - DEFAULT STYLES
 ----------------------------*/
@@ -8067,15 +8027,193 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 }
 
 /*----------------------------
+  PARTIAL - ANIMATIONS
+----------------------------*/
+@-webkit-keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  90% {
+    transform: scale(1);
+  }
+}
+@-moz-keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  90% {
+    transform: scale(1);
+  }
+}
+@-ms-keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  90% {
+    transform: scale(1);
+  }
+}
+@-o-keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  90% {
+    transform: scale(1);
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  90% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes bounce {
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes bounce {
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+@-ms-keyframes bounce {
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+@-o-keyframes bounce {
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+/* line 440, assets/sass/_partials/_default.scss */
+.anim-zoom {
+  -webkit-animation: zoom;
+  -moz-animation: zoom;
+  -ms-animation: zoom;
+  -o-animation: zoom;
+  animation: zoom;
+  animation-duration: 2s;
+}
+
+/* line 447, assets/sass/_partials/_default.scss */
+.anim-bounce, html body .header-container .header .fa.fa-shopping-cart.hasOrder:after, html body .header-container .header .fas.fa-shopping-cart.hasOrder:after, html body .header-container .header .fa-shopping-cart.hasOrder.dropdown__selected:after {
+  -webkit-animation: bounce;
+  -moz-animation: bounce;
+  -ms-animation: bounce;
+  -o-animation: bounce;
+  animation: bounce;
+  animation-duration: 5s;
+}
+
+/*----------------------------
   PARTIAL - BOX LAYOUTS
 ----------------------------*/
-/* line 419, assets/sass/_partials/_default.scss */
+/* line 475, assets/sass/_partials/_default.scss */
 .box {
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
 }
-/* line 424, assets/sass/_partials/_default.scss */
+/* line 480, assets/sass/_partials/_default.scss */
 .box--padding {
   padding: 1em 5vw;
 }
@@ -8083,7 +8221,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - MODAL
 ----------------------------*/
-/* line 441, assets/sass/_partials/_default.scss */
+/* line 497, assets/sass/_partials/_default.scss */
 .js-page-overlay {
   display: none;
   position: fixed;
@@ -8095,21 +8233,21 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 453, assets/sass/_partials/_default.scss */
+/* line 509, assets/sass/_partials/_default.scss */
 .modal-shown {
   overflow: hidden !important;
 }
-/* line 456, assets/sass/_partials/_default.scss */
+/* line 512, assets/sass/_partials/_default.scss */
 .modal-shown .js-page-overlay {
   display: block;
 }
-/* line 460, assets/sass/_partials/_default.scss */
+/* line 516, assets/sass/_partials/_default.scss */
 .modal-shown .modal {
   transform: translateX(270px);
   transition: 800ms ease all;
 }
 
-/* line 467, assets/sass/_partials/_default.scss */
+/* line 523, assets/sass/_partials/_default.scss */
 .modal {
   align-items: center;
   justify-content: center;
@@ -8121,7 +8259,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   left: -270px;
   transition: 800ms ease all;
 }
-/* line 478, assets/sass/_partials/_default.scss */
+/* line 534, assets/sass/_partials/_default.scss */
 .modal__content {
   padding: 1.5em;
   background: white;
@@ -8132,23 +8270,23 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - MENU
 ----------------------------*/
-/* line 496, assets/sass/_partials/_default.scss */
+/* line 552, assets/sass/_partials/_default.scss */
 .menu li {
   padding: 1em 0;
 }
-/* line 499, assets/sass/_partials/_default.scss */
+/* line 555, assets/sass/_partials/_default.scss */
 .menu li a {
   color: white;
 }
-/* line 502, assets/sass/_partials/_default.scss */
+/* line 558, assets/sass/_partials/_default.scss */
 .menu li a:hover {
   color: #FF4343;
 }
 
 /*----------------------------
-  PARTIAL - MENU
+  PARTIAL - QUICK CLASSES
 ----------------------------*/
-/* line 518, assets/sass/_partials/_default.scss */
+/* line 574, assets/sass/_partials/_default.scss */
 img.responsive {
   width: 100%;
   height: auto;
@@ -8317,20 +8455,21 @@ html body .header-container .header .fa.fa-shopping-cart.hasOrder:after, html bo
   font-size: 8px;
   font-size: 0.5rem;
   font-family: "Lato";
+  animation-iteration-count: infinite;
 }
-/* line 82, assets/sass/_partials/_header.scss */
+/* line 84, assets/sass/_partials/_header.scss */
 html body .header-container .header__left .fa, html body .header-container .header__left .fas, html body .header-container .header__left .dropdown__selected:after, html body .header-container .header__left .fab {
   margin: 0 1em 0 0;
 }
-/* line 88, assets/sass/_partials/_header.scss */
+/* line 90, assets/sass/_partials/_header.scss */
 html body .header-container .header__right {
   align-items: center;
 }
-/* line 91, assets/sass/_partials/_header.scss */
+/* line 93, assets/sass/_partials/_header.scss */
 html body .header-container .header__right .fa, html body .header-container .header__right .fas, html body .header-container .header__right .dropdown__selected:after, html body .header-container .header__right .fab {
   margin: 0 0 0 1em;
 }
-/* line 100, assets/sass/_partials/_header.scss */
+/* line 102, assets/sass/_partials/_header.scss */
 html body .header-container .search-form {
   background: white;
   display: none;
@@ -8343,7 +8482,7 @@ html body .header-container .search-form {
   width: 100%;
   z-index: -1;
 }
-/* line 110, assets/sass/_partials/_header.scss */
+/* line 112, assets/sass/_partials/_header.scss */
 html body .header-container .search-form input {
   padding: 0.5em;
   width: 100%;
@@ -8372,91 +8511,91 @@ html body .header-container .search-form input :-ms-input-placeholder {
   font-size: 0.75rem;
   color: red;
 }
-/* line 133, assets/sass/_partials/_header.scss */
+/* line 135, assets/sass/_partials/_header.scss */
 html body #js-modalMenu {
   justify-content: flex-start;
   align-items: flex-end;
   width: 270px;
   height: 100%;
 }
-/* line 139, assets/sass/_partials/_header.scss */
+/* line 141, assets/sass/_partials/_header.scss */
 html body #js-modalMenu hr {
   border: 1px solid #DFDFDF;
   margin: 0 1.5em;
 }
-/* line 144, assets/sass/_partials/_header.scss */
+/* line 146, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__content {
   padding: 0;
 }
-/* line 148, assets/sass/_partials/_header.scss */
+/* line 150, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header {
   align-items: center;
   justify-content: flex-start;
   padding: 1.5em;
 }
-/* line 153, assets/sass/_partials/_header.scss */
+/* line 155, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header img {
   width: 50px;
   height: auto;
   margin-right: 1em;
 }
-/* line 161, assets/sass/_partials/_header.scss */
+/* line 163, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header p:first-child {
   font-weight: bold;
 }
-/* line 165, assets/sass/_partials/_header.scss */
+/* line 167, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header p:last-child {
   font-size: 0.8em;
 }
-/* line 175, assets/sass/_partials/_header.scss */
+/* line 177, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__nav {
   overflow: scroll;
   padding-bottom: 20px;
   box-sizing: content-box;
 }
-/* line 181, assets/sass/_partials/_header.scss */
+/* line 183, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts {
   margin-bottom: 1em;
 }
-/* line 183, assets/sass/_partials/_header.scss */
+/* line 185, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li {
   padding: 0.5em 1.5em;
 }
-/* line 185, assets/sass/_partials/_header.scss */
+/* line 187, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li a {
   font-size: 12px;
   font-size: 0.75rem;
   color: #0D0C0C;
 }
-/* line 188, assets/sass/_partials/_header.scss */
+/* line 190, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li a:hover {
   color: #FF4343;
 }
-/* line 191, assets/sass/_partials/_header.scss */
+/* line 193, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li a i {
   margin: 0 10px 0 0;
 }
-/* line 198, assets/sass/_partials/_header.scss */
+/* line 200, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu {
   display: block;
 }
-/* line 200, assets/sass/_partials/_header.scss */
+/* line 202, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu li {
   padding: 0.8em 1.5em;
 }
-/* line 202, assets/sass/_partials/_header.scss */
+/* line 204, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu li a {
   color: #707070;
 }
-/* line 204, assets/sass/_partials/_header.scss */
+/* line 206, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu li a:hover {
   color: #FF4343;
 }
-/* line 213, assets/sass/_partials/_header.scss */
+/* line 215, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .btn {
   margin: 1em 0 0 1.5em;
 }
-/* line 223, assets/sass/_partials/_header.scss */
+/* line 225, assets/sass/_partials/_header.scss */
 html body .menu {
   display: none;
 }

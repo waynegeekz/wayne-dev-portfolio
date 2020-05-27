@@ -22,7 +22,7 @@ get_header();
 			<p>
 				Simple one-page website with perfect for service professionals and portfolio.
 			</p>
-			<a class="btn" href="<?php echo site_url();?>/cart/?package=basic"><i class="fas fa-handshake"></i>Get Started Now</a>
+			<a class="btn" href="<?php echo site_url();?>/cart/?package=Single%20Page%20Site"><i class="fas fa-handshake"></i>Get Started Now</a>
 			<ul class="package__features">
 				<li><i class="fa fa-calendar"></i>&plusmn; 5 days delivery</li>
 				<li><i class="fas fa-laptop-code"></i>Fully Mobile Responsive</li>
@@ -43,7 +43,7 @@ get_header();
 				Multi-page CMS website with forms, image galleries, and social media integration.
 			</p>
 			
-			<a class="btn btn--primary" href="<?php echo site_url();?>/cart/?package=sme"><i class="fas fa-handshake"></i>Get Started</a>
+			<a class="btn btn--primary" href="<?php echo site_url();?>/cart/?package=SME's%20Choice"><i class="fas fa-handshake"></i>Get Started</a>
 			
 			<ul class="package__features">
 				<li><i class="fa fa-calendar"></i>&plusmn; 4 weeks delivery</li>
@@ -83,7 +83,7 @@ get_header();
 				Setup your online store and do business transactions safely.
 			</p>
 			
-			<a class="btn" href="<?php echo site_url();?>/cart/?package=ecommerce"><i class="fas fa-handshake"></i>Get Started</a>
+			<a class="btn" href="<?php echo site_url();?>/cart/?package=Ecommerce%20Pro"><i class="fas fa-handshake"></i>Get Started</a>
 			
 			<ul class="package__features">
 				<li><i class="fa fa-calendar"></i>&plusmn; 8 weeks delivery</li>

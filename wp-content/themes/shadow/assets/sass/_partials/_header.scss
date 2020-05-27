@@ -69,6 +69,8 @@ html {
 								color: white;
 								@include font-size(8px);
 								font-family: "Lato";
+								@extend .anim-bounce;
+								animation-iteration-count: infinite;
 							}
 
 						}			

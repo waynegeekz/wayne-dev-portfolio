@@ -395,6 +395,62 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 
 
+
+
+
+/*----------------------------
+  PARTIAL - ANIMATIONS
+----------------------------*/
+
+
+// ANIMATION SAMPLES
+@include keyframes(zoom) {
+  0% { 
+    transform: scale(1);
+  }
+  25% { 
+    transform: scale(1.05);
+  }
+  50% { 
+    transform: scale(1);
+  }
+  75% { 
+    transform: scale(1.05);
+  }
+  90% {
+    transform: scale(1);
+  }
+}
+
+@include keyframes(bounce) {
+  25% { 
+    transform: translateY(-5px);
+  }
+  50% { 
+    transform: translateY(0);
+  }
+  75% { 
+    transform: translateY(-5px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+
+.anim-zoom {
+
+  @include animation(zoom);
+  animation-duration: 2s;
+
+}
+
+.anim-bounce {
+  @include animation(bounce);
+  animation-duration: 5s;
+}
+
+
+
 // .wpcf7-checkbox .wpcf7-list-item input[type=checkbox], .wpcf7-checkbox .wpcf7-list-item input[type=radio], .radio .wpcf7-list-item input[type=checkbox], .radio .wpcf7-list-item input[type=radio] {
 //   /* display: none; */
 //   position: absolute;
@@ -513,7 +569,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 
 
 /*----------------------------
-  PARTIAL - MENU
+  PARTIAL - QUICK CLASSES
 ----------------------------*/
 img.responsive {
   width: 100%;

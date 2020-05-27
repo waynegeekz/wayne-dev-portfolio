@@ -91,15 +91,7 @@
   animation: #{$str};
 }
 
-// ANIMATION SAMPLES
-@include keyframes(fade-out) {
-  0% { 
-    opacity: 1;
-  }
-  90% { 
-    opacity: 0; 
-  }
-}
+
 
 // Gradient Backgrounds
 

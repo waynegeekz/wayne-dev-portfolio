@@ -43,7 +43,7 @@
 
 			<a href="#" class="js-btnSearch"><i class="fa fa-search"></i></a>
 			
-			<a href="<?php echo site_url();?>/checkout">
+			<a href="<?php echo site_url();?>/cart">
 				<i class="fa fa-shopping-cart"></i>
 			</a>
 
