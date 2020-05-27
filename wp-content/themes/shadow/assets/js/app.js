@@ -8,31 +8,59 @@
 
     let $window = $(window);
     let cart;
+    let searchParams = new URLSearchParams(window.location.search)
 
-    let sd_loadCartOnLocalStorage = () => {
 
-        //CHECK IF LOCAL STORAGE COMPATIBLE
-        if (typeof localStorage !== 'undefined') {
+    //CONVERT NUMBER INTO CURRENCY
+    let currencyFormat = function currencyFormat(num) {
 
-            cart = {
-                'fullname': "",
-                'company': "",
-                'contact' : "",
-                'email': "",
-                'details' : "",
-                'package' : "Single Page Site",
-                'domain[]' : false,
-                'hosting[]': false,
-                'extendedMaintenance[]': false    
+        return `$ ${num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}`;
+
+    }
+
+    //GET URL PARAMETERS
+    let getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+    
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+    
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
             }
+        }
+    };
 
-            if(localStorage.getItem("sd_cart") !== null) {
 
-                cart = JSON.parse(localStorage.getItem("sd_cart"));
+    //LOAD LOCAL STORAGE WHEN IN CHECKOUT PAGE
+    let sd_loadCartOnLocalStorage = function sd_loadCartOnLocalStorage() {
 
-                //IF IN CHECKOUT PAGE, LOAD CART DETAILS INTO FORM
-                if($('#wpcf7-f44-o1').length) {
+        //IF IN CHECKOUT PAGE
+        if($('#wpcf7-f44-o1').length) {
+            
+            //STORE IN LOCAL STORAGE
+            if (typeof localStorage !== 'undefined') {
 
+                //CHECK FIRST FOR PARAMETERS
+                let paramPackage = getUrlParameter('package');  
+                 
+                //IF LOCAL STORAGE CONTAINS CART INFORMATION
+                if(localStorage.getItem("sd_cart") !== null) {
+ 
+                    cart = JSON.parse(localStorage.getItem("sd_cart"));
+
+                    if(paramPackage !== undefined && ((paramPackage === "SME's Choice" || paramPackage === "Single Page Site" || paramPackage ==="Ecommerce Pro" ))) {
+
+                        cart['package'] = paramPackage;
+
+                        sd_updateLocalStorage("package", paramPackage);
+
+                    }
+
+                    //POPULATE FORM WITH INFORMATION FROM LOCAL STORAGE
                     $.each(cart, function(key, value){
                             
                         if (key === "domain[]" || key === "hosting[]" || key === "extendedMaintenance[]") {
@@ -53,28 +81,70 @@
 
                     });
 
-                }
+                } else {
+                     
+                    cart = {
+                        'fullname': "",
+                        'company': "",
+                        'contact' : "",
+                        'email': "",
+                        'details' : "",
+                        'package' : "",
+                        'domain[]' : false,
+                        'hosting[]': false,
+                        'extendedMaintenance[]': false    
+                    }
 
+                    if(paramPackage !== undefined && (paramPackage === "SME's Choice" || paramPackage === "Single Page Site" || paramPackage === "Ecommerce Pro" )) {
+
+                        cart['package'] = paramPackage;
+
+                    } else {
+                    
+                        cart['package'] = "SME's Choice";
+                    
+                    }
+                    
+                    localStorage.setItem("sd_cart", JSON.stringify(cart));
+
+                    sd_populateFeatures(cart['package']);
+
+                } 
+                
             } else {
 
-                localStorage.setItem("sd_cart", JSON.stringify(cart));
+                alert("Your browser does not support Local Storage! Please update your browser to the latest version.");
 
-            } 
-            
-        } else {
-
-            alert("Your browser does not support Local Storage! Please update your browser to the latest version.");
+            }
 
         }
 
-
+    
     }
     
+    let sd_hasCartOrder = function sd_hasCartOrder() {
+
+        if(typeof localStorage !== undefined) {
+
+            if(localStorage.hasOwnProperty("sd_cart")) {
+
+                $(".fa-shopping-cart").addClass("hasOrder");
+
+            }
+
+        }
+
+    }
+
     let sd_updateLocalStorage = (key, value) => {
 
         cart[key] = value;
 
-        localStorage.setItem("sd_cart", JSON.stringify(cart));
+        if(typeof localStorage !== undefined) {
+
+            localStorage.setItem("sd_cart", JSON.stringify(cart));
+        
+        }
 
     }
 
@@ -134,12 +204,6 @@
 
     }
 
-    function currencyFormat(num) {
-
-        return `$ ${num.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}`;
-
-    }
-
     const sd_calculateAmount = () => {
         
         let packageCost = 300;
@@ -147,9 +211,13 @@
         let packageSelected = cart['package'];
 
         if(packageSelected == "SME's Choice") {
+
             packageCost = 900;
-        }else if (packageSelected == "Ecommerce Pro") {
+
+        } else if (packageSelected == "Ecommerce Pro") {
+
             packageCost = 1600;
+
         }
 
         let domainCost = cart['domain[]'] ? 50 : 0;
@@ -165,11 +233,9 @@
     }
 
 
-    const sd_showModal = (modalElement) => {
+    const sd_showModal = () => {
         
         $('body').addClass('modal-shown');
-
-        modalElement.find('.menu');
 
     };
 
@@ -257,7 +323,7 @@
             
             e.preventDefault();
 
-            sd_showModal($("#js-modalMenu"));
+            sd_showModal();
 
         });
 
@@ -319,6 +385,7 @@
         sd_fixNavMenuHeight();
         sd_isHome();
         sd_loadCartOnLocalStorage();
+        sd_hasCartOrder();
 
     });
 

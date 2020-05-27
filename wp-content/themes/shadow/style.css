@@ -7704,7 +7704,7 @@ hr {
   top: 0;
   left: 0;
   width: 20%;
-  background: #FF3131;
+  background: #FF4343;
   height: 100%;
 }
 
@@ -7721,7 +7721,7 @@ hr {
 }
 /* line 54, assets/sass/_partials/_default.scss */
 .btn:hover {
-  background: #FF3131;
+  background: #FF4343;
   color: white;
   border: 1px solid transparent;
   transition: background 0.3s ease-in;
@@ -7738,14 +7738,14 @@ hr {
 }
 /* line 69, assets/sass/_partials/_default.scss */
 .btn--primary {
-  background: #FF3131;
+  background: #FF4343;
   color: white;
   border: none;
 }
 /* line 74, assets/sass/_partials/_default.scss */
 .btn--primary:hover {
   border: none;
-  background: #e40000;
+  background: #f60000;
   transition: background 0.5s ease-in;
   -moz-transition: background 0.5s ease-in;
   -webkit-transition: background 0.5s ease-in;
@@ -8142,7 +8142,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 }
 /* line 502, assets/sass/_partials/_default.scss */
 .menu li a:hover {
-  color: #FF3131;
+  color: #FF4343;
 }
 
 /*----------------------------
@@ -8279,7 +8279,7 @@ html body .header-container .header .fa, html body .header-container .header .fa
 }
 /* line 35, assets/sass/_partials/_header.scss */
 html body .header-container .header .fa:hover, html body .header-container .header .fas:hover, html body .header-container .header .dropdown__selected:hover:after {
-  color: #FF3131;
+  color: #FF4343;
 }
 /* line 39, assets/sass/_partials/_header.scss */
 html body .header-container .header .fa.fa-search, html body .header-container .header .fas.fa-search, html body .header-container .header .fa-search.dropdown__selected:after {
@@ -8312,7 +8312,7 @@ html body .header-container .header .fa.fa-shopping-cart.hasOrder:after, html bo
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   content: "1";
-  background: #FF3131;
+  background: #FF4343;
   color: white;
   font-size: 8px;
   font-size: 0.5rem;
@@ -8430,7 +8430,7 @@ html body #js-modalMenu .modal__contacts li a {
 }
 /* line 188, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li a:hover {
-  color: #FF3131;
+  color: #FF4343;
 }
 /* line 191, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li a i {
@@ -8450,7 +8450,7 @@ html body #js-modalMenu .modal__menu li a {
 }
 /* line 204, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu li a:hover {
-  color: #FF3131;
+  color: #FF4343;
 }
 /* line 213, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .btn {
@@ -8601,7 +8601,7 @@ html body .site-content #main .intro__description h3 {
 }
 /* line 145, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__description h3 span {
-  color: #FF3131;
+  color: #FF4343;
 }
 /* line 150, assets/sass/_pages/_index.scss */
 html body .site-content #main .intro__description p {
@@ -8761,7 +8761,7 @@ html body .site-content #pricing .packages .package__popular {
 html body .site-content #pricing .packages .package__popular div {
   font-size: 12px;
   font-size: 0.75rem;
-  background: #FF3131;
+  background: #FF4343;
   height: 100%;
   width: 100%;
   display: flex;
@@ -8772,9 +8772,9 @@ html body .site-content #pricing .packages .package__popular:before {
   content: "";
   width: 0;
   height: 0;
-  border-right: 10px solid #FF3131;
+  border-right: 10px solid #FF4343;
   border-left: 10px solid transparent;
-  border-bottom: 10px solid #FF3131;
+  border-bottom: 10px solid #FF4343;
   border-top: 10px solid transparent;
 }
 /* line 66, assets/sass/_pages/_pricing.scss */
@@ -8782,9 +8782,9 @@ html body .site-content #pricing .packages .package__popular:after {
   content: "";
   width: 0;
   height: 0;
-  border-left: 10px solid #FF3131;
+  border-left: 10px solid #FF4343;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #FF3131;
+  border-bottom: 10px solid #FF4343;
   border-top: 10px solid transparent;
 }
 /* line 78, assets/sass/_pages/_pricing.scss */
@@ -8861,7 +8861,7 @@ html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .checkou
 /* line 54, assets/sass/_pages/_checkout.scss */
 html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .checkout__pkgSelect .pkgSelect__box {
   width: 100%;
-  background: #0D0C0C;
+  background: #FF4343;
   color: white;
 }
 /* line 61, assets/sass/_pages/_checkout.scss */
@@ -8944,7 +8944,7 @@ html body .site-footer span {
 /* line 29, assets/sass/_partials/_footer.scss */
 html body .site-footer span:hover {
   cursor: pointer;
-  color: #FF3131;
+  color: #FF4343;
 }
 /* line 36, assets/sass/_partials/_footer.scss */
 html body .site-footer div {
@@ -8963,7 +8963,7 @@ html body .site-footer a {
 }
 /* line 50, assets/sass/_partials/_footer.scss */
 html body .site-footer a:hover {
-  color: #FF3131;
+  color: #FF4343;
 }
 
 @media only screen and (min-width: 481px) {
@@ -9017,7 +9017,7 @@ html body .site-footer a:hover {
   }
   /* line 90, assets/sass/_partials/_responsive.scss */
   html body .header-container .header .header__right .menu li a:hover {
-    color: #FF3131;
+    color: #FF4343;
   }
   /* line 100, assets/sass/_partials/_responsive.scss */
   html body .header-container .search-form {
