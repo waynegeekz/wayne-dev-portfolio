@@ -8285,19 +8285,52 @@ html body .header-container .header .fa:hover, html body .header-container .head
 html body .header-container .header .fa.fa-search, html body .header-container .header .fas.fa-search, html body .header-container .header .fa-search.dropdown__selected:after {
   font-size: 1.3em;
 }
-/* line 47, assets/sass/_partials/_header.scss */
+/* line 43, assets/sass/_partials/_header.scss */
+html body .header-container .header .fa.fa-shopping-cart, html body .header-container .header .fas.fa-shopping-cart, html body .header-container .header .fa-shopping-cart.dropdown__selected:after {
+  position: relative;
+}
+/* line 48, assets/sass/_partials/_header.scss */
+html body .header-container .header .fa.fa-shopping-cart.hasOrder:hover, html body .header-container .header .fas.fa-shopping-cart.hasOrder:hover, html body .header-container .header .fa-shopping-cart.hasOrder.dropdown__selected:hover:after {
+  color: white;
+}
+/* line 50, assets/sass/_partials/_header.scss */
+html body .header-container .header .fa.fa-shopping-cart.hasOrder:hover:after, html body .header-container .header .fas.fa-shopping-cart.hasOrder:hover:after, html body .header-container .header .fa-shopping-cart.hasOrder.dropdown__selected:hover:after {
+  background: white;
+  color: #0D0C0C;
+}
+/* line 57, assets/sass/_partials/_header.scss */
+html body .header-container .header .fa.fa-shopping-cart.hasOrder:after, html body .header-container .header .fas.fa-shopping-cart.hasOrder:after, html body .header-container .header .fa-shopping-cart.hasOrder.dropdown__selected:after {
+  position: absolute;
+  bottom: -.5em;
+  right: -1em;
+  height: 1em;
+  width: 1em;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  content: "1";
+  background: #FF3131;
+  color: white;
+  font-size: 8px;
+  font-size: 0.5rem;
+  font-family: "Lato";
+}
+/* line 82, assets/sass/_partials/_header.scss */
 html body .header-container .header__left .fa, html body .header-container .header__left .fas, html body .header-container .header__left .dropdown__selected:after, html body .header-container .header__left .fab {
   margin: 0 1em 0 0;
 }
-/* line 53, assets/sass/_partials/_header.scss */
+/* line 88, assets/sass/_partials/_header.scss */
 html body .header-container .header__right {
   align-items: center;
 }
-/* line 56, assets/sass/_partials/_header.scss */
+/* line 91, assets/sass/_partials/_header.scss */
 html body .header-container .header__right .fa, html body .header-container .header__right .fas, html body .header-container .header__right .dropdown__selected:after, html body .header-container .header__right .fab {
   margin: 0 0 0 1em;
 }
-/* line 65, assets/sass/_partials/_header.scss */
+/* line 100, assets/sass/_partials/_header.scss */
 html body .header-container .search-form {
   background: white;
   display: none;
@@ -8310,7 +8343,7 @@ html body .header-container .search-form {
   width: 100%;
   z-index: -1;
 }
-/* line 75, assets/sass/_partials/_header.scss */
+/* line 110, assets/sass/_partials/_header.scss */
 html body .header-container .search-form input {
   padding: 0.5em;
   width: 100%;
@@ -8339,91 +8372,91 @@ html body .header-container .search-form input :-ms-input-placeholder {
   font-size: 0.75rem;
   color: red;
 }
-/* line 98, assets/sass/_partials/_header.scss */
+/* line 133, assets/sass/_partials/_header.scss */
 html body #js-modalMenu {
   justify-content: flex-start;
   align-items: flex-end;
   width: 270px;
   height: 100%;
 }
-/* line 104, assets/sass/_partials/_header.scss */
+/* line 139, assets/sass/_partials/_header.scss */
 html body #js-modalMenu hr {
   border: 1px solid #DFDFDF;
   margin: 0 1.5em;
 }
-/* line 109, assets/sass/_partials/_header.scss */
+/* line 144, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__content {
   padding: 0;
 }
-/* line 113, assets/sass/_partials/_header.scss */
+/* line 148, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header {
   align-items: center;
   justify-content: flex-start;
   padding: 1.5em;
 }
-/* line 118, assets/sass/_partials/_header.scss */
+/* line 153, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header img {
   width: 50px;
   height: auto;
   margin-right: 1em;
 }
-/* line 126, assets/sass/_partials/_header.scss */
+/* line 161, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header p:first-child {
   font-weight: bold;
 }
-/* line 130, assets/sass/_partials/_header.scss */
+/* line 165, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__header p:last-child {
   font-size: 0.8em;
 }
-/* line 140, assets/sass/_partials/_header.scss */
+/* line 175, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__nav {
   overflow: scroll;
   padding-bottom: 20px;
   box-sizing: content-box;
 }
-/* line 146, assets/sass/_partials/_header.scss */
+/* line 181, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts {
   margin-bottom: 1em;
 }
-/* line 148, assets/sass/_partials/_header.scss */
+/* line 183, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li {
   padding: 0.5em 1.5em;
 }
-/* line 150, assets/sass/_partials/_header.scss */
+/* line 185, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li a {
   font-size: 12px;
   font-size: 0.75rem;
   color: #0D0C0C;
 }
-/* line 153, assets/sass/_partials/_header.scss */
+/* line 188, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li a:hover {
   color: #FF3131;
 }
-/* line 156, assets/sass/_partials/_header.scss */
+/* line 191, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__contacts li a i {
   margin: 0 10px 0 0;
 }
-/* line 163, assets/sass/_partials/_header.scss */
+/* line 198, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu {
   display: block;
 }
-/* line 165, assets/sass/_partials/_header.scss */
+/* line 200, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu li {
   padding: 0.8em 1.5em;
 }
-/* line 167, assets/sass/_partials/_header.scss */
+/* line 202, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu li a {
   color: #707070;
 }
-/* line 169, assets/sass/_partials/_header.scss */
+/* line 204, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .modal__menu li a:hover {
   color: #FF3131;
 }
-/* line 178, assets/sass/_partials/_header.scss */
+/* line 213, assets/sass/_partials/_header.scss */
 html body #js-modalMenu .btn {
   margin: 1em 0 0 1.5em;
 }
-/* line 188, assets/sass/_partials/_header.scss */
+/* line 223, assets/sass/_partials/_header.scss */
 html body .menu {
   display: none;
 }

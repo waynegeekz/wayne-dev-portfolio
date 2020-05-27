@@ -40,6 +40,41 @@ html {
 						font-size: 1.3em;
 					}
 
+					&.fa-shopping-cart {
+						position: relative;
+
+						&.hasOrder {
+
+							&:hover {
+								color: white;
+								&:after {
+									background: white;
+									color: $dark-gray;
+								}
+
+							}
+
+							&:after{
+								position: absolute;
+								bottom: -.5em;
+								right: -1em;
+								height: 1em;
+								width: 1em;
+								padding: 0.5em;
+								display: flex;
+								justify-content: center;
+								@include border-radius(50%);
+								content: "1";
+								background: $primary;
+								color: white;
+								@include font-size(8px);
+								font-family: "Lato";
+							}
+
+						}			
+
+					}
+
 				}
 
 				&__left {

@@ -43,6 +43,10 @@
 
 			<a href="#" class="js-btnSearch"><i class="fa fa-search"></i></a>
 			
+			<a href="<?php echo site_url();?>/checkout">
+				<i class="fa fa-shopping-cart hasOrder"></i>
+			</a>
+
 		</nav>
 
 	</section>
