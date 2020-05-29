@@ -7644,20 +7644,39 @@ body {
   color: #0D0C0C;
 }
 
-/* line 17, assets/sass/_partials/_default.scss */
+/* line 16, assets/sass/_partials/_default.scss */
+::-webkit-scrollbar {
+  background: #DFDFDF;
+  height: 5px;
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+/* line 22, assets/sass/_partials/_default.scss */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* line 25, assets/sass/_partials/_default.scss */
+::-webkit-scrollbar-thumb {
+  background: #707070;
+}
+
+/* line 29, assets/sass/_partials/_default.scss */
 hr {
   margin: 2em 0;
 }
 
-/* line 21, assets/sass/_partials/_default.scss */
+/* line 33, assets/sass/_partials/_default.scss */
 .hr-bar {
   position: relative;
   background: #DFDFDF;
   height: .4em;
   width: 15em;
   margin: 1em 0;
+  border: none;
 }
-/* line 28, assets/sass/_partials/_default.scss */
+/* line 41, assets/sass/_partials/_default.scss */
 .hr-bar:after {
   position: absolute;
   content: "";
@@ -7671,7 +7690,7 @@ hr {
 /*----------------------------
   PARTIAL - BUTTONS
 ----------------------------*/
-/* line 47, assets/sass/_partials/_default.scss */
+/* line 60, assets/sass/_partials/_default.scss */
 .btn {
   display: inline-block;
   border: 1px solid #707070;
@@ -7679,7 +7698,7 @@ hr {
   background: white;
   color: #0D0C0C;
 }
-/* line 54, assets/sass/_partials/_default.scss */
+/* line 67, assets/sass/_partials/_default.scss */
 .btn:hover {
   background: #FF4343;
   color: white;
@@ -7688,21 +7707,21 @@ hr {
   -moz-transition: background 0.3s ease-in;
   -webkit-transition: background 0.3s ease-in;
 }
-/* line 61, assets/sass/_partials/_default.scss */
+/* line 74, assets/sass/_partials/_default.scss */
 .btn i {
   margin-left: 10px;
 }
-/* line 65, assets/sass/_partials/_default.scss */
+/* line 78, assets/sass/_partials/_default.scss */
 .btn--transparent {
   opacity: 0.8;
 }
-/* line 69, assets/sass/_partials/_default.scss */
+/* line 82, assets/sass/_partials/_default.scss */
 .btn--primary {
   background: #FF4343;
   color: white;
   border: none;
 }
-/* line 74, assets/sass/_partials/_default.scss */
+/* line 87, assets/sass/_partials/_default.scss */
 .btn--primary:hover {
   border: none;
   background: #f60000;
@@ -7710,13 +7729,13 @@ hr {
   -moz-transition: background 0.5s ease-in;
   -webkit-transition: background 0.5s ease-in;
 }
-/* line 81, assets/sass/_partials/_default.scss */
+/* line 94, assets/sass/_partials/_default.scss */
 .btn--secondary {
   background: #0D0C0C;
   color: white;
   border: none;
 }
-/* line 86, assets/sass/_partials/_default.scss */
+/* line 99, assets/sass/_partials/_default.scss */
 .btn--secondary:hover {
   border: none;
   background: #353131;
@@ -7728,13 +7747,13 @@ hr {
 /*----------------------------
   PARTIAL - DEFAULT ANCHOR TEXTS
 ----------------------------*/
-/* line 102, assets/sass/_partials/_default.scss */
+/* line 115, assets/sass/_partials/_default.scss */
 a {
   color: #318AFF;
   text-decoration: none;
   vertical-align: baseline;
 }
-/* line 107, assets/sass/_partials/_default.scss */
+/* line 120, assets/sass/_partials/_default.scss */
 a:hover {
   color: #0057ca;
   transition: color 0.5s ease-in;
@@ -7745,13 +7764,13 @@ a:hover {
 /*----------------------------
   PARTIAL - TOOLTIP
 ----------------------------*/
-/* line 122, assets/sass/_partials/_default.scss */
+/* line 135, assets/sass/_partials/_default.scss */
 .tooltip {
   position: relative;
   cursor: pointer;
   color: #DFDFDF !important;
 }
-/* line 127, assets/sass/_partials/_default.scss */
+/* line 140, assets/sass/_partials/_default.scss */
 .tooltip span {
   display: none;
   position: absolute;
@@ -7772,7 +7791,7 @@ a:hover {
   -moz-transition: all 1s ease-in;
   -webkit-transition: all 1s ease-in;
 }
-/* line 141, assets/sass/_partials/_default.scss */
+/* line 154, assets/sass/_partials/_default.scss */
 .tooltip span:after {
   height: 0;
   padding: 0;
@@ -7784,7 +7803,7 @@ a:hover {
   bottom: -5px;
   left: calc(50% - 4px);
 }
-/* line 156, assets/sass/_partials/_default.scss */
+/* line 169, assets/sass/_partials/_default.scss */
 .tooltip:hover span {
   display: block;
 }
@@ -7792,7 +7811,7 @@ a:hover {
 /*----------------------------
   PARTIAL - DEFAULT HEADINGS STYLE
 ----------------------------*/
-/* line 170, assets/sass/_partials/_default.scss */
+/* line 183, assets/sass/_partials/_default.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: Righteous, Helvetica, Arial, sans-serif;
   font-size: 32px;
@@ -7800,34 +7819,34 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 1.6em;
 }
-/* line 173, assets/sass/_partials/_default.scss */
+/* line 186, assets/sass/_partials/_default.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #0D0C0C;
 }
-/* line 176, assets/sass/_partials/_default.scss */
+/* line 189, assets/sass/_partials/_default.scss */
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   color: #318AFF;
 }
 
-/* line 183, assets/sass/_partials/_default.scss */
+/* line 196, assets/sass/_partials/_default.scss */
 h1, h2, h3 {
   font-size: 32px;
   font-size: 2rem;
 }
 
-/* line 187, assets/sass/_partials/_default.scss */
+/* line 200, assets/sass/_partials/_default.scss */
 h4 {
   font-size: 22px;
   font-size: 1.375rem;
 }
 
-/* line 190, assets/sass/_partials/_default.scss */
+/* line 203, assets/sass/_partials/_default.scss */
 h5 {
   font-size: 26px;
   font-size: 1.625rem;
 }
 
-/* line 194, assets/sass/_partials/_default.scss */
+/* line 207, assets/sass/_partials/_default.scss */
 p {
   font-family: Lato, Helvetica, Arial, sans-serif;
   font-size: 1rem;
@@ -7839,55 +7858,55 @@ p {
 /*----------------------------
   PARTIAL - DEFAULT LIST STYLES
 ----------------------------*/
-/* line 207, assets/sass/_partials/_default.scss */
+/* line 220, assets/sass/_partials/_default.scss */
 .page-blog ul, .page-blog ol {
   margin: 1em;
 }
-/* line 211, assets/sass/_partials/_default.scss */
+/* line 224, assets/sass/_partials/_default.scss */
 .page-blog ul {
   list-style: disc;
   list-style-position: inside;
 }
-/* line 214, assets/sass/_partials/_default.scss */
+/* line 227, assets/sass/_partials/_default.scss */
 .page-blog ul li {
   line-height: 1.6em;
 }
-/* line 220, assets/sass/_partials/_default.scss */
+/* line 233, assets/sass/_partials/_default.scss */
 .page-blog ol {
   list-style: decimal;
   list-style-position: inside;
 }
-/* line 223, assets/sass/_partials/_default.scss */
+/* line 236, assets/sass/_partials/_default.scss */
 .page-blog ol li {
   line-height: 1.6em;
 }
 
-/* line 230, assets/sass/_partials/_default.scss */
+/* line 243, assets/sass/_partials/_default.scss */
 .package__features {
   margin-top: 1em;
 }
-/* line 233, assets/sass/_partials/_default.scss */
+/* line 246, assets/sass/_partials/_default.scss */
 .package__features li {
   padding: 0.8em 0;
   line-height: 1.6em;
 }
-/* line 237, assets/sass/_partials/_default.scss */
+/* line 250, assets/sass/_partials/_default.scss */
 .package__features li.feature--inactive {
   color: #DFDFDF;
 }
-/* line 241, assets/sass/_partials/_default.scss */
+/* line 254, assets/sass/_partials/_default.scss */
 .package__features li i {
   margin-right: 1em;
 }
-/* line 244, assets/sass/_partials/_default.scss */
+/* line 257, assets/sass/_partials/_default.scss */
 .package__features li i.fas, .package__features li i.dropdown__selected:after {
   color: #22FF1A;
 }
-/* line 248, assets/sass/_partials/_default.scss */
+/* line 261, assets/sass/_partials/_default.scss */
 .package__features li i.fa {
   color: #22FF1A;
 }
-/* line 252, assets/sass/_partials/_default.scss */
+/* line 265, assets/sass/_partials/_default.scss */
 .package__features li i.fab {
   color: #22FF1A;
 }
@@ -7895,7 +7914,7 @@ p {
 /*----------------------------
   PARTIAL - DEFAULT FORM STYLES
 ----------------------------*/
-/* line 268, assets/sass/_partials/_default.scss */
+/* line 281, assets/sass/_partials/_default.scss */
 input, textarea, select, button {
   padding: 1em 1.3em;
   outline: none;
@@ -7919,27 +7938,27 @@ input :-ms-input-placeholder, textarea :-ms-input-placeholder, select :-ms-input
   color: #707070;
 }
 
-/* line 280, assets/sass/_partials/_default.scss */
+/* line 293, assets/sass/_partials/_default.scss */
 select {
   cursor: pointer;
 }
 
-/* line 286, assets/sass/_partials/_default.scss */
+/* line 299, assets/sass/_partials/_default.scss */
 input[type="submit"] {
   cursor: pointer;
 }
-/* line 290, assets/sass/_partials/_default.scss */
+/* line 303, assets/sass/_partials/_default.scss */
 input[type="checkbox"] {
   margin: 0 .5em 0 0;
   width: auto !important;
 }
 
-/* line 297, assets/sass/_partials/_default.scss */
+/* line 310, assets/sass/_partials/_default.scss */
 button {
   cursor: pointer;
 }
 
-/* line 301, assets/sass/_partials/_default.scss */
+/* line 314, assets/sass/_partials/_default.scss */
 label {
   display: flex;
   padding: 1em 0 0.5em 0;
@@ -7947,14 +7966,14 @@ label {
   cursor: pointer;
 }
 
-/* line 308, assets/sass/_partials/_default.scss */
+/* line 321, assets/sass/_partials/_default.scss */
 .input-format {
   padding: 0 0 1em 0;
   font-size: 12px;
   font-size: 0.75rem;
 }
 
-/* line 313, assets/sass/_partials/_default.scss */
+/* line 326, assets/sass/_partials/_default.scss */
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   margin: 0;
   padding: 1em;
@@ -7962,34 +7981,34 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   color: #FF1131;
 }
 
-/* line 320, assets/sass/_partials/_default.scss */
+/* line 333, assets/sass/_partials/_default.scss */
 .currency {
   font-size: 12px;
   font-size: 0.75rem;
   margin-right: 5px;
 }
 
-/* line 326, assets/sass/_partials/_default.scss */
+/* line 339, assets/sass/_partials/_default.scss */
 .dropdown {
   position: relative;
 }
-/* line 329, assets/sass/_partials/_default.scss */
+/* line 342, assets/sass/_partials/_default.scss */
 .dropdown__selected {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
 }
-/* line 335, assets/sass/_partials/_default.scss */
+/* line 348, assets/sass/_partials/_default.scss */
 .dropdown__selected .drowpdown__value {
   flex-grow: 1;
 }
-/* line 339, assets/sass/_partials/_default.scss */
+/* line 352, assets/sass/_partials/_default.scss */
 .dropdown__selected:after {
   content: "\f107";
   margin-left: 1em;
 }
-/* line 349, assets/sass/_partials/_default.scss */
+/* line 362, assets/sass/_partials/_default.scss */
 .dropdown__options {
   display: none;
   position: absolute;
@@ -8000,25 +8019,25 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   width: 100%;
   color: #0D0C0C;
 }
-/* line 359, assets/sass/_partials/_default.scss */
+/* line 372, assets/sass/_partials/_default.scss */
 .dropdown__options .dropdown__option {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
 }
-/* line 364, assets/sass/_partials/_default.scss */
+/* line 377, assets/sass/_partials/_default.scss */
 .dropdown__options .dropdown__option:hover {
   background: #DFDFDF;
 }
-/* line 374, assets/sass/_partials/_default.scss */
+/* line 387, assets/sass/_partials/_default.scss */
 .dropdown.dropdownIsToggled .dropdown__options {
   display: block;
 }
-/* line 377, assets/sass/_partials/_default.scss */
+/* line 390, assets/sass/_partials/_default.scss */
 .dropdown.dropdownIsToggled .dropdown__options:hover {
   display: block;
 }
-/* line 385, assets/sass/_partials/_default.scss */
+/* line 398, assets/sass/_partials/_default.scss */
 .dropdown.dropdownIsToggled .dropdown__selected:after {
   content: "\f106";
   transition: all 1s ease-in;
@@ -8184,7 +8203,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     transform: translateY(0);
   }
 }
-/* line 440, assets/sass/_partials/_default.scss */
+/* line 453, assets/sass/_partials/_default.scss */
 .anim-zoom {
   -webkit-animation: zoom;
   -moz-animation: zoom;
@@ -8194,7 +8213,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   animation-duration: 2s;
 }
 
-/* line 447, assets/sass/_partials/_default.scss */
+/* line 460, assets/sass/_partials/_default.scss */
 .anim-bounce, html body .header-container .header .fa.fa-shopping-cart.hasOrder:after, html body .header-container .header .fas.fa-shopping-cart.hasOrder:after, html body .header-container .header .fa-shopping-cart.hasOrder.dropdown__selected:after {
   -webkit-animation: bounce;
   -moz-animation: bounce;
@@ -8207,13 +8226,13 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - BOX LAYOUTS
 ----------------------------*/
-/* line 475, assets/sass/_partials/_default.scss */
+/* line 488, assets/sass/_partials/_default.scss */
 .box {
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
 }
-/* line 480, assets/sass/_partials/_default.scss */
+/* line 493, assets/sass/_partials/_default.scss */
 .box--padding {
   padding: 1em 5vw;
 }
@@ -8221,7 +8240,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - MODAL
 ----------------------------*/
-/* line 497, assets/sass/_partials/_default.scss */
+/* line 510, assets/sass/_partials/_default.scss */
 .js-page-overlay {
   display: none;
   position: fixed;
@@ -8233,21 +8252,21 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 509, assets/sass/_partials/_default.scss */
+/* line 522, assets/sass/_partials/_default.scss */
 .modal-shown {
   overflow: hidden !important;
 }
-/* line 512, assets/sass/_partials/_default.scss */
+/* line 525, assets/sass/_partials/_default.scss */
 .modal-shown .js-page-overlay {
   display: block;
 }
-/* line 516, assets/sass/_partials/_default.scss */
+/* line 529, assets/sass/_partials/_default.scss */
 .modal-shown .modal {
   transform: translateX(270px);
   transition: 800ms ease all;
 }
 
-/* line 523, assets/sass/_partials/_default.scss */
+/* line 536, assets/sass/_partials/_default.scss */
 .modal {
   align-items: center;
   justify-content: center;
@@ -8259,7 +8278,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   left: -270px;
   transition: 800ms ease all;
 }
-/* line 534, assets/sass/_partials/_default.scss */
+/* line 547, assets/sass/_partials/_default.scss */
 .modal__content {
   padding: 1.5em;
   background: white;
@@ -8270,15 +8289,15 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - MENU
 ----------------------------*/
-/* line 552, assets/sass/_partials/_default.scss */
+/* line 565, assets/sass/_partials/_default.scss */
 .menu li {
   padding: 1em 0;
 }
-/* line 555, assets/sass/_partials/_default.scss */
+/* line 568, assets/sass/_partials/_default.scss */
 .menu li a {
   color: white;
 }
-/* line 558, assets/sass/_partials/_default.scss */
+/* line 571, assets/sass/_partials/_default.scss */
 .menu li a:hover {
   color: #FF4343;
 }
@@ -8286,7 +8305,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - QUICK CLASSES
 ----------------------------*/
-/* line 574, assets/sass/_partials/_default.scss */
+/* line 587, assets/sass/_partials/_default.scss */
 img.responsive {
   width: 100%;
   height: auto;
@@ -8953,6 +8972,64 @@ html body .site-content #pricing .pricing__inquiry h3 {
 /* line 103, assets/sass/_pages/_pricing.scss */
 html body .site-content #pricing .pricing__inquiry a {
   margin-top: 2em;
+}
+
+/* line 9, assets/sass/_pages/_category.scss */
+html body .site-content #page-category {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em 5vw;
+}
+/* line 16, assets/sass/_pages/_category.scss */
+html body .site-content #page-category header p {
+  padding: 1em 0;
+}
+/* line 22, assets/sass/_pages/_category.scss */
+html body .site-content #page-category hr {
+  margin: 1em 0;
+}
+/* line 28, assets/sass/_pages/_category.scss */
+html body .site-content #page-category .posts article {
+  margin: 2em 0;
+}
+/* line 31, assets/sass/_pages/_category.scss */
+html body .site-content #page-category .posts article .post__breadcrumbs {
+  margin: 0 0 0.5em 0;
+  padding: 0 0 0.5em 0;
+  line-height: 1.6em;
+  overflow: auto;
+  white-space: nowrap;
+}
+/* line 38, assets/sass/_pages/_category.scss */
+html body .site-content #page-category .posts article .post__breadcrumbs a {
+  color: #0D0C0C;
+}
+/* line 41, assets/sass/_pages/_category.scss */
+html body .site-content #page-category .posts article .post__breadcrumbs a:hover {
+  color: #FF4343;
+}
+/* line 47, assets/sass/_pages/_category.scss */
+html body .site-content #page-category .posts article .post__breadcrumbs i {
+  margin: 0 1em;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+/* line 56, assets/sass/_pages/_category.scss */
+html body .site-content #page-category .posts article h3 a:hover {
+  color: #FF4343;
+}
+/* line 63, assets/sass/_pages/_category.scss */
+html body .site-content #page-category .posts article .post__details {
+  margin: 1em 0;
+  line-height: 1.6em;
+}
+/* line 68, assets/sass/_pages/_category.scss */
+html body .site-content #page-category .posts article p {
+  padding: 0 0 1em 0;
+}
+/* line 72, assets/sass/_pages/_category.scss */
+html body .site-content #page-category .posts article img {
+  margin: 0 0 1em 0;
 }
 
 /* line 16, assets/sass/_pages/_checkout.scss */

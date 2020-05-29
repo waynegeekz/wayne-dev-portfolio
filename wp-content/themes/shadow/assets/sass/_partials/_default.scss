@@ -11,7 +11,19 @@ body {
   font-family: $font-p;
   font-size: 1rem;
   color: $dark-gray;
+}
 
+::-webkit-scrollbar {
+  background: $light-gray;
+  height: 5px;
+  margin: 1em 0;
+  cursor: pointer;
+}
+::-webkit-scrollbar-button{
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background: $gray;
 }
 
 hr {
@@ -24,6 +36,7 @@ hr {
   height: .4em;
   width: 15em;
   margin: 1em 0;
+  border: none;
 
   &:after{
     position: absolute;

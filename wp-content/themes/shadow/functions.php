@@ -67,7 +67,7 @@ add_theme_support( 'title-tag' );
  * Enable support for Post Thumbnails on posts and pages.
  */
 add_theme_support( 'post-thumbnails' );
-
+add_image_size( 'cat-thumb', 1024, 520, array( 'center', 'center' ) );
 
 /*
  * Add Site Logo Support
