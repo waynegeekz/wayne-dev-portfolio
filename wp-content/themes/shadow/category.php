@@ -72,8 +72,15 @@ get_header(); ?>
     <?php endif; ?>
 
     </section>
- 
 
+    <?php 
+        sd_custom_pagination(
+            [
+                'prev_text' => __( '»', 'textdomain' ), 
+                'next_text' => __( '«', 'textdomain' )
+            ]
+        );
+    ?>
 
 </main>
  

@@ -8214,7 +8214,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 }
 
 /* line 460, assets/sass/_partials/_default.scss */
-.anim-bounce, html body .header-container .header .fa.fa-shopping-cart.hasOrder:after, html body .header-container .header .fas.fa-shopping-cart.hasOrder:after, html body .header-container .header .fa-shopping-cart.hasOrder.dropdown__selected:after {
+.anim-bounce, .pagination .nav-links .page-numbers-container span, html body .header-container .header .fa.fa-shopping-cart.hasOrder:after, html body .header-container .header .fas.fa-shopping-cart.hasOrder:after, html body .header-container .header .fa-shopping-cart.hasOrder.dropdown__selected:after {
   -webkit-animation: bounce;
   -moz-animation: bounce;
   -ms-animation: bounce;
@@ -8314,6 +8314,59 @@ img.responsive {
 /*----------------------------
   PARTIAL - WORDPRESS DEFAULTS
 ----------------------------*/
+/* line 599, assets/sass/_partials/_default.scss */
+.pagination {
+  margin-top: 2em;
+}
+/* line 602, assets/sass/_partials/_default.scss */
+.pagination .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+/* line 608, assets/sass/_partials/_default.scss */
+.pagination .nav-links a, .pagination .nav-links span {
+  padding: 0.7em 0.8em;
+  color: #0D0C0C;
+}
+/* line 613, assets/sass/_partials/_default.scss */
+.pagination .nav-links > a {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  padding: 0.7em 1em;
+  background: #DFDFDF;
+  margin: 0 0.5em;
+}
+/* line 619, assets/sass/_partials/_default.scss */
+.pagination .nav-links > a:hover {
+  background: #FF4343;
+  color: white;
+}
+/* line 626, assets/sass/_partials/_default.scss */
+.pagination .nav-links .page-numbers-container {
+  display: flex;
+  background: #DFDFDF;
+  border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  padding: 0 0.5em;
+}
+/* line 632, assets/sass/_partials/_default.scss */
+.pagination .nav-links .page-numbers-container span {
+  background: #FF4343;
+  color: white;
+  border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  -webkit-border-radius: 0.4em;
+  animation-iteration-count: infinite;
+}
+/* line 642, assets/sass/_partials/_default.scss */
+.pagination .nav-links .page-numbers-container a:hover {
+  color: #FF4343;
+}
+
 /*.rtl {}
 .home {}
 .blog {}

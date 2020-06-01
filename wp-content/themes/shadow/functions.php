@@ -167,3 +167,31 @@ add_action( 'wp_enqueue_scripts', 'basetheme_scripts' );
 // add_action( 'wp_enqueue_scripts', 'rjs_lwp_contactform_css_js');
 
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+
+function sd_custom_pagination($args = [], $class = 'pagination') {
+
+    if ($GLOBALS['wp_query']->max_num_pages <= 1) return;
+
+    $args = wp_parse_args( $args, [
+        'mid_size'           => 2,
+        'prev_next'          => false,
+        'prev_text'          => __('Older posts', 'textdomain'),
+        'next_text'          => __('Newer posts', 'textdomain')
+    ]);
+
+    $links     = paginate_links($args);
+    $next_link = get_previous_posts_link($args['next_text']);
+    $prev_link = get_next_posts_link($args['prev_text']);
+    $template  = apply_filters( 'sd_custom_pagination_markup_template', '
+    <nav class="navigation %1$s" role="navigation">
+        <div class="nav-links">
+            %4$s
+            <div class="page-numbers-container">%3$s</div>
+            %2$s
+        </div>
+    </nav>', $args, $class);
+
+    echo sprintf($template, $class, $prev_link, $links, $next_link);
+
+}

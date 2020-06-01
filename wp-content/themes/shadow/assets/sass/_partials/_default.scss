@@ -596,6 +596,61 @@ img.responsive {
 ----------------------------*/
 
 
+.pagination {
+  margin-top: 2em;
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  
+    a, span {
+      padding: 0.7em 0.8em;
+      color: $dark-gray;
+    }
+
+    > a {
+      @include border-radius(50%);
+      padding: 0.7em 1em;
+      background: $light-gray;
+      margin: 0 0.5em;
+      
+      &:hover {
+        background: $primary;
+        color: white;
+      }
+
+    }
+
+    .page-numbers-container {
+      display: flex;
+      background: $light-gray;
+      @include border-radius(0.5em);
+      padding: 0 0.5em;
+
+      span {
+        background: $primary;
+        color: white;
+        @include border-radius(0.4em);
+        @extend .anim-bounce;
+        animation-iteration-count: infinite;
+      }
+
+      a {
+        
+        &:hover {
+          color: $primary;
+        }
+
+      }
+    
+    }
+  }
+
+}
+
+
 /*.rtl {}
 .home {}
 .blog {}
