@@ -136,10 +136,11 @@ function basetheme_scripts() {
     wp_deregister_script('jquery');
     wp_deregister_script( 'wp-embed' );
 
-	wp_enqueue_style( 'basetheme-style', get_stylesheet_uri() );
 
-    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/vendor/jquery/jquery-3.5.1.min.js' );
-	wp_enqueue_script( 'basetheme-scripts', get_template_directory_uri() . '/assets/js/app.js' );
+    wp_enqueue_style( 'basetheme-style', get_stylesheet_uri() );
+    wp_enqueue_script('prism', get_template_directory_uri() . '/assets/js/vendor/prism/prism.js', "1.0", true);
+    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/vendor/jquery/jquery-3.5.1.min.js', "3.5.1", true);
+	wp_enqueue_script( 'basetheme-scripts', get_template_directory_uri() . '/assets/js/app.js', "0.1", true);
 
 
     $datatoBePassed = array (

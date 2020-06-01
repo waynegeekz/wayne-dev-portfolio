@@ -7601,6 +7601,221 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+/* PrismJS 1.20.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+markup-templating+php+sass+sql&plugins=line-numbers+unescaped-markup */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+/* line 9, assets/sass/_vendor/prism/_prism.scss */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: black;
+  background: none;
+  text-shadow: 0 1px white;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* line 33, assets/sass/_vendor/prism/_prism.scss */
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+/* line 39, assets/sass/_vendor/prism/_prism.scss */
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+@media print {
+  /* line 46, assets/sass/_vendor/prism/_prism.scss */
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+}
+/* Code blocks */
+/* line 53, assets/sass/_vendor/prism/_prism.scss */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+
+/* line 59, assets/sass/_vendor/prism/_prism.scss */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #f5f2f0;
+}
+
+/* Inline code */
+/* line 65, assets/sass/_vendor/prism/_prism.scss */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+}
+
+/* line 71, assets/sass/_vendor/prism/_prism.scss */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+/* line 78, assets/sass/_vendor/prism/_prism.scss */
+.token.punctuation {
+  color: #999;
+}
+
+/* line 82, assets/sass/_vendor/prism/_prism.scss */
+.token.namespace {
+  opacity: .7;
+}
+
+/* line 86, assets/sass/_vendor/prism/_prism.scss */
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #905;
+}
+
+/* line 96, assets/sass/_vendor/prism/_prism.scss */
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #690;
+}
+
+/* line 105, assets/sass/_vendor/prism/_prism.scss */
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #9a6e3a;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 114, assets/sass/_vendor/prism/_prism.scss */
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a;
+}
+
+/* line 120, assets/sass/_vendor/prism/_prism.scss */
+.token.function,
+.token.class-name {
+  color: #DD4A68;
+}
+
+/* line 125, assets/sass/_vendor/prism/_prism.scss */
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e90;
+}
+
+/* line 131, assets/sass/_vendor/prism/_prism.scss */
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+/* line 135, assets/sass/_vendor/prism/_prism.scss */
+.token.italic {
+  font-style: italic;
+}
+
+/* line 139, assets/sass/_vendor/prism/_prism.scss */
+.token.entity {
+  cursor: help;
+}
+
+/* line 143, assets/sass/_vendor/prism/_prism.scss */
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+/* line 149, assets/sass/_vendor/prism/_prism.scss */
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+/* line 154, assets/sass/_vendor/prism/_prism.scss */
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 171, assets/sass/_vendor/prism/_prism.scss */
+.line-numbers-rows > span {
+  display: block;
+  counter-increment: linenumber;
+}
+
+/* line 176, assets/sass/_vendor/prism/_prism.scss */
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+/* Fallback, in case JS does not run, to ensure the code is at least visible */
+/* line 185, assets/sass/_vendor/prism/_prism.scss */
+[class*='lang-'] script[type='text/plain'],
+[class*='language-'] script[type='text/plain'],
+script[type='text/plain'][class*='lang-'],
+script[type='text/plain'][class*='language-'] {
+  display: block;
+  font: 100% Consolas, Monaco, monospace;
+  white-space: pre;
+  overflow: auto;
+}
+
 /*----------------------------
   PARTIAL - VARIABLES
 ----------------------------*/
@@ -7635,16 +7850,17 @@ readers do not read off random characters that represent icons */
   -webkit-box-sizing: border-box;
   margin: 0;
   padding: 0;
+  letter-spacing: 0.5px;
 }
 
-/* line 10, assets/sass/_partials/_default.scss */
+/* line 11, assets/sass/_partials/_default.scss */
 body {
   font-family: Lato;
   font-size: 1rem;
   color: #0D0C0C;
 }
 
-/* line 16, assets/sass/_partials/_default.scss */
+/* line 17, assets/sass/_partials/_default.scss */
 ::-webkit-scrollbar {
   background: #DFDFDF;
   height: 5px;
@@ -7652,22 +7868,22 @@ body {
   cursor: pointer;
 }
 
-/* line 22, assets/sass/_partials/_default.scss */
+/* line 23, assets/sass/_partials/_default.scss */
 ::-webkit-scrollbar-button {
   display: none;
 }
 
-/* line 25, assets/sass/_partials/_default.scss */
+/* line 26, assets/sass/_partials/_default.scss */
 ::-webkit-scrollbar-thumb {
   background: #707070;
 }
 
-/* line 29, assets/sass/_partials/_default.scss */
+/* line 30, assets/sass/_partials/_default.scss */
 hr {
   margin: 2em 0;
 }
 
-/* line 33, assets/sass/_partials/_default.scss */
+/* line 34, assets/sass/_partials/_default.scss */
 .hr-bar {
   position: relative;
   background: #DFDFDF;
@@ -7676,7 +7892,7 @@ hr {
   margin: 1em 0;
   border: none;
 }
-/* line 41, assets/sass/_partials/_default.scss */
+/* line 42, assets/sass/_partials/_default.scss */
 .hr-bar:after {
   position: absolute;
   content: "";
@@ -7690,7 +7906,7 @@ hr {
 /*----------------------------
   PARTIAL - BUTTONS
 ----------------------------*/
-/* line 60, assets/sass/_partials/_default.scss */
+/* line 61, assets/sass/_partials/_default.scss */
 .btn {
   display: inline-block;
   border: 1px solid #707070;
@@ -7698,7 +7914,7 @@ hr {
   background: white;
   color: #0D0C0C;
 }
-/* line 67, assets/sass/_partials/_default.scss */
+/* line 68, assets/sass/_partials/_default.scss */
 .btn:hover {
   background: #FF4343;
   color: white;
@@ -7707,21 +7923,21 @@ hr {
   -moz-transition: background 0.3s ease-in;
   -webkit-transition: background 0.3s ease-in;
 }
-/* line 74, assets/sass/_partials/_default.scss */
+/* line 75, assets/sass/_partials/_default.scss */
 .btn i {
   margin-left: 10px;
 }
-/* line 78, assets/sass/_partials/_default.scss */
+/* line 79, assets/sass/_partials/_default.scss */
 .btn--transparent {
   opacity: 0.8;
 }
-/* line 82, assets/sass/_partials/_default.scss */
+/* line 83, assets/sass/_partials/_default.scss */
 .btn--primary {
   background: #FF4343;
   color: white;
   border: none;
 }
-/* line 87, assets/sass/_partials/_default.scss */
+/* line 88, assets/sass/_partials/_default.scss */
 .btn--primary:hover {
   border: none;
   background: #f60000;
@@ -7729,13 +7945,13 @@ hr {
   -moz-transition: background 0.5s ease-in;
   -webkit-transition: background 0.5s ease-in;
 }
-/* line 94, assets/sass/_partials/_default.scss */
+/* line 95, assets/sass/_partials/_default.scss */
 .btn--secondary {
   background: #0D0C0C;
   color: white;
   border: none;
 }
-/* line 99, assets/sass/_partials/_default.scss */
+/* line 100, assets/sass/_partials/_default.scss */
 .btn--secondary:hover {
   border: none;
   background: #353131;
@@ -7747,30 +7963,30 @@ hr {
 /*----------------------------
   PARTIAL - DEFAULT ANCHOR TEXTS
 ----------------------------*/
-/* line 115, assets/sass/_partials/_default.scss */
+/* line 116, assets/sass/_partials/_default.scss */
 a {
-  color: #318AFF;
+  color: #FF4343;
   text-decoration: none;
   vertical-align: baseline;
 }
-/* line 120, assets/sass/_partials/_default.scss */
+/* line 121, assets/sass/_partials/_default.scss */
 a:hover {
-  color: #0057ca;
-  transition: color 0.5s ease-in;
-  -moz-transition: color 0.5s ease-in;
-  -webkit-transition: color 0.5s ease-in;
+  color: #dc0000;
+  transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -webkit-transition: color 0.2s ease-in;
 }
 
 /*----------------------------
   PARTIAL - TOOLTIP
 ----------------------------*/
-/* line 135, assets/sass/_partials/_default.scss */
+/* line 136, assets/sass/_partials/_default.scss */
 .tooltip {
   position: relative;
   cursor: pointer;
   color: #DFDFDF !important;
 }
-/* line 140, assets/sass/_partials/_default.scss */
+/* line 141, assets/sass/_partials/_default.scss */
 .tooltip span {
   display: none;
   position: absolute;
@@ -7791,7 +8007,7 @@ a:hover {
   -moz-transition: all 1s ease-in;
   -webkit-transition: all 1s ease-in;
 }
-/* line 154, assets/sass/_partials/_default.scss */
+/* line 155, assets/sass/_partials/_default.scss */
 .tooltip span:after {
   height: 0;
   padding: 0;
@@ -7803,7 +8019,7 @@ a:hover {
   bottom: -5px;
   left: calc(50% - 4px);
 }
-/* line 169, assets/sass/_partials/_default.scss */
+/* line 170, assets/sass/_partials/_default.scss */
 .tooltip:hover span {
   display: block;
 }
@@ -7811,7 +8027,7 @@ a:hover {
 /*----------------------------
   PARTIAL - DEFAULT HEADINGS STYLE
 ----------------------------*/
-/* line 183, assets/sass/_partials/_default.scss */
+/* line 184, assets/sass/_partials/_default.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: Righteous, Helvetica, Arial, sans-serif;
   font-size: 32px;
@@ -7819,34 +8035,34 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 1.6em;
 }
-/* line 186, assets/sass/_partials/_default.scss */
+/* line 187, assets/sass/_partials/_default.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #0D0C0C;
 }
-/* line 189, assets/sass/_partials/_default.scss */
+/* line 190, assets/sass/_partials/_default.scss */
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
-  color: #318AFF;
+  color: #FF4343;
 }
 
-/* line 196, assets/sass/_partials/_default.scss */
+/* line 197, assets/sass/_partials/_default.scss */
 h1, h2, h3 {
   font-size: 32px;
   font-size: 2rem;
 }
 
-/* line 200, assets/sass/_partials/_default.scss */
+/* line 201, assets/sass/_partials/_default.scss */
 h4 {
   font-size: 22px;
   font-size: 1.375rem;
 }
 
-/* line 203, assets/sass/_partials/_default.scss */
+/* line 204, assets/sass/_partials/_default.scss */
 h5 {
   font-size: 26px;
   font-size: 1.625rem;
 }
 
-/* line 207, assets/sass/_partials/_default.scss */
+/* line 208, assets/sass/_partials/_default.scss */
 p {
   font-family: Lato, Helvetica, Arial, sans-serif;
   font-size: 1rem;
@@ -7858,63 +8074,86 @@ p {
 /*----------------------------
   PARTIAL - DEFAULT LIST STYLES
 ----------------------------*/
-/* line 220, assets/sass/_partials/_default.scss */
+/* line 221, assets/sass/_partials/_default.scss */
 .page-blog ul, .page-blog ol {
   margin: 1em;
 }
-/* line 224, assets/sass/_partials/_default.scss */
+/* line 225, assets/sass/_partials/_default.scss */
 .page-blog ul {
   list-style: disc;
   list-style-position: inside;
 }
-/* line 227, assets/sass/_partials/_default.scss */
+/* line 228, assets/sass/_partials/_default.scss */
 .page-blog ul li {
   line-height: 1.6em;
 }
-/* line 233, assets/sass/_partials/_default.scss */
+/* line 234, assets/sass/_partials/_default.scss */
 .page-blog ol {
   list-style: decimal;
   list-style-position: inside;
 }
-/* line 236, assets/sass/_partials/_default.scss */
+/* line 237, assets/sass/_partials/_default.scss */
 .page-blog ol li {
   line-height: 1.6em;
 }
 
-/* line 243, assets/sass/_partials/_default.scss */
+/* line 244, assets/sass/_partials/_default.scss */
 .package__features {
   margin-top: 1em;
 }
-/* line 246, assets/sass/_partials/_default.scss */
+/* line 247, assets/sass/_partials/_default.scss */
 .package__features li {
   padding: 0.8em 0;
   line-height: 1.6em;
 }
-/* line 250, assets/sass/_partials/_default.scss */
+/* line 251, assets/sass/_partials/_default.scss */
 .package__features li.feature--inactive {
   color: #DFDFDF;
 }
-/* line 254, assets/sass/_partials/_default.scss */
+/* line 255, assets/sass/_partials/_default.scss */
 .package__features li i {
   margin-right: 1em;
 }
-/* line 257, assets/sass/_partials/_default.scss */
+/* line 258, assets/sass/_partials/_default.scss */
 .package__features li i.fas, .package__features li i.dropdown__selected:after {
   color: #22FF1A;
 }
-/* line 261, assets/sass/_partials/_default.scss */
+/* line 262, assets/sass/_partials/_default.scss */
 .package__features li i.fa {
   color: #22FF1A;
 }
-/* line 265, assets/sass/_partials/_default.scss */
+/* line 266, assets/sass/_partials/_default.scss */
 .package__features li i.fab {
   color: #22FF1A;
+}
+
+/* line 275, assets/sass/_partials/_default.scss */
+.post__breadcrumbs {
+  margin: 0 0 0.5em 0;
+  padding: 0 0 0.5em 0;
+  line-height: 1.6em;
+  overflow: auto;
+  white-space: nowrap;
+}
+/* line 282, assets/sass/_partials/_default.scss */
+.post__breadcrumbs a {
+  color: #0D0C0C;
+}
+/* line 285, assets/sass/_partials/_default.scss */
+.post__breadcrumbs a:hover {
+  color: #FF4343;
+}
+/* line 291, assets/sass/_partials/_default.scss */
+.post__breadcrumbs i {
+  margin: 0 1em;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 /*----------------------------
   PARTIAL - DEFAULT FORM STYLES
 ----------------------------*/
-/* line 281, assets/sass/_partials/_default.scss */
+/* line 304, assets/sass/_partials/_default.scss */
 input, textarea, select, button {
   padding: 1em 1.3em;
   outline: none;
@@ -7938,27 +8177,27 @@ input :-ms-input-placeholder, textarea :-ms-input-placeholder, select :-ms-input
   color: #707070;
 }
 
-/* line 293, assets/sass/_partials/_default.scss */
+/* line 316, assets/sass/_partials/_default.scss */
 select {
   cursor: pointer;
 }
 
-/* line 299, assets/sass/_partials/_default.scss */
+/* line 322, assets/sass/_partials/_default.scss */
 input[type="submit"] {
   cursor: pointer;
 }
-/* line 303, assets/sass/_partials/_default.scss */
+/* line 326, assets/sass/_partials/_default.scss */
 input[type="checkbox"] {
   margin: 0 .5em 0 0;
   width: auto !important;
 }
 
-/* line 310, assets/sass/_partials/_default.scss */
+/* line 333, assets/sass/_partials/_default.scss */
 button {
   cursor: pointer;
 }
 
-/* line 314, assets/sass/_partials/_default.scss */
+/* line 337, assets/sass/_partials/_default.scss */
 label {
   display: flex;
   padding: 1em 0 0.5em 0;
@@ -7966,14 +8205,14 @@ label {
   cursor: pointer;
 }
 
-/* line 321, assets/sass/_partials/_default.scss */
+/* line 344, assets/sass/_partials/_default.scss */
 .input-format {
   padding: 0 0 1em 0;
   font-size: 12px;
   font-size: 0.75rem;
 }
 
-/* line 326, assets/sass/_partials/_default.scss */
+/* line 349, assets/sass/_partials/_default.scss */
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   margin: 0;
   padding: 1em;
@@ -7981,34 +8220,34 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   color: #FF1131;
 }
 
-/* line 333, assets/sass/_partials/_default.scss */
+/* line 356, assets/sass/_partials/_default.scss */
 .currency {
   font-size: 12px;
   font-size: 0.75rem;
   margin-right: 5px;
 }
 
-/* line 339, assets/sass/_partials/_default.scss */
+/* line 362, assets/sass/_partials/_default.scss */
 .dropdown {
   position: relative;
 }
-/* line 342, assets/sass/_partials/_default.scss */
+/* line 365, assets/sass/_partials/_default.scss */
 .dropdown__selected {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
 }
-/* line 348, assets/sass/_partials/_default.scss */
+/* line 371, assets/sass/_partials/_default.scss */
 .dropdown__selected .drowpdown__value {
   flex-grow: 1;
 }
-/* line 352, assets/sass/_partials/_default.scss */
+/* line 375, assets/sass/_partials/_default.scss */
 .dropdown__selected:after {
   content: "\f107";
   margin-left: 1em;
 }
-/* line 362, assets/sass/_partials/_default.scss */
+/* line 385, assets/sass/_partials/_default.scss */
 .dropdown__options {
   display: none;
   position: absolute;
@@ -8019,25 +8258,25 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   width: 100%;
   color: #0D0C0C;
 }
-/* line 372, assets/sass/_partials/_default.scss */
+/* line 395, assets/sass/_partials/_default.scss */
 .dropdown__options .dropdown__option {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
 }
-/* line 377, assets/sass/_partials/_default.scss */
+/* line 400, assets/sass/_partials/_default.scss */
 .dropdown__options .dropdown__option:hover {
   background: #DFDFDF;
 }
-/* line 387, assets/sass/_partials/_default.scss */
+/* line 410, assets/sass/_partials/_default.scss */
 .dropdown.dropdownIsToggled .dropdown__options {
   display: block;
 }
-/* line 390, assets/sass/_partials/_default.scss */
+/* line 413, assets/sass/_partials/_default.scss */
 .dropdown.dropdownIsToggled .dropdown__options:hover {
   display: block;
 }
-/* line 398, assets/sass/_partials/_default.scss */
+/* line 421, assets/sass/_partials/_default.scss */
 .dropdown.dropdownIsToggled .dropdown__selected:after {
   content: "\f106";
   transition: all 1s ease-in;
@@ -8203,7 +8442,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     transform: translateY(0);
   }
 }
-/* line 453, assets/sass/_partials/_default.scss */
+/* line 476, assets/sass/_partials/_default.scss */
 .anim-zoom {
   -webkit-animation: zoom;
   -moz-animation: zoom;
@@ -8213,7 +8452,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   animation-duration: 2s;
 }
 
-/* line 460, assets/sass/_partials/_default.scss */
+/* line 483, assets/sass/_partials/_default.scss */
 .anim-bounce, .pagination .nav-links .page-numbers-container span, html body .header-container .header .fa.fa-shopping-cart.hasOrder:after, html body .header-container .header .fas.fa-shopping-cart.hasOrder:after, html body .header-container .header .fa-shopping-cart.hasOrder.dropdown__selected:after {
   -webkit-animation: bounce;
   -moz-animation: bounce;
@@ -8226,13 +8465,13 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - BOX LAYOUTS
 ----------------------------*/
-/* line 488, assets/sass/_partials/_default.scss */
+/* line 511, assets/sass/_partials/_default.scss */
 .box {
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
 }
-/* line 493, assets/sass/_partials/_default.scss */
+/* line 516, assets/sass/_partials/_default.scss */
 .box--padding {
   padding: 1em 5vw;
 }
@@ -8240,7 +8479,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - MODAL
 ----------------------------*/
-/* line 510, assets/sass/_partials/_default.scss */
+/* line 533, assets/sass/_partials/_default.scss */
 .js-page-overlay {
   display: none;
   position: fixed;
@@ -8252,21 +8491,21 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 522, assets/sass/_partials/_default.scss */
+/* line 545, assets/sass/_partials/_default.scss */
 .modal-shown {
   overflow: hidden !important;
 }
-/* line 525, assets/sass/_partials/_default.scss */
+/* line 548, assets/sass/_partials/_default.scss */
 .modal-shown .js-page-overlay {
   display: block;
 }
-/* line 529, assets/sass/_partials/_default.scss */
+/* line 552, assets/sass/_partials/_default.scss */
 .modal-shown .modal {
   transform: translateX(270px);
   transition: 800ms ease all;
 }
 
-/* line 536, assets/sass/_partials/_default.scss */
+/* line 559, assets/sass/_partials/_default.scss */
 .modal {
   align-items: center;
   justify-content: center;
@@ -8278,7 +8517,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   left: -270px;
   transition: 800ms ease all;
 }
-/* line 547, assets/sass/_partials/_default.scss */
+/* line 570, assets/sass/_partials/_default.scss */
 .modal__content {
   padding: 1.5em;
   background: white;
@@ -8289,15 +8528,15 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - MENU
 ----------------------------*/
-/* line 565, assets/sass/_partials/_default.scss */
+/* line 588, assets/sass/_partials/_default.scss */
 .menu li {
   padding: 1em 0;
 }
-/* line 568, assets/sass/_partials/_default.scss */
+/* line 591, assets/sass/_partials/_default.scss */
 .menu li a {
   color: white;
 }
-/* line 571, assets/sass/_partials/_default.scss */
+/* line 594, assets/sass/_partials/_default.scss */
 .menu li a:hover {
   color: #FF4343;
 }
@@ -8305,7 +8544,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - QUICK CLASSES
 ----------------------------*/
-/* line 587, assets/sass/_partials/_default.scss */
+/* line 610, assets/sass/_partials/_default.scss */
 img.responsive {
   width: 100%;
   height: auto;
@@ -8314,23 +8553,23 @@ img.responsive {
 /*----------------------------
   PARTIAL - WORDPRESS DEFAULTS
 ----------------------------*/
-/* line 599, assets/sass/_partials/_default.scss */
+/* line 622, assets/sass/_partials/_default.scss */
 .pagination {
   margin-top: 2em;
 }
-/* line 602, assets/sass/_partials/_default.scss */
+/* line 625, assets/sass/_partials/_default.scss */
 .pagination .nav-links {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
 }
-/* line 608, assets/sass/_partials/_default.scss */
+/* line 631, assets/sass/_partials/_default.scss */
 .pagination .nav-links a, .pagination .nav-links span {
   padding: 0.7em 0.8em;
   color: #0D0C0C;
 }
-/* line 613, assets/sass/_partials/_default.scss */
+/* line 636, assets/sass/_partials/_default.scss */
 .pagination .nav-links > a {
   border-radius: 50%;
   -moz-border-radius: 50%;
@@ -8339,12 +8578,12 @@ img.responsive {
   background: #DFDFDF;
   margin: 0 0.5em;
 }
-/* line 619, assets/sass/_partials/_default.scss */
+/* line 642, assets/sass/_partials/_default.scss */
 .pagination .nav-links > a:hover {
   background: #FF4343;
   color: white;
 }
-/* line 626, assets/sass/_partials/_default.scss */
+/* line 649, assets/sass/_partials/_default.scss */
 .pagination .nav-links .page-numbers-container {
   display: flex;
   background: #DFDFDF;
@@ -8353,7 +8592,7 @@ img.responsive {
   -webkit-border-radius: 0.5em;
   padding: 0 0.5em;
 }
-/* line 632, assets/sass/_partials/_default.scss */
+/* line 655, assets/sass/_partials/_default.scss */
 .pagination .nav-links .page-numbers-container span {
   background: #FF4343;
   color: white;
@@ -8362,7 +8601,7 @@ img.responsive {
   -webkit-border-radius: 0.4em;
   animation-iteration-count: infinite;
 }
-/* line 642, assets/sass/_partials/_default.scss */
+/* line 665, assets/sass/_partials/_default.scss */
 .pagination .nav-links .page-numbers-container a:hover {
   color: #FF4343;
 }
@@ -9045,42 +9284,20 @@ html body .site-content #page-category hr {
 html body .site-content #page-category .posts article {
   margin: 2em 0;
 }
-/* line 31, assets/sass/_pages/_category.scss */
-html body .site-content #page-category .posts article .post__breadcrumbs {
-  margin: 0 0 0.5em 0;
-  padding: 0 0 0.5em 0;
-  line-height: 1.6em;
-  overflow: auto;
-  white-space: nowrap;
-}
-/* line 38, assets/sass/_pages/_category.scss */
-html body .site-content #page-category .posts article .post__breadcrumbs a {
-  color: #0D0C0C;
-}
-/* line 41, assets/sass/_pages/_category.scss */
-html body .site-content #page-category .posts article .post__breadcrumbs a:hover {
-  color: #FF4343;
-}
-/* line 47, assets/sass/_pages/_category.scss */
-html body .site-content #page-category .posts article .post__breadcrumbs i {
-  margin: 0 1em;
-  font-size: 12px;
-  font-size: 0.75rem;
-}
-/* line 56, assets/sass/_pages/_category.scss */
+/* line 35, assets/sass/_pages/_category.scss */
 html body .site-content #page-category .posts article h3 a:hover {
   color: #FF4343;
 }
-/* line 63, assets/sass/_pages/_category.scss */
+/* line 42, assets/sass/_pages/_category.scss */
 html body .site-content #page-category .posts article .post__details {
   margin: 1em 0;
   line-height: 1.6em;
 }
-/* line 68, assets/sass/_pages/_category.scss */
+/* line 47, assets/sass/_pages/_category.scss */
 html body .site-content #page-category .posts article p {
   padding: 0 0 1em 0;
 }
-/* line 72, assets/sass/_pages/_category.scss */
+/* line 51, assets/sass/_pages/_category.scss */
 html body .site-content #page-category .posts article img {
   margin: 0 0 1em 0;
 }
@@ -9191,6 +9408,102 @@ html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .checkou
   padding: 1.5em 0;
   display: flex;
   justify-content: space-between;
+}
+
+/* line 12, assets/sass/_pages/_single.scss */
+html body .site-content .article {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em 5vw;
+}
+/* line 17, assets/sass/_pages/_single.scss */
+html body .site-content .article .entry-header {
+  margin-top: 0.5em;
+}
+/* line 20, assets/sass/_pages/_single.scss */
+html body .site-content .article .entry-header h1 {
+  margin-top: 0.5em;
+}
+/* line 26, assets/sass/_pages/_single.scss */
+html body .site-content .article .entry-content {
+  margin-top: 1em;
+}
+/* line 30, assets/sass/_pages/_single.scss */
+html body .site-content .article .mashsb-container {
+  margin-top: 1em;
+}
+/* line 34, assets/sass/_pages/_single.scss */
+html body .site-content .article h3, html body .site-content .article h4, html body .site-content .article h5, html body .site-content .article h6 {
+  padding: 0.5em 0;
+}
+/* line 38, assets/sass/_pages/_single.scss */
+html body .site-content .article h3 {
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+/* line 42, assets/sass/_pages/_single.scss */
+html body .site-content .article h4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+/* line 46, assets/sass/_pages/_single.scss */
+html body .site-content .article p, html body .site-content .article ul li, html body .site-content .article ol li, html body .site-content .article figure {
+  padding: 1em 0;
+  line-height: 1.6em;
+}
+/* line 51, assets/sass/_pages/_single.scss */
+html body .site-content .article ul {
+  list-style-type: disc;
+  margin-left: 1em;
+}
+/* line 56, assets/sass/_pages/_single.scss */
+html body .site-content .article ol {
+  list-style-type: decimal;
+  margin-left: 1em;
+}
+/* line 62, assets/sass/_pages/_single.scss */
+html body .site-content .article figure figcaption {
+  margin: -2px 0 0 0;
+  padding: 0.5em;
+  line-height: 1.6em;
+  font-size: 12px;
+  font-size: 0.75rem;
+  background: #DFDFDF;
+}
+/* line 71, assets/sass/_pages/_single.scss */
+html body .site-content .article blockquote {
+  margin: 0.5em 5%;
+  padding-left: 3%;
+  border-left: 5px solid #0D0C0C;
+  display: flex;
+  flex-flow: column nowrap;
+}
+/* line 78, assets/sass/_pages/_single.scss */
+html body .site-content .article blockquote p {
+  font-style: italic;
+  font-size: 1.2em;
+}
+/* line 83, assets/sass/_pages/_single.scss */
+html body .site-content .article blockquote cite {
+  margin-bottom: 0.5em;
+}
+/* line 85, assets/sass/_pages/_single.scss */
+html body .site-content .article blockquote cite:before {
+  content: "- ";
+}
+/* line 91, assets/sass/_pages/_single.scss */
+html body .site-content .article .wp-block-code {
+  background: #DFDFDF;
+  padding: 1.5em 2em;
+  overflow-x: auto;
+}
+/* line 96, assets/sass/_pages/_single.scss */
+html body .site-content .article .wp-block-code code {
+  line-height: 1.6em;
+}
+/* line 98, assets/sass/_pages/_single.scss */
+html body .site-content .article .wp-block-code code span {
+  text-shadow: none;
 }
 
 /* line 7, assets/sass/_partials/_footer.scss */

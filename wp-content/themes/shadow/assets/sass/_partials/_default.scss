@@ -5,6 +5,7 @@
   @include box-sizing(border-box);
   margin: 0;
   padding: 0;
+  letter-spacing: 0.5px;
 }
 
 body {
@@ -113,13 +114,13 @@ hr {
 ----------------------------*/
 
 a {
-  color: $link;
+  color: $primary;
   text-decoration: none;
   vertical-align: baseline;
   
   &:hover {
-    color: darken($link, 20%);
-    @include transition(color, 0.5s, ease-in); 
+    color: darken($primary, 20%);
+    @include transition(color, 0.2s, ease-in); 
   }
 
 }
@@ -187,7 +188,7 @@ h1, h2, h3, h4, h5, h6{
     color: $dark-gray;
     
     &:hover {
-      color: $link;
+      color: $primary;
     }
   }
 
@@ -269,6 +270,28 @@ p {
     
   }
 
+}
+
+.post__breadcrumbs {
+  margin: 0 0 0.5em 0;
+  padding: 0 0 0.5em 0;
+  line-height: 1.6em;
+  overflow: auto;
+  white-space: nowrap;
+
+  a {
+    color: $dark-gray;
+
+    &:hover {
+      color: $primary;
+    }
+
+  }
+
+  i {
+    margin: 0 1em;
+    @include font-size(12px);
+  }
 }
 
 

@@ -28,27 +28,6 @@ html {
           article {
             margin: 2em 0;
 
-            .post__breadcrumbs {
-              margin: 0 0 0.5em 0;
-              padding: 0 0 0.5em 0;
-              line-height: 1.6em;
-              overflow: auto;
-              white-space: nowrap;
-
-              a {
-                color: $dark-gray;
-
-                &:hover {
-                  color: $primary;
-                }
-
-              }
-
-              i {
-                margin: 0 1em;
-                @include font-size(12px);
-              }
-            }
 
             h3 {
 

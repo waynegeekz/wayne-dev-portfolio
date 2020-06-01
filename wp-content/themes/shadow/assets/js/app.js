@@ -287,7 +287,7 @@
 
     }
 
-    $(document).ready(function($) {
+    $(document).ready(function($) {;
 
         
         //CALL STACK FOR ON SCROLL FUNCTIONS
