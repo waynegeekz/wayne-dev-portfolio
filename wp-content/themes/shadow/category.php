@@ -4,23 +4,6 @@ get_header(); ?>
  
 <main id="page-category" class="site-main" role="main">
 
-    
-    <header class="category-header">
-    
-        <h3 class="category-title"><?php single_cat_title(); ?></h3>
-
-        <?php
-
-        if ( category_description() ) : ?>
-            
-        <?php echo category_description(); ?>
-
-        <?php endif; ?>
-
-    </header>
-
-    <hr>
-
     <section class="posts">
 
     <?php 
@@ -28,6 +11,22 @@ get_header(); ?>
     if ( have_posts() ) :
 
     while ( have_posts() ) : the_post(); ?>
+
+        <header class="category-header">
+            
+            <h3 class="category-title"><?php single_cat_title(); ?></h3>
+
+            <?php
+
+            if ( category_description() ) : ?>
+                
+            <?php echo category_description(); ?>
+
+            <?php endif; ?>
+
+        </header>
+
+        <hr>
 
         <article>
     
@@ -67,7 +66,9 @@ get_header(); ?>
 
     else: ?>
     
-        <p>Sorry, no posts matched your criteria.</p>
+    <h4 class="fill-space">
+        Sorry, but there are no posts for this category for now.
+    </h4>
     
     <?php endif; ?>
 
