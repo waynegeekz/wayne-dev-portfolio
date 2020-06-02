@@ -8102,37 +8102,7 @@ p {
   line-height: 1.6em;
 }
 
-/* line 248, assets/sass/_partials/_default.scss */
-.package__features {
-  margin-top: 1em;
-}
-/* line 251, assets/sass/_partials/_default.scss */
-.package__features li {
-  padding: 0.8em 0;
-  line-height: 1.6em;
-}
-/* line 255, assets/sass/_partials/_default.scss */
-.package__features li.feature--inactive {
-  color: #DFDFDF;
-}
-/* line 259, assets/sass/_partials/_default.scss */
-.package__features li i {
-  margin-right: 1em;
-}
-/* line 262, assets/sass/_partials/_default.scss */
-.package__features li i.fas, .package__features li i.dropdown__selected:after {
-  color: #22FF1A;
-}
-/* line 266, assets/sass/_partials/_default.scss */
-.package__features li i.fa {
-  color: #22FF1A;
-}
-/* line 270, assets/sass/_partials/_default.scss */
-.package__features li i.fab {
-  color: #22FF1A;
-}
-
-/* line 279, assets/sass/_partials/_default.scss */
+/* line 250, assets/sass/_partials/_default.scss */
 .post__breadcrumbs {
   margin: 0 0 0.5em 0;
   padding: 0 0 0.5em 0;
@@ -8140,25 +8110,136 @@ p {
   overflow: auto;
   white-space: nowrap;
 }
-/* line 286, assets/sass/_partials/_default.scss */
+/* line 257, assets/sass/_partials/_default.scss */
 .post__breadcrumbs a {
   color: #0D0C0C;
 }
-/* line 289, assets/sass/_partials/_default.scss */
+/* line 260, assets/sass/_partials/_default.scss */
 .post__breadcrumbs a:hover {
   color: #FF4343;
 }
-/* line 295, assets/sass/_partials/_default.scss */
+/* line 266, assets/sass/_partials/_default.scss */
 .post__breadcrumbs i {
   margin: 0 1em;
   font-size: 12px;
   font-size: 0.75rem;
 }
 
+/* line 272, assets/sass/_partials/_default.scss */
+.package__features {
+  margin-top: 1em;
+}
+/* line 275, assets/sass/_partials/_default.scss */
+.package__features li {
+  padding: 0.8em 0;
+  line-height: 1.6em;
+}
+/* line 279, assets/sass/_partials/_default.scss */
+.package__features li.feature--inactive {
+  color: #DFDFDF;
+}
+/* line 283, assets/sass/_partials/_default.scss */
+.package__features li i {
+  margin-right: 1em;
+}
+/* line 286, assets/sass/_partials/_default.scss */
+.package__features li i.fas, .package__features li i.dropdown__selected:after {
+  color: #22FF1A;
+}
+/* line 290, assets/sass/_partials/_default.scss */
+.package__features li i.fa {
+  color: #22FF1A;
+}
+/* line 294, assets/sass/_partials/_default.scss */
+.package__features li i.fab {
+  color: #22FF1A;
+}
+
+/* line 304, assets/sass/_partials/_default.scss */
+.packages, html body .site-content #showcase .projects {
+  margin-top: 1em;
+}
+/* line 307, assets/sass/_partials/_default.scss */
+.packages .package, html body .site-content #showcase .projects .package, html body .site-content #showcase .projects .project {
+  margin: 1em 0 2em 0;
+  padding: 1.5em;
+  box-shadow: 0 1px 5px #707070;
+  -moz-box-shadow: 0 1px 5px #707070;
+  -webkit-box-shadow: 0 1px 5px #707070;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  position: relative;
+}
+/* line 315, assets/sass/_partials/_default.scss */
+.packages .package:hover .package__popular, html body .site-content #showcase .projects .package:hover .package__popular, html body .site-content #showcase .projects .project:hover .package__popular {
+  transform: scale(1.3) rotate(-315deg);
+  transition: all .5s ease-in;
+}
+/* line 321, assets/sass/_partials/_default.scss */
+.packages .package__popular, html body .site-content #showcase .projects .package__popular {
+  position: absolute;
+  top: 18px;
+  right: -23px;
+  color: white;
+  letter-spacing: 1px;
+  z-index: 9;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s ease-in;
+  transform: rotate(45deg);
+}
+/* line 335, assets/sass/_partials/_default.scss */
+.packages .package__popular div, html body .site-content #showcase .projects .package__popular div {
+  font-size: 12px;
+  font-size: 0.75rem;
+  background: #FF4343;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+/* line 344, assets/sass/_partials/_default.scss */
+.packages .package__popular:before, html body .site-content #showcase .projects .package__popular:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 10px solid #FF4343;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #FF4343;
+  border-top: 10px solid transparent;
+}
+/* line 354, assets/sass/_partials/_default.scss */
+.packages .package__popular:after, html body .site-content #showcase .projects .package__popular:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid #FF4343;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #FF4343;
+  border-top: 10px solid transparent;
+}
+/* line 366, assets/sass/_partials/_default.scss */
+.packages .package__price, html body .site-content #showcase .projects .package__price {
+  margin-top: 1em;
+}
+/* line 370, assets/sass/_partials/_default.scss */
+.packages .package .btn, html body .site-content #showcase .projects .package .btn, html body .site-content #showcase .projects .project .btn {
+  width: 100%;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+/* line 374, assets/sass/_partials/_default.scss */
+.packages .package .btn i, html body .site-content #showcase .projects .package .btn i, html body .site-content #showcase .projects .project .btn i {
+  margin-right: 1em;
+}
+
 /*----------------------------
   PARTIAL - DEFAULT FORM STYLES
 ----------------------------*/
-/* line 308, assets/sass/_partials/_default.scss */
+/* line 391, assets/sass/_partials/_default.scss */
 input, textarea, select, button {
   padding: 1em 1.3em;
   outline: none;
@@ -8182,27 +8263,27 @@ input :-ms-input-placeholder, textarea :-ms-input-placeholder, select :-ms-input
   color: #707070;
 }
 
-/* line 320, assets/sass/_partials/_default.scss */
+/* line 403, assets/sass/_partials/_default.scss */
 select {
   cursor: pointer;
 }
 
-/* line 326, assets/sass/_partials/_default.scss */
+/* line 409, assets/sass/_partials/_default.scss */
 input[type="submit"] {
   cursor: pointer;
 }
-/* line 330, assets/sass/_partials/_default.scss */
+/* line 413, assets/sass/_partials/_default.scss */
 input[type="checkbox"] {
   margin: 0 .5em 0 0;
   width: auto !important;
 }
 
-/* line 337, assets/sass/_partials/_default.scss */
+/* line 420, assets/sass/_partials/_default.scss */
 button {
   cursor: pointer;
 }
 
-/* line 341, assets/sass/_partials/_default.scss */
+/* line 424, assets/sass/_partials/_default.scss */
 label {
   display: flex;
   padding: 1em 0 0.5em 0;
@@ -8210,14 +8291,14 @@ label {
   cursor: pointer;
 }
 
-/* line 348, assets/sass/_partials/_default.scss */
+/* line 431, assets/sass/_partials/_default.scss */
 .input-format {
   padding: 0 0 1em 0;
   font-size: 12px;
   font-size: 0.75rem;
 }
 
-/* line 353, assets/sass/_partials/_default.scss */
+/* line 436, assets/sass/_partials/_default.scss */
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   margin: 0;
   padding: 1em;
@@ -8225,34 +8306,34 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   color: #FF1131;
 }
 
-/* line 360, assets/sass/_partials/_default.scss */
+/* line 443, assets/sass/_partials/_default.scss */
 .currency {
   font-size: 12px;
   font-size: 0.75rem;
   margin-right: 5px;
 }
 
-/* line 366, assets/sass/_partials/_default.scss */
+/* line 449, assets/sass/_partials/_default.scss */
 .dropdown {
   position: relative;
 }
-/* line 369, assets/sass/_partials/_default.scss */
+/* line 452, assets/sass/_partials/_default.scss */
 .dropdown__selected {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
 }
-/* line 375, assets/sass/_partials/_default.scss */
+/* line 458, assets/sass/_partials/_default.scss */
 .dropdown__selected .drowpdown__value {
   flex-grow: 1;
 }
-/* line 379, assets/sass/_partials/_default.scss */
+/* line 462, assets/sass/_partials/_default.scss */
 .dropdown__selected:after {
   content: "\f107";
   margin-left: 1em;
 }
-/* line 389, assets/sass/_partials/_default.scss */
+/* line 472, assets/sass/_partials/_default.scss */
 .dropdown__options {
   display: none;
   position: absolute;
@@ -8263,25 +8344,25 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   width: 100%;
   color: #0D0C0C;
 }
-/* line 399, assets/sass/_partials/_default.scss */
+/* line 482, assets/sass/_partials/_default.scss */
 .dropdown__options .dropdown__option {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
 }
-/* line 404, assets/sass/_partials/_default.scss */
+/* line 487, assets/sass/_partials/_default.scss */
 .dropdown__options .dropdown__option:hover {
   background: #DFDFDF;
 }
-/* line 414, assets/sass/_partials/_default.scss */
+/* line 497, assets/sass/_partials/_default.scss */
 .dropdown.dropdownIsToggled .dropdown__options {
   display: block;
 }
-/* line 417, assets/sass/_partials/_default.scss */
+/* line 500, assets/sass/_partials/_default.scss */
 .dropdown.dropdownIsToggled .dropdown__options:hover {
   display: block;
 }
-/* line 425, assets/sass/_partials/_default.scss */
+/* line 508, assets/sass/_partials/_default.scss */
 .dropdown.dropdownIsToggled .dropdown__selected:after {
   content: "\f106";
   transition: all 1s ease-in;
@@ -8447,7 +8528,175 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     transform: translateY(0);
   }
 }
-/* line 480, assets/sass/_partials/_default.scss */
+@-webkit-keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+@-moz-keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+@-ms-keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+@-o-keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+/* line 580, assets/sass/_partials/_default.scss */
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 589, assets/sass/_partials/_default.scss */
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: #97c4ff;
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  z-index: -1;
+}
+
+/* line 601, assets/sass/_partials/_default.scss */
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+/* line 609, assets/sass/_partials/_default.scss */
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+/* line 617, assets/sass/_partials/_default.scss */
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+/* line 624, assets/sass/_partials/_default.scss */
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+/* line 632, assets/sass/_partials/_default.scss */
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+/* line 639, assets/sass/_partials/_default.scss */
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+/* line 646, assets/sass/_partials/_default.scss */
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+/* line 653, assets/sass/_partials/_default.scss */
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+/* line 661, assets/sass/_partials/_default.scss */
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+/* line 669, assets/sass/_partials/_default.scss */
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+/* line 677, assets/sass/_partials/_default.scss */
 .anim-zoom {
   -webkit-animation: zoom;
   -moz-animation: zoom;
@@ -8457,7 +8706,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   animation-duration: 2s;
 }
 
-/* line 487, assets/sass/_partials/_default.scss */
+/* line 684, assets/sass/_partials/_default.scss */
 .anim-bounce, .pagination .nav-links .page-numbers-container span, html body .header-container .header .fa.fa-shopping-cart.hasOrder:after, html body .header-container .header .fas.fa-shopping-cart.hasOrder:after, html body .header-container .header .fa-shopping-cart.hasOrder.dropdown__selected:after {
   -webkit-animation: bounce;
   -moz-animation: bounce;
@@ -8470,21 +8719,25 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - BOX LAYOUTS
 ----------------------------*/
-/* line 515, assets/sass/_partials/_default.scss */
+/* line 712, assets/sass/_partials/_default.scss */
 .box {
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
 }
-/* line 520, assets/sass/_partials/_default.scss */
+/* line 717, assets/sass/_partials/_default.scss */
 .box--padding {
   padding: 1em 5vw;
+}
+/* line 721, assets/sass/_partials/_default.scss */
+.box--margin {
+  margin: 1em 5vw;
 }
 
 /*----------------------------
   PARTIAL - MODAL
 ----------------------------*/
-/* line 537, assets/sass/_partials/_default.scss */
+/* line 738, assets/sass/_partials/_default.scss */
 .js-page-overlay {
   display: none;
   position: fixed;
@@ -8496,21 +8749,21 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 549, assets/sass/_partials/_default.scss */
+/* line 750, assets/sass/_partials/_default.scss */
 .modal-shown {
   overflow: hidden !important;
 }
-/* line 552, assets/sass/_partials/_default.scss */
+/* line 753, assets/sass/_partials/_default.scss */
 .modal-shown .js-page-overlay {
   display: block;
 }
-/* line 556, assets/sass/_partials/_default.scss */
+/* line 757, assets/sass/_partials/_default.scss */
 .modal-shown .modal {
   transform: translateX(270px);
   transition: 800ms ease all;
 }
 
-/* line 563, assets/sass/_partials/_default.scss */
+/* line 764, assets/sass/_partials/_default.scss */
 .modal {
   align-items: center;
   justify-content: center;
@@ -8522,7 +8775,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   left: -270px;
   transition: 800ms ease all;
 }
-/* line 574, assets/sass/_partials/_default.scss */
+/* line 775, assets/sass/_partials/_default.scss */
 .modal__content {
   padding: 1.5em;
   background: white;
@@ -8533,15 +8786,15 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - MENU
 ----------------------------*/
-/* line 592, assets/sass/_partials/_default.scss */
+/* line 793, assets/sass/_partials/_default.scss */
 .menu li {
   padding: 1em 0;
 }
-/* line 595, assets/sass/_partials/_default.scss */
+/* line 796, assets/sass/_partials/_default.scss */
 .menu li a {
   color: white;
 }
-/* line 598, assets/sass/_partials/_default.scss */
+/* line 799, assets/sass/_partials/_default.scss */
 .menu li a:hover {
   color: #FF4343;
 }
@@ -8549,7 +8802,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 /*----------------------------
   PARTIAL - QUICK CLASSES
 ----------------------------*/
-/* line 614, assets/sass/_partials/_default.scss */
+/* line 815, assets/sass/_partials/_default.scss */
 img.responsive {
   width: 100%;
   height: auto;
@@ -8558,23 +8811,23 @@ img.responsive {
 /*----------------------------
   PARTIAL - WORDPRESS DEFAULTS
 ----------------------------*/
-/* line 626, assets/sass/_partials/_default.scss */
+/* line 827, assets/sass/_partials/_default.scss */
 .pagination {
   margin-top: 2em;
 }
-/* line 629, assets/sass/_partials/_default.scss */
+/* line 830, assets/sass/_partials/_default.scss */
 .pagination .nav-links {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
 }
-/* line 635, assets/sass/_partials/_default.scss */
+/* line 836, assets/sass/_partials/_default.scss */
 .pagination .nav-links a, .pagination .nav-links span {
   padding: 0.7em 0.8em;
   color: #0D0C0C;
 }
-/* line 640, assets/sass/_partials/_default.scss */
+/* line 841, assets/sass/_partials/_default.scss */
 .pagination .nav-links > a {
   border-radius: 50%;
   -moz-border-radius: 50%;
@@ -8583,12 +8836,12 @@ img.responsive {
   background: #DFDFDF;
   margin: 0 0.5em;
 }
-/* line 646, assets/sass/_partials/_default.scss */
+/* line 847, assets/sass/_partials/_default.scss */
 .pagination .nav-links > a:hover {
   background: #FF4343;
   color: white;
 }
-/* line 653, assets/sass/_partials/_default.scss */
+/* line 854, assets/sass/_partials/_default.scss */
 .pagination .nav-links .page-numbers-container {
   display: flex;
   background: #DFDFDF;
@@ -8597,7 +8850,7 @@ img.responsive {
   -webkit-border-radius: 0.5em;
   padding: 0 0.5em;
 }
-/* line 659, assets/sass/_partials/_default.scss */
+/* line 860, assets/sass/_partials/_default.scss */
 .pagination .nav-links .page-numbers-container span {
   background: #FF4343;
   color: white;
@@ -8606,7 +8859,7 @@ img.responsive {
   -webkit-border-radius: 0.4em;
   animation-iteration-count: infinite;
 }
-/* line 669, assets/sass/_partials/_default.scss */
+/* line 870, assets/sass/_partials/_default.scss */
 .pagination .nav-links .page-numbers-container a:hover {
   color: #FF4343;
 }
@@ -9181,92 +9434,12 @@ html body .site-content #pricing {
 html body .site-content #pricing p {
   padding: 1em 0;
 }
-/* line 16, assets/sass/_pages/_pricing.scss */
-html body .site-content #pricing .packages {
-  margin-top: 1em;
-}
-/* line 19, assets/sass/_pages/_pricing.scss */
-html body .site-content #pricing .packages .package {
-  margin: 1em 0 2em 0;
-  padding: 1.5em;
-  box-shadow: 0 1px 5px #707070;
-  -moz-box-shadow: 0 1px 5px #707070;
-  -webkit-box-shadow: 0 1px 5px #707070;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  position: relative;
-}
-/* line 27, assets/sass/_pages/_pricing.scss */
-html body .site-content #pricing .packages .package:hover .package__popular {
-  transform: scale(1.3) rotate(-315deg);
-  transition: all .5s ease-in;
-}
-/* line 33, assets/sass/_pages/_pricing.scss */
-html body .site-content #pricing .packages .package__popular {
-  position: absolute;
-  top: 18px;
-  right: -23px;
-  color: white;
-  letter-spacing: 1px;
-  z-index: 9;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all .5s ease-in;
-  transform: rotate(45deg);
-}
-/* line 47, assets/sass/_pages/_pricing.scss */
-html body .site-content #pricing .packages .package__popular div {
-  font-size: 12px;
-  font-size: 0.75rem;
-  background: #FF4343;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-/* line 56, assets/sass/_pages/_pricing.scss */
-html body .site-content #pricing .packages .package__popular:before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-right: 10px solid #FF4343;
-  border-left: 10px solid transparent;
-  border-bottom: 10px solid #FF4343;
-  border-top: 10px solid transparent;
-}
-/* line 66, assets/sass/_pages/_pricing.scss */
-html body .site-content #pricing .packages .package__popular:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 10px solid #FF4343;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #FF4343;
-  border-top: 10px solid transparent;
-}
-/* line 78, assets/sass/_pages/_pricing.scss */
-html body .site-content #pricing .packages .package__price {
-  margin-top: 1em;
-}
-/* line 82, assets/sass/_pages/_pricing.scss */
-html body .site-content #pricing .packages .package .btn {
-  width: 100%;
-  font-size: 18px;
-  font-size: 1.125rem;
-}
-/* line 86, assets/sass/_pages/_pricing.scss */
-html body .site-content #pricing .packages .package .btn i {
-  margin-right: 1em;
-}
-/* line 99, assets/sass/_pages/_pricing.scss */
+/* line 20, assets/sass/_pages/_pricing.scss */
 html body .site-content #pricing .pricing__inquiry h3 {
   font-size: 22px;
   font-size: 1.375rem;
 }
-/* line 103, assets/sass/_pages/_pricing.scss */
+/* line 24, assets/sass/_pages/_pricing.scss */
 html body .site-content #pricing .pricing__inquiry a {
   margin-top: 2em;
 }
@@ -9351,7 +9524,7 @@ html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product h3, html
   margin: 0.5em 0;
 }
 /* line 51, assets/sass/_pages/_checkout.scss */
-html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .checkout__pkgSelect .package {
+html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .checkout__pkgSelect .package, html body .site-content #checkout .wpcf7 .wpcf7-form .checkout__product .checkout__pkgSelect #showcase .projects .project, html body .site-content #showcase .projects #checkout .wpcf7 .wpcf7-form .checkout__product .checkout__pkgSelect .project {
   display: none;
 }
 /* line 54, assets/sass/_pages/_checkout.scss */
@@ -9455,46 +9628,59 @@ html body .site-content .article h3 img, html body .site-content .article h4 img
 }
 /* line 49, assets/sass/_pages/_single.scss */
 html body .site-content .article h3 {
+  margin: 1em 0 .5em 0;
   font-size: 30px;
   font-size: 1.875rem;
 }
-/* line 53, assets/sass/_pages/_single.scss */
+/* line 54, assets/sass/_pages/_single.scss */
 html body .site-content .article h4 {
   font-size: 24px;
   font-size: 1.5rem;
 }
-/* line 57, assets/sass/_pages/_single.scss */
+/* line 58, assets/sass/_pages/_single.scss */
 html body .site-content .article p, html body .site-content .article ul li, html body .site-content .article ol li {
   margin: 1em 0;
   line-height: 1.6em;
 }
-/* line 60, assets/sass/_pages/_single.scss */
+/* line 61, assets/sass/_pages/_single.scss */
 html body .site-content .article p img, html body .site-content .article ul li img, html body .site-content .article ol li img {
   margin-right: 10px;
   width: 50px;
   height: auto;
 }
-/* line 67, assets/sass/_pages/_single.scss */
+/* line 68, assets/sass/_pages/_single.scss */
 html body .site-content .article ul {
   list-style-type: disc;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 /* line 72, assets/sass/_pages/_single.scss */
-html body .site-content .article ol {
-  list-style-type: decimal;
-  margin-left: 1em;
-}
-/* line 77, assets/sass/_pages/_single.scss */
-html body .site-content .article figure {
-  margin: 2em 0;
+html body .site-content .article ul li:before {
+  content: " ";
+  width: 1em;
+  display: inline-block;
 }
 /* line 80, assets/sass/_pages/_single.scss */
+html body .site-content .article ol {
+  list-style-type: decimal;
+  margin-left: 3em;
+}
+/* line 84, assets/sass/_pages/_single.scss */
+html body .site-content .article ol li:before {
+  content: " ";
+  width: 0.5em;
+  display: inline-block;
+}
+/* line 94, assets/sass/_pages/_single.scss */
+html body .site-content .article figure img {
+  height: auto;
+}
+/* line 98, assets/sass/_pages/_single.scss */
 html body .site-content .article figure iframe {
   width: 100%;
   height: 50vw;
   max-height: 450px;
 }
-/* line 86, assets/sass/_pages/_single.scss */
+/* line 104, assets/sass/_pages/_single.scss */
 html body .site-content .article figure figcaption {
   margin: -2px 0 0 0;
   padding: 0.5em 1em;
@@ -9503,7 +9689,7 @@ html body .site-content .article figure figcaption {
   font-size: 0.75rem;
   background: #DFDFDF;
 }
-/* line 96, assets/sass/_pages/_single.scss */
+/* line 114, assets/sass/_pages/_single.scss */
 html body .site-content .article blockquote {
   margin: 1em 5%;
   padding-left: 3%;
@@ -9511,32 +9697,177 @@ html body .site-content .article blockquote {
   display: flex;
   flex-flow: column nowrap;
 }
-/* line 103, assets/sass/_pages/_single.scss */
+/* line 121, assets/sass/_pages/_single.scss */
 html body .site-content .article blockquote p {
   font-style: italic;
   font-size: 1.2em;
 }
-/* line 108, assets/sass/_pages/_single.scss */
+/* line 126, assets/sass/_pages/_single.scss */
 html body .site-content .article blockquote cite {
   margin-bottom: 0.5em;
 }
-/* line 110, assets/sass/_pages/_single.scss */
+/* line 128, assets/sass/_pages/_single.scss */
 html body .site-content .article blockquote cite:before {
   content: "- ";
 }
-/* line 116, assets/sass/_pages/_single.scss */
+/* line 134, assets/sass/_pages/_single.scss */
 html body .site-content .article .wp-block-code {
   background: #DFDFDF;
   padding: 1.5em 2em;
   overflow-x: auto;
 }
-/* line 121, assets/sass/_pages/_single.scss */
+/* line 139, assets/sass/_pages/_single.scss */
 html body .site-content .article .wp-block-code code {
   line-height: 1.6em;
 }
-/* line 123, assets/sass/_pages/_single.scss */
+/* line 141, assets/sass/_pages/_single.scss */
 html body .site-content .article .wp-block-code code span {
   text-shadow: none;
+}
+
+/* line 9, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase {
+  padding: 1em 0;
+}
+/* line 12, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase > h3 {
+  margin: 0.5em 5vw;
+}
+/* line 16, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .hr-bar {
+  margin: 0 5vw;
+}
+/* line 19, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects {
+  margin: 2em 5vw 0 5vw;
+  position: relative;
+}
+/* line 24, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects .project {
+  background: white;
+}
+/* line 28, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects .project > a {
+  background: #22FF1A;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  margin: 1em 0;
+  display: inline-block;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+/* line 37, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects .project > a.project--ongoing {
+  background: #318AFF;
+}
+/* line 39, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects .project > a.project--ongoing:hover {
+  background: #006dfd;
+}
+/* line 44, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects .project > a:hover {
+  background: #08e600;
+}
+/* line 50, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects .project img {
+  width: 100%;
+}
+/* line 56, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects--rework {
+  margin: 2em 5vw;
+}
+/* line 62, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects--rework .rework h4 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+/* line 67, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects--rework .rework__samples {
+  margin: 0.5em 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+/* line 74, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects--rework .rework__samples .sample {
+  margin-bottom: 2em;
+  flex: 0 0 100%;
+  max-width: 512px;
+}
+/* line 79, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects--rework .rework__samples .sample header {
+  padding: 1em 0;
+  background: #DFDFDF;
+}
+/* line 84, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects--rework .rework__samples .sample a {
+  background: #FF4343;
+  padding: 0.5em 1em;
+  color: white;
+  display: inline-block;
+  margin-top: 0.5em;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+}
+/* line 92, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects--rework .rework__samples .sample a:hover {
+  background: #ff1010;
+}
+/* line 99, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects--rework .rework__samples .sample--reworked header {
+  background: #0D0C0C;
+  color: white;
+}
+/* line 104, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects--rework .rework__samples .sample--reworked a {
+  background: #22FF1A;
+}
+/* line 106, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .projects--rework .rework__samples .sample--reworked a:hover {
+  background: #08e600;
+}
+/* line 125, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .promotion--dark {
+  background: #0D0C0C;
+  padding: 3em 5vw;
+  position: relative;
+  margin: 3em 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+/* line 134, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .promotion--dark:after {
+  content: " ";
+  z-index: 0;
+  position: absolute;
+  clip-path: ellipse(25vw 25vw at 25vw 25vw);
+  bottom: -90px;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
+  height: 500vw;
+  width: 50vw;
+}
+/* line 147, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .promotion--dark div {
+  text-align: center;
+}
+/* line 149, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .promotion--dark div p {
+  color: white;
+}
+/* line 152, assets/sass/_pages/_showcase.scss */
+html body .site-content #showcase .promotion--dark div p:last-child {
+  margin: 1em 0;
+  font-family: Righteous, Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  color: white;
+  font-weight: normal;
+  line-height: 1.6em;
 }
 
 /* line 7, assets/sass/_partials/_footer.scss */
@@ -9674,148 +10005,168 @@ html body .site-footer a:hover {
   html body .site-content #main .clients__gallery {
     flex: 0 0 50%;
   }
+  /* line 141, assets/sass/_partials/_responsive.scss */
+  html body .site-content #showcase .projects {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  /* line 146, assets/sass/_partials/_responsive.scss */
+  html body .site-content #showcase .projects .project {
+    flex: 0 0 47%;
+  }
 }
 @media only screen and (min-width: 801px) {
-  /* line 164, assets/sass/_partials/_responsive.scss */
+  /* line 177, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .intro {
     padding: 7em 5vw;
   }
-  /* line 168, assets/sass/_partials/_responsive.scss */
+  /* line 181, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .intro__description h3 {
     font-size: 32px;
     font-size: 2rem;
   }
-  /* line 175, assets/sass/_partials/_responsive.scss */
+  /* line 188, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .process__title {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  /* line 180, assets/sass/_partials/_responsive.scss */
+  /* line 193, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .process__title .title__left {
     flex: 0 0 50%;
   }
-  /* line 185, assets/sass/_partials/_responsive.scss */
+  /* line 198, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .process__steps {
     display: flex;
     justify-content: space-around;
   }
-  /* line 189, assets/sass/_partials/_responsive.scss */
+  /* line 202, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .process__steps .steps__box {
     flex: 0 0 30%;
   }
-  /* line 197, assets/sass/_partials/_responsive.scss */
+  /* line 210, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .promotion {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
-  /* line 201, assets/sass/_partials/_responsive.scss */
+  /* line 214, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .promotion div {
     flex: 0 0 40vw;
   }
-  /* line 203, assets/sass/_partials/_responsive.scss */
+  /* line 216, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .promotion div img {
     width: 100%;
     height: 100vw;
     object-fit: cover;
   }
-  /* line 209, assets/sass/_partials/_responsive.scss */
+  /* line 222, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .promotion aside {
     flex: 0 0 50vw;
     padding: 0 5vw 0 0;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 247, assets/sass/_partials/_responsive.scss */
+  /* line 260, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .intro {
     padding: 7em 5vw;
   }
-  /* line 250, assets/sass/_partials/_responsive.scss */
+  /* line 263, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .intro__img {
     flex: 0 0 50%;
     font-size: 1.4vw;
     margin-bottom: 0;
   }
-  /* line 256, assets/sass/_partials/_responsive.scss */
+  /* line 269, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .intro__description {
     flex: 0 0 50%;
   }
-  /* line 266, assets/sass/_partials/_responsive.scss */
+  /* line 279, assets/sass/_partials/_responsive.scss */
   html body .site-content #pricing > p {
     width: 60%;
   }
-  /* line 270, assets/sass/_partials/_responsive.scss */
-  html body .site-content #pricing .packages {
+  /* line 283, assets/sass/_partials/_responsive.scss */
+  html body .site-content #pricing .packages, html body .site-content #pricing #showcase .projects, html body .site-content #showcase #pricing .projects {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  /* line 275, assets/sass/_partials/_responsive.scss */
-  html body .site-content #pricing .packages .package {
+  /* line 288, assets/sass/_partials/_responsive.scss */
+  html body .site-content #pricing .packages .package, html body .site-content #pricing #showcase .projects .package, html body .site-content #showcase #pricing .projects .package, html body .site-content #showcase .projects #pricing .packages .project, html body .site-content #pricing #showcase .projects .project, html body .site-content #showcase #pricing .projects .project {
     flex: 0 0 31%;
   }
-  /* line 281, assets/sass/_partials/_responsive.scss */
+  /* line 294, assets/sass/_partials/_responsive.scss */
   html body .site-content #pricing .pricing__inquiry {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  /* line 286, assets/sass/_partials/_responsive.scss */
+  /* line 299, assets/sass/_partials/_responsive.scss */
   html body .site-content #pricing .pricing__inquiry h3 {
     width: 50%;
   }
-  /* line 290, assets/sass/_partials/_responsive.scss */
+  /* line 303, assets/sass/_partials/_responsive.scss */
   html body .site-content #pricing .pricing__inquiry a {
     margin-top: 0;
   }
 }
 @media only screen and (min-width: 1025px) {
-  /* line 326, assets/sass/_partials/_responsive.scss */
+  /* line 339, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron {
     background-size: 100% auto;
     padding: 0 15vw;
   }
-  /* line 330, assets/sass/_partials/_responsive.scss */
+  /* line 343, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron__header {
     font-size: 42px;
     font-size: 2.625rem;
   }
-  /* line 339, assets/sass/_partials/_responsive.scss */
+  /* line 352, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .promotion div img {
     width: 100%;
     height: auto;
   }
-  /* line 345, assets/sass/_partials/_responsive.scss */
+  /* line 358, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .promotion aside {
     padding: 0 10vw 0 0;
   }
-  /* line 355, assets/sass/_partials/_responsive.scss */
+  /* line 368, assets/sass/_partials/_responsive.scss */
   html body .site-content #checkout .wpcf7-form {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 1em;
   }
-  /* line 361, assets/sass/_partials/_responsive.scss */
+  /* line 374, assets/sass/_partials/_responsive.scss */
   html body .site-content #checkout .wpcf7-form .checkout__personal {
     flex-grow: 1;
     margin-right: 5%;
   }
-  /* line 366, assets/sass/_partials/_responsive.scss */
+  /* line 379, assets/sass/_partials/_responsive.scss */
   html body .site-content #checkout .wpcf7-form .checkout__product {
     flex: 0 0 390px;
   }
+  /* line 389, assets/sass/_partials/_responsive.scss */
+  html body .site-content #showcase .projects .project {
+    flex: 0 0 32%;
+  }
 }
 @media only screen and (min-width: 1281px) {
-  /* line 394, assets/sass/_partials/_responsive.scss */
+  /* line 421, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron {
     background-size: 100% auto;
     padding: 0 25vw;
   }
-  /* line 398, assets/sass/_partials/_responsive.scss */
+  /* line 425, assets/sass/_partials/_responsive.scss */
   html body .site-content #main .jumbotron__header {
     font-size: 52px;
     font-size: 3.25rem;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  /* line 456, assets/sass/_partials/_responsive.scss */
+  html body .site-content #showcase .projects .project {
+    flex: 0 0 24%;
   }
 }

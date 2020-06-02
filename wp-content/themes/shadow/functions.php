@@ -196,3 +196,5 @@ function sd_custom_pagination($args = [], $class = 'pagination') {
     echo sprintf($template, $class, $prev_link, $links, $next_link);
 
 }
+
+add_post_type_support( 'page', 'excerpt' );

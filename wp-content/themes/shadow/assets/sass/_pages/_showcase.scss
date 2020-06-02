@@ -1,0 +1,170 @@
+html {
+
+  
+  body {
+
+
+    .site-content {
+
+      #showcase {
+        padding: 1em 0;
+
+        > h3 {
+          margin: 0.5em 5vw;
+        }
+        
+        .hr-bar {
+          margin: 0 5vw;
+        }
+        .projects {
+          @extend .packages;
+          margin: 2em 5vw 0 5vw;
+          position: relative;
+
+          .project {
+            @extend .package;
+            background: white;
+
+            > a {
+              background: $check;
+              color: white;
+              padding: 0.5em 1em;
+              @include border-radius(1em);
+              margin: 1em 0;
+              display: inline-block;
+              @include font-size(12px);
+              
+              &.project--ongoing {
+                background: $link;
+                &:hover {
+                  background: darken($link, 10%);
+                }
+              }
+
+              &:hover {
+                background: darken($check, 10%);
+              }
+
+            }
+            
+            img {
+              width: 100%;
+            }
+          }
+
+
+          &--rework {
+            margin: 2em 5vw;
+
+
+            .rework {
+
+              h4 {
+                margin-bottom: 1em;
+                text-align: center;
+              }
+
+              &__samples {
+                margin: 0.5em 0;
+                text-align: center;
+                display: flex;
+                justify-content: space-around;
+                flex-flow: row wrap;
+
+                .sample {
+                  margin-bottom: 2em;
+                  flex: 0 0 100%;
+                  max-width: 512px;
+
+                  header {
+                    padding: 1em 0;
+                    background: $light-gray;
+                  }
+                  
+                  a {
+                    background: $primary;
+                    padding: 0.5em 1em;
+                    color: white;
+                    display: inline-block;
+                    margin-top: 0.5em;
+                    @include border-radius(1em);
+
+                    &:hover {
+                      background: darken($primary, 10%);
+                    }
+
+                  }
+
+                  &--reworked {
+                    header {
+                      background: $dark-gray;
+                      color: white;
+                    }
+
+                    a {
+                      background: $check;
+                      &:hover {
+                        background: darken($check, 10%);
+                      }
+                    }
+                  }
+
+                }
+                
+                
+
+              }
+
+            }
+
+
+          }
+
+        }
+
+        .promotion--dark {
+          background: $dark-gray;
+          padding: 3em 5vw;
+          position: relative;
+          margin: 3em 0;
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+
+          &:after {
+            content: " ";
+            z-index: 0;
+            position: absolute;
+            //clip-path: polygon(3% 71%, 7% 63%, 11% 59%, 16% 52%, 22% 48%, 32% 42%, 38% 39%, 45% 36%, 52% 35%, 57% 34%, 69% 37%, 77% 44%, 84% 48%, 88% 51%, 94% 56%, 95% 59%, 97% 66%, 97% 73%);
+            //clip-path: circle(100% at 100% 100%);
+            clip-path: ellipse(25vw 25vw at 25vw 25vw);
+            bottom: -90px;
+            background-image: linear-gradient(to bottom right, rgba(255,255,255,0), rgba(255,255,255,0.7));
+            height: 500vw;
+            width: 50vw;
+          }
+
+          div {
+            text-align: center;
+            p {
+              color: white;
+
+              &:last-child {              
+                margin: 1em 0;
+                @include font-heading(32px, white, normal, 1.6em);
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+    }
+
+
+  }
+
+
+}
